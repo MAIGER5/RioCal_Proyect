@@ -3,7 +3,7 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const mainRouter = require('./routes/mainRouter');
 
-
+require('./db.js')
 const app = express();
 
 app.use(express.json({ limit:'10mb' }));  //El middleware express.json() analizará automáticamente el cuerpo de la solicitud si está en formato JSON y lo convertirá en un objeto JavaScript accesible a través de req.body
