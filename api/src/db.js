@@ -2,6 +2,9 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
 const functionProducts = require('./models/ProductsModels');
+const functionMercado = require('./models/MercadoModels');
+const functionServiciosExtrem = require('./models/ServiciosExtremModels');
+const functionFormContacto = require('./models/FormContactoModels');
 
 
 const {
@@ -17,8 +20,11 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
 });
 
 functionProducts(sequelize);
+functionMercado(sequelize);
+functionServiciosExtrem(sequelize);
+functionFormContacto(sequelize);
 
-const { Products } = sequelize.models;
+const { Products, Mercado, ServiciosExtrem, FormContacto } = sequelize.models;
 
 async function testPostgreSQLConnection() {
   try {
