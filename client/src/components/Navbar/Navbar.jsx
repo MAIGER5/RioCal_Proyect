@@ -1,22 +1,45 @@
 import styles from './Navbar.module.css'
 import logo from '../Utils/logo.png'
+import { AcordeonIndustrias } from './AcordeonIndustrias'
+import { useState } from 'react'
+
+const Industrias = [ 'Mineria', 'Agriocultura', 'Métalugica', 'Construcción', 'Infraestructura', 'Alimentaria', 'Servicios Públicos']
+
 
 export const Navbar = () => {
+
+  const lisItems = Industrias.map((ele, index)=>
+    <a href='#' key={index}> {ele} </a>
+  ) 
+  const [ able, setAble] = useState(false);
+
+  const handleClick = ()=> {
+    setAble(!able);
+  }
+
   return (
     <div className={styles.Contenedor}>
-        <div className={styles.Navbar}>
-            <div className={styles.Logo}>
+      <div className={styles.Barra}>
+        <div className={styles.Logo}>
                 <img src={logo} alt="logo RioCal" />
-            </div>
-            <div className={styles.Menu}>
-                <p className={styles.OpcionMenu}>Nuestra Empresa</p>
-                <p className={styles.OpcionMenu}>Industrias</p>
-                <p className={styles.OpcionMenu}>Productos</p>
-                <p className={styles.RioCal}>RioCal +</p>
-                <p className={styles.OpcionMenu}>Sostenibilidad</p>
-                <p className={styles.OpcionMenu}>Contacto</p>
-            </div>
         </div>
+        <div class={styles.navbar}>
+          <a href="#inicio" className={styles.Subtitle}>Inicio</a>
+          <a href="#riocal" className={styles.RioCal}>RioCal +</a>
+          <a href="#productos" className={styles.Subtitle}>Productos</a>
+          <div className={styles.dropdown}>
+            <button className={styles.dropbtn}>Industria
+              <i className="fa fa-caret-down"></i>
+            </button>
+            <div className={styles.dropdownContent}>
+              {lisItems}
+            </div>
+          </div>
+          <a href="#news" className={styles.Subtitle}>Sostenibilidad</a>
+          <a href="#news" className={styles.Subtitle}>Contacto</a>
+        </div>
+      </div>
     </div>
   )
 }
+
