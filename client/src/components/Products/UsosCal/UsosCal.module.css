@@ -1,0 +1,48 @@
+.contenedor{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    margin-bottom: 90px;
+}
+
+.contenedor p, strong{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    color: #0e1e2c;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+}
+/* li{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    color: #0e1e2c;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+} */
+
+.title{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #394046;
+    font-stretch: semi-condensed;
+    letter-spacing: 1.5px;
+}
+
+ul {
+    list-style: none; /* Quitamos los marcadores */
+    padding: 0; /* Quitamos el padding por defecto de la lista */
+    margin-left: 10px; /* Separamos la lista de la izquierda */
+}
+    
+li::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "\2666"; /* Insertamos el marcador */
+    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: #0063b4; /* Coloreamos la viñeta */
+}

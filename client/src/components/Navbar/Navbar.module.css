@@ -1,22 +1,32 @@
 
-.Contenedor {
-    width: 100%;
+.Contenedor1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 60px;
+    max-width: 1800px;
     display: flex;
-    justify-content: center;
-    /* border: 1px solid rgb(9, 9, 10); */
+    justify-content: space-around;
+    /* border: 1px solid rgb(238, 6, 6); */
 }
 .Barra {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid blue; */
 }
 
-.Logo {
+.Logo img {
     cursor: pointer;
-    /* border: 1px solid green; */
-    
+    width: 200px;
+    /* border: 1px solid green; */   
+}
+
+.links:focus{
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Navbar container */
@@ -29,9 +39,35 @@
     /* border: 1px solid red; */
 
   }
-  
+
+  .navreponse{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+  .navreponse1{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(226, 223, 223, 0.2); */
+    z-index: 1;
+  }
+
   .RioCal {
-    background-color: #61993b;
+    background-color: #79b353;
     color: #ffff;
   }
 
@@ -40,7 +76,7 @@
   }
   /* Links inside the navbar */
   .navbar a {
-    float: left;
+    /* float: left; */
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
@@ -53,12 +89,25 @@
     border-radius: 5px;
   }
   
+  .navreponse a, .navreponse1 a {
+    /* float: left; */
+    font-size: 22px;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bolder; */
+    transition: background-color .5s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
 
 
   /* The dropdown container */
   .dropdown {
     overflow: hidden;
-    
+
     /* border: 1px solid red; */
 
   }
@@ -76,14 +125,16 @@
     font-size: large;
     transition: background-color .5s;
     cursor: pointer;
-    margin: 0; /* Important for vertical align on mobile phones */
+    /* margin: 0; Important for vertical align on mobile phones */
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navreponse a:hover, .navreponse1 a:hover, .navbar a:hover, .dropdown:hover .dropbtn {
     color: #ddd;
     background-color: #0063b4;
   }
+
+
 
   /* Dropdown content (hidden by default) */
   .dropdownContent {
@@ -102,6 +153,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    justify-content: center;
     text-align: left;
   }
   
@@ -115,88 +167,37 @@
     display: block;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .Contenedor {
-    width: 100%;
+  .iconmenu{
+    width: 60px;
+    height: 60px;
+    background-color: #61993b;
     display: flex;
-    justify-content: center;
-}
-
-.Menu {
-    overflow: hidden;
-    width: 65%;
-    display: flex;
-    justify-content:space-between;
     align-items: center;
-}
-
-.Menu p {
-    width: 17%;
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
-    padding-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-    color: #0063b4;
-    font-size: large;
-    transition: background-color .5s;
-    cursor: pointer;
-}
-
-.Menu p:hover {
-    background-color: #004f7c;
-    color: #ffff;
     border-radius: 5px;
-    text-decoration: none;
-}
+  }
 
-
-.Logo {
-    cursor: pointer;
-}
-
-.Navbar {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.RioCal {
-    width: 10%;
-    height: 50%;
-    display: flex;
-    align-items: end;
-    padding-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
+  .toggle_btn{
+    display: none;
     color: #ffff;
-    justify-content: center;
-    font-size: large;
-    background-color: #61993b ;
-    border-radius: 5px;
     cursor: pointer;
-    transition: color .5s;
-    text-decoration: none;
-}
+  }
 
-.RioCal:hover {
-    color: #004f7c;
-} */
+  .tarjetH{
+    background: linear-gradient(to bottom right, blue, pink)
+  }
+
+  @media screen and (max-width: 1245px){
+
+    .navbar {
+      display: none;
+    }
+    .toggle_btn{
+      display: block;
+    }
+
+    .Logo img{
+      width: 220px;
+
+    }
+  }

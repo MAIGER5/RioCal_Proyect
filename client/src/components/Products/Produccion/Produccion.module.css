@@ -1,0 +1,78 @@
+.contenedor{
+    width: 70%;
+    margin: auto;
+    display: grid;
+}
+
+.rango span{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    color: #0e1e2c;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+    font-weight: lighter;
+}
+
+.formula{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0e1e2c;
+    /* border: 1px solid red; */
+
+}
+
+.contenedor p, strong{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    color: #0e1e2c;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+}
+
+
+.especificaciones{
+    display: grid;
+}
+
+.especificacionesTitle{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #394046;
+    font-stretch: semi-condensed;
+    letter-spacing: 1.5px;
+}
+
+.resaltado{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+    color: #0063b4;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #0063b4;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+}

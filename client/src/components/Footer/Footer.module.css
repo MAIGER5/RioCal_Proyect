@@ -1,0 +1,117 @@
+.todo{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid red; */
+}
+
+.container{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a4750;
+    z-index: -1;
+}
+
+
+.growing {
+    overflow: hidden; /* Oculta el contenido que excede el contenedor */
+    width: 40%; /* Ajusta según sea necesario */
+    /* margin: auto; */
+    margin-top: 0;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat; /* Asegura que la imagen de fondo no se repita */
+    /* transition: transform 1s; */
+  }
+
+.growing img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para ajustarla al contenedor */
+  object-position: center center; /* Centra la imagen dentro del contenedor */
+  transition: transform 1s;
+  z-index: 1; /* Asegura que la imagen esté sobre la capa de degradado */
+}
+
+.growing:hover img{
+    transform: scale(1.03, 1.03);
+}
+
+  .growing::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 300px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(70, 130, 180, 0.8));
+    z-index: 2; /* Asegura que la capa esté sobre la imagen */
+  }
+  
+
+  .textImagenGrow{
+    position: absolute;
+    top: 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+    font-stretch: extra-condensed;
+    letter-spacing: 1.1px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    z-index: 3;
+    /* border: 1px solid yellow; */
+}
+
+
+
+.containerInterno{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.Grid1{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+.Grid2{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+.Grid3{
+    width: 20%;
+    height: 80%;
+                         }
+.Grid4{
+    width: 30%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+p{
+    color: #ffff;
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    line-height: 25px;
+}
+.titulo{
+    font-weight: bold;
+}
+.mapa{
+    color: rgb(231, 101, 101);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.Links{
+    cursor: pointer;
+}

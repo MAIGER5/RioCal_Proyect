@@ -1,0 +1,76 @@
+.container{
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    border-style: none;
+    display: grid;
+
+}
+.container2{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    border-style: none;
+}
+
+.GridPincipal {
+
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    opacity: 90%;
+    object-fit: cover;
+    border-style: none;
+
+    /* border: 1px solid red; */
+}
+
+.contenedorCards{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 362px;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 5px solid red; */
+}
+
+
+.cardHorizontal{
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 360px;
+    z-index: 2;
+    /* border: 5px solid red; */
+}
+
+.texSutentabilidad{
+    margin-left: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 380px;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 1445px){
+    .contenedorCards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tarjetasMargin{
+        margin-bottom: 10px;
+    }
+}

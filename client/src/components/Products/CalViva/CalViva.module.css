@@ -1,0 +1,100 @@
+
+.boxPrincipal{
+    display: grid;  
+}
+
+.contenedorPrincipal{
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid green;    */
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+
+}
+
+.containerInterno{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.titles{
+    width: 30%;
+}
+
+.titles a{
+    padding-left: 20px;
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #0063b4;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    display: block;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-stretch: ultra-condensed;
+
+
+    /* border: 1px solid red; */
+
+}
+
+.description p, li{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    color: #0e1e2c;
+    font-weight: lighter;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+
+    /* border: 1px solid red; */
+
+}
+
+.description{
+    width: 75%;
+    /* border: 1px solid red; */
+
+}
+
+.benefits{
+    padding: 0;
+    margin-left: 20px;
+}
+.tituloPrincipal{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #0063b4;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+
+}
+
+.titleDescription{
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    color: #0063b4;
+    font-size: 24px;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+}
+
+.links{
+    text-decoration: none;
+}
