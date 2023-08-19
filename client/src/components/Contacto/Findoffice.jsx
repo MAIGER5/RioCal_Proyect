@@ -33,23 +33,23 @@ export const Findoffice = () => {
 
         </div>
         <div className={styles.buton}>
-            <Button 
-                sx={{
-                width:'100%',
-                height:'50px',
-                background:'#0063b4',
-                borderRadius:'80px',
-                color:'#ffff',
-                fontFamily:'Oxygen, sans-serif',
-                textTransform:'inherit',
-                fontWeight:600,
-                '&:hover': {
-                    backgroundColor: '#50882b',
-                    borderColor: '#0062cc',
-                    boxShadow: 'none',
-                },
-                }}
-            >Encontrar una Oficina</Button>
+                <Button href="#oficinas"
+                    sx={{
+                    width:'100%',
+                    height:'50px',
+                    background:'#0063b4',
+                    borderRadius:'80px',
+                    color:'#ffff',
+                    fontFamily:'Oxygen, sans-serif',
+                    textTransform:'inherit',
+                    fontWeight:600,
+                    '&:hover': {
+                        backgroundColor: '#50882b',
+                        borderColor: '#0062cc',
+                        boxShadow: 'none',
+                    },
+                    }}
+                >Encontrar una Oficina</Button>
         </div>
     </div>
   )

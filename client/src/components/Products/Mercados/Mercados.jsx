@@ -1,5 +1,5 @@
 import { Box, Paper, Typography } from '@mui/material'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Mercados.module.css'
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
@@ -24,131 +24,80 @@ export const Mercados = () => {
                     // border:'1px solid black',
                     justifyContent: 'flex-start', // Centra horizontalmente
                     '& > :not(style)': {
-                    m: 1,
-                    width: 200,
-                    height: 200,
-                    display:'flex',
-                    flexDirection:'column',
-                    justifyContent:'center', 
-                    alignItems:'center',
-                    background:'#fafafa',
-                    fontSize:'60px'
+                        m: 1,
+                        width: 200,
+                        height: 200,
+                        display:'flex',
+                        flexDirection:'column',
+                        justifyContent:'center', 
+                        alignItems:'center',
+                        background:'#fafafa',
+                        fontSize:'60px',
+                        transition: 'background 1s',
+                        textDecoration:'none',
+                        '&:hover': {
+                            background: '#5585b5',
+                            color:'#fafafa',
+                            '& .MuiTypography-root': { 
+                                color:'#fafafa',
+                            },
+                            '& .IconClass': {
+                                color: '#fafafa',
+                            },
 
+                        },
                     },
+                    '& .MuiTypography-root': { 
+                        fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                        fontSize:'22px',
+                        // fontWeight:'li',
+                        fontStretch:'ultra-condensed',
+                        letterSpacing:'0.5px',
+                        lineHeight:'39.96px',
+                        color:'#265c9e',
+                        transition:'color 1s'
+                        
+                    },
+                    '& .IconClass': {
+                        fontSize: 'inherit',
+                        color: '#47525c',
+                        transition:'color 1s'
+                    },
+
                 }}
                 >
                 
-                <Paper elevation={1} className={styles.paper} component={NavLink} to={'/Agricultura'} sx={{textDecoration:'none'}}>
-                    <AgricultureIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'li',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Agricultura</Typography>
+                <Paper component={NavLink} to={'/Agricultura'}>
+                    <AgricultureIcon className='IconClass'/>
+                    <Typography>Agricultura</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <ScienceOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Químico</Typography>
+                <Paper component={NavLink} to={'/Quimico'}>
+                    <ScienceOutlinedIcon className='IconClass'/>
+                    <Typography>Químico</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <EngineeringOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Ing. Civil & Const.</Typography>
+                <Paper component={NavLink} to={'/IngCivilConst'}>
+                    <EngineeringOutlinedIcon className='IconClass'/>
+                    <Typography>Ing. Civil & Const.</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <WaterDropOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Medio Ambiente</Typography>
+                <Paper component={NavLink} to={'/'}>
+                    <WaterDropOutlinedIcon className='IconClass'/>
+                    <Typography>Medio Ambiente</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <GasMeterOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Tratamiento de Gas</Typography>
+                <Paper component={NavLink} to={'/'}>
+                    <GasMeterOutlinedIcon className='IconClass'/>
+                    <Typography>Tratamiento de Gas</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <ConfirmationNumberOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >Hierro & Acero</Typography>
+                <Paper component={NavLink} to={'/'}>
+                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
+                    <Typography>Hierro & Acero</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <ConfirmationNumberOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >No Ferrosos</Typography>
+                <Paper component={NavLink} to={'/'}>
+                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
+                    <Typography>No Ferrosos</Typography>
                 </Paper>
-                <Paper elevation={1} component={NavLink} to={'/'} sx={{textDecoration:'none'}}>
-                    <DescriptionOutlinedIcon color='action' fontSize='inherit'/>
-                    <Typography 
-                        sx={{
-                            fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                            fontSize:'22px',
-                            // fontWeight:'bold',
-                            fontStretch:'ultra-condensed',
-                            letterSpacing:'0.5px',
-                            lineHeight:'39.96px',
-                            color:'#0063b4'
-                        }}
-                    >PCC & Papel</Typography>
+                <Paper component={NavLink} to={'/'}>
+                    <DescriptionOutlinedIcon className='IconClass'/>
+                    <Typography>PCC & Papel</Typography>
                 </Paper>
 
             </Box>

@@ -2,12 +2,13 @@
     width: 70%;
     margin: auto;
     display: grid;
+    color: #47525c;
 }
 
 .rango span{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 16px;
-    color: #0e1e2c;
+    color: inherit;
     font-style: initial;
     text-rendering: optimizelegibility;
     letter-spacing: 1px;
@@ -23,7 +24,7 @@
     justify-content: center;
     font-weight: 600;
     font-size: 18px;
-    color: #0e1e2c;
+    color: inherit;
     /* border: 1px solid red; */
 
 }
@@ -31,7 +32,7 @@
 .contenedor p, strong{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 16px;
-    color: #0e1e2c;
+    color: inherit;
     font-style: initial;
     text-rendering: optimizelegibility;
     letter-spacing: 1px;
@@ -48,7 +49,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 40px;
     font-weight: 500;
-    color: #394046;
+    color: inherit;
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
 }
@@ -61,7 +62,7 @@
     letter-spacing: 1px;
     line-height: 28px;
     font-stretch: ultra-condensed;
-    color: #0063b4;
+    color: #265c9e;
     font-size: large;
     font-weight: 600;
     cursor: pointer;
@@ -72,7 +73,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 50px;
     font-weight: 600;
-    color: #0063b4;
+    color: #265c9e;
     font-stretch: ultra-condensed;
     letter-spacing: 1px;
 }

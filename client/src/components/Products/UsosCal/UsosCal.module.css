@@ -3,12 +3,13 @@
     margin: auto;
     display: grid;
     margin-bottom: 90px;
+    color: #47525c;
 }
 
 .contenedor p, strong{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 16px;
-    color: #0e1e2c;
+    color: inherit;
     font-style: initial;
     text-rendering: optimizelegibility;
     letter-spacing: 1px;
@@ -30,7 +31,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 50px;
     font-weight: 600;
-    color: #394046;
+    color: inherit;
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
 }
@@ -44,5 +45,5 @@ ul {
 li::before { /* Añadimos contenido antes de cada elemento de la lista */
     content: "\2666"; /* Insertamos el marcador */
     padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
-    color: #0063b4; /* Coloreamos la viñeta */
+    color: #265c9e; /* Coloreamos la viñeta */
 }

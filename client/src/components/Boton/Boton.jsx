@@ -26,9 +26,9 @@ export const Boton2 = () => {
   return (
     <Button 
       sx={{
-        width:'50%',
+        width:'70%',
         height:'15%',
-        background:'#0063b4',
+        background:'#265c9e',
         borderRadius:'80px',
         color:'#ffff',
         '&:hover': {
@@ -38,6 +38,25 @@ export const Boton2 = () => {
       },
       }}
     >Click para COMPRAR</Button>
+  )
+}
+export const Boton3 = () => {
+  return (
+    <Button 
+      sx={{
+        width:'70%',
+        height:'10%',
+        background:'#265c9e',
+        borderRadius:'80px',
+        color:'#ffff',
+        marginTop:'25px',
+        '&:hover': {
+          backgroundColor: '#50882b',
+          borderColor: '#0062cc',
+          boxShadow: 'none',
+      },
+      }}
+    >Crece con Nosotros</Button>
   )
 }
 

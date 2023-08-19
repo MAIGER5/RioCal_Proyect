@@ -1,6 +1,7 @@
 
 .boxPrincipal{
-    display: grid;  
+    display: grid; 
+    color: #47525c; 
 }
 
 .contenedorPrincipal{
@@ -37,7 +38,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 21px;
     font-weight: 500;
-    color: #0063b4;
+    color:  #265c9e;
     text-decoration-line: none;
     text-decoration-style: solid;
     display: block;
@@ -55,7 +56,7 @@
 .description p, li{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 16px;
-    color: #0e1e2c;
+    color: #47525c;
     font-weight: lighter;
     font-style: initial;
     text-rendering: optimizelegibility;
@@ -81,7 +82,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 55px;
     font-weight: bold;
-    color: #0063b4;
+    color:  #265c9e;
     font-stretch: ultra-condensed;
     letter-spacing: 1px;
 
@@ -89,7 +90,7 @@
 
 .titleDescription{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-    color: #0063b4;
+    color: #265c9e;
     font-size: 24px;
     font-stretch: ultra-condensed;
     letter-spacing: 1px;

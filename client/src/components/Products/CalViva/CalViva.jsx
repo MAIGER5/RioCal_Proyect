@@ -48,7 +48,7 @@ export const CalViva = () => {
                                 color:'#ffff',
                                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
                                 fontSize:'16px',
-                                backgroundColor:'#0063b4',
+                                backgroundColor:'#265c9e',
                                 borderRadius:'80px',
                                 '&:hover': {
                                     backgroundColor: '#50882b',

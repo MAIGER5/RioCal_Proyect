@@ -11,13 +11,19 @@ export const PreguntasFrec = () => {
     <div className={styles.container}>
         <Typography variant='p' className={styles.Typography} fontSize={'50px'} width={'30%'}>FAQs</Typography>
         <div className={styles.Accordiones}>
-            <Accordion>
+            <Accordion 
+                sx={{
+                    '& .MuiTypography-root':{
+                        color:'#47525c',
+                    }
+                }}
+            >
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
                 >
-                <Typography variant='p' className={styles.Typography}>¿Cuál es la diferencia entre Cal viva (alto contenido de calcio) y la Cal viva dolómita?</Typography>
+                <Typography variant='p' color={'#47525c'} className={styles.Typography}>¿Cuál es la diferencia entre Cal viva (alto contenido de calcio) y la Cal viva dolómita?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography variant='p' className={styles.TypographyDos}
@@ -26,13 +32,19 @@ export const PreguntasFrec = () => {
                 </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion
+                sx={{
+                    '& .MuiTypography-root':{
+                        color:'#47525c',
+                    }
+                }}
+            >
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
                 >
-                <Typography variant='p' className={styles.Typography}>Se debe usar Cal viva, hidratada o lechada de cal?</Typography>
+                <Typography variant='p' className={styles.Typography}>¿Se debe usar Cal viva, hidratada o lechada de cal?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                 <Typography variant='p' className={styles.TypographyDos}>
@@ -49,7 +61,13 @@ export const PreguntasFrec = () => {
                 </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion
+                sx={{
+                    '& .MuiTypography-root':{
+                        color:'#47525c',
+                    }
+                }}
+            >
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"

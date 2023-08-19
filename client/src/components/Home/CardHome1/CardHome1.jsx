@@ -1,32 +1,30 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import styles from './CardHome1.module.css'
-import piedra from '../../../utils/piedra.png'
+import piedra from '../../../utils/piedra1.jpg';
+import principal from '../../../utils/uno.jpg' 
+import planta from '../../../utils/planta.jpg';
 import { Link } from 'react-router-dom';
 
 export const CardHome1 = () => {
     return (
-        <Link to={'Calviva'} className={styles.link}>
-            <div className={styles.ContenedorTarjet1}>
-                <Card sx={{ maxWidth: 345, background:'none' }}>
-                    <CardActionArea>
-                        <CardContent sx={{background:'#0063b4', height:150, opacity:'93%'}}>
-                            <Typography gutterBottom variant="h5" component="div" color='#fafafa' sx={{textDecoration: 'none'}}>
-                            CAL Viva
-                            </Typography>
-                            <Typography variant="body2" color="#ffff">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardMedia
-                            component="img"
-                            height="180"
-                            image={piedra}
-                            alt="green iguana"
-                        />
-                    </CardActionArea>
-                </Card>
-            </div>
-        </Link>
+            <div className={styles.ContenedorTarjetas}>
+                <Link to={'/Calviva'} className={styles.contenedorInforCard}>
+                    <div className={styles.textImagen}><p>Cal Viva</p></div>
+                    <div className={styles.cuadroImage}>
+                        <img src={piedra} alt="" />
+                    </div>
+                </Link>
+                <Link to={'/Calviva'} className={styles.contenedorInforCard}>
+                    <div className={styles.textImagen}><p>Cal Hidratada</p></div>
+                    <div className={styles.cuadroImage}>
+                        <img src={planta} alt="" />
+                    </div>
+                </Link>
+                <Link to={'/Calviva'} className={styles.contenedorInforCard}>
+                    <div className={styles.textImagen}><p>Cal Dolomita</p></div>
+                    <div className={styles.cuadroImage}>
+                        <img src={principal} alt="" />
+                    </div>
+                </Link>
+            </div>       
     )
 }

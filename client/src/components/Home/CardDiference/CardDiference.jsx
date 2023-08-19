@@ -1,7 +1,8 @@
 import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardDiference.module.css';
-import cargue from '../../../utils/cargue.jpg'
-import silo from '../../../utils/silo.jpg'
+import cargue from '../../../utils/cargue1.png'
+import silo from '../../../utils/silo1.jpg'
+import { Boton2, Boton3 } from "../../Boton/Boton";
 
 export const CardDiference = () => {
     return (
@@ -29,11 +30,12 @@ export const CardDiference = () => {
             >
             <Typography 
                 gutterBottom 
-                variant="h3" 
+                variant="h4" 
                 component="div" 
                 color='#222831' 
                 fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
                 marginBottom={'20px'}
+                marginTop={'20px'}
             >
             NUESTRAS SOLUCIONES QUE HACEN LA DIFERENCIA
             </Typography>
@@ -46,20 +48,7 @@ export const CardDiference = () => {
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
             </Typography>
-            <Button 
-                sx={{
-                width:'50%',
-                height:'12%',
-                background:'#0063b4',
-                borderRadius:'80px',
-                color:'#ffff',
-                '&:hover': {
-                    backgroundColor: '#50882b',
-                    borderColor: '#0062cc',
-                    boxShadow: 'none',
-                },
-                }}
-            > <Typography>Nuestro Mercado</Typography></Button>
+            <Boton3/>
             </Grid>
         </Box>
         <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>

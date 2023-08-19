@@ -1,10 +1,8 @@
 
 import styles from './Home.module.css';
-import principal from '../../utils/_DSC1385.jpg'
-import { Card, CardMedia, Typography } from '@mui/material';
+import principal from '../../utils/PORTADA.jpg'
+import { Card, CardMedia } from '@mui/material';
 import { CardHome1 } from './CardHome1/CardHome1';
-import { CardHome2 } from './CardHome/CardHome2';
-import { CardHome3 } from './CardHome/CardHome3';
 import { CardHorizontal } from './CardHorizontal/CardHorizontal';
 import { CardProductos } from './CardProductos/CardProductos';
 import { CardSolutions } from './CardSolutions/CardSolutions';
@@ -25,11 +23,7 @@ export const Home = () => {
                 width={'10px'}
             />
         </Card>
-        <div className={styles.contenedorCards}>
-            <CardHome1 className={styles.tarjetasMargin}/>
-            <CardHome2 className={styles.tarjetasMargin}/>
-            <CardHome3 className={styles.tarjetasMargin}/>
-        </div>
+        <CardHome1 className={styles.tarjetasMargin}/>
         {/* <div className={styles.cardHorizontal}>
           <div className={styles.texSutentabilidad}>
             <Typography 

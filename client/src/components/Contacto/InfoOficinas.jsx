@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material';
 
 export const InfoOficinas = () => {
   return (
-    <div className={styles.oficinas}>
+    <div id='oficinas' className={styles.oficinas}>
       <Typography 
         sx={{
           color:'#394046',

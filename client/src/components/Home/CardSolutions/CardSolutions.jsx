@@ -1,7 +1,8 @@
 import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardSolutions.module.css';
-import calidad from '../../../utils/calidad.jpg'
-import carro from '../../../utils/carro.jpg'
+import calidad from '../../../utils/calidad1.jpg'
+import carro from '../../../utils/carro1.png'
+import { Boton3 } from "../../Boton/Boton";
 
 
 
@@ -15,6 +16,10 @@ export const CardSolutions = () => {
               height="200"
               image={carro}
               alt="green iguana"
+              sx={{
+                imageRendering:'-webkit-optimize-contrast',
+                // imageRendering:'pixelated'
+              }}
           />
           <CardContent sx={{background:'#0063b4', height:240, opacity:'93%'}}>
               <Typography 
@@ -86,7 +91,7 @@ export const CardSolutions = () => {
         >
           <Typography 
             gutterBottom 
-            variant="h3" 
+            variant="h4" 
             component="div" 
             color='#222831' 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
@@ -103,23 +108,9 @@ export const CardSolutions = () => {
           Lizards are a widespread group of squamate reptiles, with over 6,000
           species, ranging across all continents except Antarctica
           </Typography>
-          <Button 
-            sx={{
-              width:'50%',
-              height:'12%',
-              background:'#50882b',
-              borderRadius:'80px',
-              color:'#ffff',
-              '&:hover': {
-                backgroundColor: '#0063b4',
-                borderColor: '#0062cc',
-                boxShadow: 'none',
-              },
-            }}
-          > <Typography>Nuestro Mercado</Typography></Button>
+          <Boton3/>
         </Grid>
       </Box>
-
     </div>
   )
 }

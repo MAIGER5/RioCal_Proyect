@@ -12,10 +12,10 @@ export const CardHorizontal = () => {
             <CardMedia
                 component="img"
                 image={tierra}
-                alt="green iguana"
+                alt="planeta"
                 sx={{
                   width:'100%',
-                  height:'470px',
+                  height:'90%',
                   opacity:'80%'
                 }}
             />

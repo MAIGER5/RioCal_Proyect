@@ -3,6 +3,7 @@
     margin: auto;
     margin-bottom: 90px;
     display: flex;
+    color: #47525c;
 }
 
 
@@ -10,7 +11,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #394046;
+    /* color: inherit; */
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
 }
@@ -19,7 +20,7 @@
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 17 px;
     font-weight: 400;
-    color: #50565c;
+    /* color: #50565c; */
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
 }

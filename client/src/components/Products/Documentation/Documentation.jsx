@@ -6,22 +6,23 @@ import { Link } from "react-router-dom";
 export const Documentation = () => {
   return (
     <div id="Documentation" className={styles.container}>
-        <Typography color={'#394046'}
+        <Typography color={'inherit'}
             sx={{
                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                fontSize:'45px',
+                fontSize:'40px',
                 marginLeft:'190px',
                 marginTop:'60px',
                 fontStretch:'ultra-condensed',
-                fontWeight:'400',
+                fontWeight:'600',
                 letterSpacing:'0.5px',
                 lineHeight:'39.96px',
                 textRendering:'optimizeSpeed',
-                fontFeatureSettings:'"smcp", "zero"'
+                fontFeatureSettings:'"smcp", "zero"',
+                // color:' #394046'
             }}
         >DOCUMENTACIÓN</Typography>
         <div className={styles.fichaTec}>
-            <Typography color={'#0063b4'}
+            <Typography color={'#265c9e'}
                 sx={{
                     fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
                     fontSize:'22px',
@@ -35,11 +36,12 @@ export const Documentation = () => {
                 sx={{
                     borderRadius:7,
                     height:'30px',
+                    backgroundColor:'#265c9e'
                 }}>Descargar
             </Button>
         </div>
         <div className={styles.fichaTec}>
-            <Typography color={'#0063b4'}
+            <Typography color={'#265c9e'}
                 sx={{
                     fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
                     fontSize:'22px',
@@ -51,12 +53,14 @@ export const Documentation = () => {
             <Button variant="contained" 
                 sx={{
                     borderRadius:7,
-                    height:'30px'
+                    height:'30px',
+                    backgroundColor:'#265c9e'
+
                 }}>Descargar
             </Button>
         </div>
         <br /><br />
-        <Typography color={'#0e1e2c'} align="center"
+        <Typography color={'inherit'} align="center"
             sx={{
                 width:'100%',
                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
@@ -75,7 +79,7 @@ export const Documentation = () => {
                     sx={{
                     width:'15%',
                     height:'40px',
-                    background:'#0063b4',
+                    background:'#265c9e',
                     borderRadius:'80px',
                     color:'#ffff',
                     '&:hover': {
