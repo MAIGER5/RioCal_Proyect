@@ -79,7 +79,7 @@ export const Mercados = () => {
                     <EngineeringOutlinedIcon className='IconClass'/>
                     <Typography>Ing. Civil & Const.</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/'}>
+                <Paper component={NavLink} to={'/MedioAmbiente'}>
                     <WaterDropOutlinedIcon className='IconClass'/>
                     <Typography>Medio Ambiente</Typography>
                 </Paper>

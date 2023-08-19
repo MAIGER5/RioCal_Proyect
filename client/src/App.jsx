@@ -8,7 +8,7 @@ import { Contacto } from './components/Contacto/Contacto'
 import { Agricultura } from './components/Industrias/Agricultura/Agricultura'
 import { Quimico } from './components/Industrias/Quimico/Quimico'
 import { IngCivilConst } from './components/Industrias/IngCivilConst/IngCivilConst'
-// import { MedioAmbiente } from './components/Industrias/MedioAmbiente/IngCivilConst/MedioAmbiente'
+import { MedioAmbiente } from './components/Industrias/MedioAmbiente/MedioAmbiente'
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
         <Route path='/Agricultura' element={<Agricultura/>}/>
         <Route path='/Quimico' element={<Quimico/>}/>
         <Route path='/IngCivilConst' element={<IngCivilConst/>}/>
-        {/* <Route path='/MedioAmbiente' element={<MedioAmbiente/>}/> */}
+        <Route path='/MedioAmbiente' element={<MedioAmbiente/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
