@@ -1,7 +1,5 @@
 import styles from './Metalurgica.module.css';
 import imagePrincipal from '../../../utils/Metalurgica.jpg'
-import agua2 from '../../../utils/agua2.webp';
-import solidification from '../../../utils/solidification.webp';
 import fundicion from '../../../utils/fundicion.jpg';
 
 

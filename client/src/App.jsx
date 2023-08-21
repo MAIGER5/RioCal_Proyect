@@ -11,6 +11,7 @@ import { IngCivilConst } from './components/Industrias/IngCivilConst/IngCivilCon
 import { MedioAmbiente } from './components/Industrias/MedioAmbiente/MedioAmbiente'
 import { FlueGas } from './components/Industrias/FlueGas/FlueGas.jsx'
 import { Metalurgica } from './components/Industrias/Metalurgica/Metalurgica'
+import { NoFerrosos } from './components/Industrias/NoFerrosos/NoFerrosos.jsx'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/MedioAmbiente' element={<MedioAmbiente/>}/>
         <Route path='/FlueGas' element={<FlueGas/>}/>
         <Route path='/Metalurgica' element={<Metalurgica/>}/>
+        <Route path='/NoFerrosos' element={<NoFerrosos/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
