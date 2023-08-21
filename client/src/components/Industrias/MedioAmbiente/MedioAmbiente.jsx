@@ -1,9 +1,10 @@
 import styles from './MedioAmbiente.module.css';
 import imagePrincipal from '../../../utils/ambiente.jpg'
 import agua2 from '../../../utils/agua2.webp';
-import estabilizacion from '../../../utils/estabilizacion.png';
+import solidification from '../../../utils/solidification.webp';
 import animalWaste from '../../../utils/animalWaste.jpg';
 import agua1 from '../../../utils/agua1.jpg';
+import desulfuration from '../../../utils/desulfuration.jpg';
 
 
 
@@ -26,9 +27,9 @@ export const MedioAmbiente = () => {
             </div>
             <div className={styles.contenedorInforCard}>
                 <div className={styles.cuadroImagepequeñas}>
-                    <img src={estabilizacion} alt="" />
+                    <img src={solidification} alt="" />
                 </div>
-                <div className={styles.textImagen}><p>Solidificación</p></div>
+                <div className={styles.textImagen}><p>Solidificación & Remediación</p></div>
             </div>
             <div className={styles.contenedorInforCard2}>
                 <div className={styles.cuadroImage2} style={{ backgroundImage: `linear-gradient(to left, rgba(255, 255, 255, 0), rgba(70, 130, 180, 0.8)), url(${animalWaste})` }}>
@@ -44,8 +45,8 @@ export const MedioAmbiente = () => {
                 <div className={styles.textImagenGrande}><p>Aguas residuales municipales y biosólidos</p></div>
             </div>
             <div className={styles.imagenGrande2}>
-                <img src={agua1} alt="agua1" />
-                <div className={styles.textImagenGrande2}><p>Aguas residuales municipales y biosólidos</p></div>
+                <img src={desulfuration} alt="desulfuration" />
+                <div className={styles.textImagenGrande2}><p>Desulfuración de Gases</p></div>
             </div>
         </div>
         

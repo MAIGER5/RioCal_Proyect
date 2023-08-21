@@ -55,13 +55,13 @@ export const Mercados = () => {
                         letterSpacing:'0.5px',
                         lineHeight:'39.96px',
                         color:'#265c9e',
-                        transition:'color 1s'
+                        transition:'color 0.6s'
                         
                     },
                     '& .IconClass': {
                         fontSize: 'inherit',
                         color: '#47525c',
-                        transition:'color 1s'
+                        transition:'color 0.6s'
                     },
 
                 }}
@@ -83,7 +83,7 @@ export const Mercados = () => {
                     <WaterDropOutlinedIcon className='IconClass'/>
                     <Typography>Medio Ambiente</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/'}>
+                <Paper component={NavLink} to={'/FlueGas'}>
                     <GasMeterOutlinedIcon className='IconClass'/>
                     <Typography>Tratamiento de Gas</Typography>
                 </Paper>

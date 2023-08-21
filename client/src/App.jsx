@@ -9,6 +9,7 @@ import { Agricultura } from './components/Industrias/Agricultura/Agricultura'
 import { Quimico } from './components/Industrias/Quimico/Quimico'
 import { IngCivilConst } from './components/Industrias/IngCivilConst/IngCivilConst'
 import { MedioAmbiente } from './components/Industrias/MedioAmbiente/MedioAmbiente'
+import { FlueGas } from './components/Industrias/FlueGas/FlueGas.jsx'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/Quimico' element={<Quimico/>}/>
         <Route path='/IngCivilConst' element={<IngCivilConst/>}/>
         <Route path='/MedioAmbiente' element={<MedioAmbiente/>}/>
+        <Route path='/FlueGas' element={<FlueGas/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
