@@ -87,9 +87,9 @@ export const Mercados = () => {
                     <GasMeterOutlinedIcon className='IconClass'/>
                     <Typography>Tratamiento de Gas</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/'}>
+                <Paper component={NavLink} to={'/Metalurgica'}>
                     <ConfirmationNumberOutlinedIcon className='IconClass'/>
-                    <Typography>Hierro & Acero</Typography>
+                    <Typography>Metalúrgica</Typography>
                 </Paper>
                 <Paper component={NavLink} to={'/'}>
                     <ConfirmationNumberOutlinedIcon className='IconClass'/>
