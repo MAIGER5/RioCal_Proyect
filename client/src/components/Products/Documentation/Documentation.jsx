@@ -10,8 +10,8 @@ export const Documentation = () => {
             sx={{
                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
                 fontSize:'40px',
-                marginLeft:'190px',
-                marginTop:'60px',
+                marginLeft:'60px',
+                marginTop:'40px',
                 fontStretch:'ultra-condensed',
                 fontWeight:'600',
                 letterSpacing:'0.5px',
@@ -62,7 +62,8 @@ export const Documentation = () => {
         <br /><br />
         <Typography color={'inherit'} align="center"
             sx={{
-                width:'100%',
+                margin:'auto',
+                width:'90%',
                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
                 fontSize:'17px',
                 fontWeight:'lighter',
@@ -77,7 +78,7 @@ export const Documentation = () => {
             <div className={styles.buttonContact}>  
                 <Button
                     sx={{
-                    width:'15%',
+                    width:'185px',
                     height:'40px',
                     background:'#265c9e',
                     borderRadius:'80px',

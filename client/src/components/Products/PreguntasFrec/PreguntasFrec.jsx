@@ -9,7 +9,7 @@ export const PreguntasFrec = () => {
 
   return (
     <div className={styles.container}>
-        <Typography variant='p' className={styles.Typography} fontSize={'50px'} width={'30%'}>FAQs</Typography>
+        <Typography variant='p' className={styles.Typography} fontSize={'50px'} width={'20%'}>FAQs</Typography>
         <div className={styles.Accordiones}>
             <Accordion 
                 sx={{

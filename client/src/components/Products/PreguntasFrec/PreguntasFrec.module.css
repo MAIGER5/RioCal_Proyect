@@ -3,9 +3,13 @@
     margin: auto;
     margin-bottom: 90px;
     display: flex;
+    justify-content: space-between;
     color: #47525c;
 }
 
+.Accordiones{
+    width: 90%;
+}
 
 .Typography{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;

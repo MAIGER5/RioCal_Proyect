@@ -43,11 +43,11 @@ export const CalViva = () => {
                         <Link to={'/Contacto'}>
                             <Button
                                 sx={{
-                                width:'28%',
+                                width:'205px',
                                 height:'40px',
                                 color:'#ffff',
                                 fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                                fontSize:'16px',
+                                fontSize:'15px',
                                 backgroundColor:'#265c9e',
                                 borderRadius:'80px',
                                 '&:hover': {
