@@ -12,6 +12,7 @@ import { MedioAmbiente } from './components/Industrias/MedioAmbiente/MedioAmbien
 import { FlueGas } from './components/Industrias/FlueGas/FlueGas.jsx'
 import { Metalurgica } from './components/Industrias/Metalurgica/Metalurgica'
 import { NoFerrosos } from './components/Industrias/NoFerrosos/NoFerrosos.jsx'
+import { PulpaPapel } from './components/Industrias/PulpaPapel/PulpaPapel.jsx'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/FlueGas' element={<FlueGas/>}/>
         <Route path='/Metalurgica' element={<Metalurgica/>}/>
         <Route path='/NoFerrosos' element={<NoFerrosos/>}/>
+        <Route path='/PulpaPapel' element={<PulpaPapel/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

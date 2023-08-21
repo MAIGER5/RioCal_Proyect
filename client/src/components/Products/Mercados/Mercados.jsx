@@ -95,7 +95,7 @@ export const Mercados = () => {
                     <ConfirmationNumberOutlinedIcon className='IconClass'/>
                     <Typography>No Ferrosos</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/'}>
+                <Paper component={NavLink} to={'/PulpaPapel'}>
                     <DescriptionOutlinedIcon className='IconClass'/>
                     <Typography>PCC & Papel</Typography>
                 </Paper>

@@ -28,7 +28,7 @@ export const Agricultura = () => {
                 <div className={styles.cuadroImageVacasPollos}>
                     <img src={desinfection} alt="" />
                 </div>
-                <div className={styles.textImagen}><p>Alimentación Animal</p></div>
+                <div className={styles.textImagen}><p>Desinfección</p></div>
             </div>
             <div className={styles.contenedorInforCard2}>
                 <div className={styles.cuadroImage2} style={{ backgroundImage: `linear-gradient(to left, rgba(255, 255, 255, 0), rgba(70, 130, 180, 0.8)), url(${sugar})` }}>
