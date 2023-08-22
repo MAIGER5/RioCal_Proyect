@@ -13,7 +13,7 @@ export const CardHome1 = () => {
                         <img src={piedra} alt="" />
                     </div>
                 </Link>
-                <Link to={'/Calviva'} className={styles.contenedorInforCard}>
+                <Link to={'/CalHidratada'} className={styles.contenedorInforCard}>
                     <div className={styles.textImagen}><p>Cal Hidratada</p></div>
                     <div className={styles.cuadroImage}>
                         <img src={planta} alt="" />

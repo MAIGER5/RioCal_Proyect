@@ -1,0 +1,28 @@
+.container{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    height: 400px;
+    background-color: #eff5f5;
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+
+.fichaTec{
+    width:70% ;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.buttonContact{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    text-decoration: none;
+}

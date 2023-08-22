@@ -2,7 +2,8 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/Navbar/Navbar'
 import { Home } from './components/Home/Home'
-import { CalViva } from './components/Products/CalViva/CalViva'
+import { CalViva } from './components/ProductsCalviva/CalViva/CalViva'
+import { CalHidratada } from './components/ProductsCalHidratada/CalHidratada/CalHidratada'
 import { Footer } from './components/Footer/Footer'
 import { Contacto } from './components/Contacto/Contacto'
 import { Agricultura } from './components/Industrias/Agricultura/Agricultura'
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Calviva' element={<CalViva/>}/>
+        <Route path='/CalHidratada' element={<CalHidratada/>}/>
         <Route path='/Contacto' element={<Contacto/>}/>
         <Route path='/Agricultura' element={<Agricultura/>}/>
         <Route path='/Quimico' element={<Quimico/>}/>
