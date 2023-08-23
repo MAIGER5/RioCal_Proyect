@@ -1,128 +1,128 @@
-import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardDiference.module.css';
 import cargue from '../../../utils/cargue1.png'
 import silo from '../../../utils/silo1.jpg'
-import { Boton2, Boton3 } from "../../Boton/Boton";
+import { Boton3 } from "../../Boton/Boton";
 
 export const CardDiference = () => {
     return (
         <div className={styles.container}>
             <Box 
-            sx={{
-            // background:'#0063b4', 
-            height:'95%', 
-            width:'45%', 
-            opacity:'93%', 
-            borderRadius:'2px',
-            display:'flex',
-            alignItems:'center',
-            justifyContent:'center',
-            border:'1px solid #a7bcb9',
-            // background:'#d9dad7'
-            }}>
-            <Grid
-            sx={{
-                width:'70%',
-                height:'95%',
-                // border:'1px solid red'
-        
-            }}
-            >
-            <Typography 
-                gutterBottom 
-                variant="h4" 
-                component="div" 
-                color='#222831' 
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-                marginBottom={'20px'}
-                marginTop={'20px'}
-            >
-            NUESTRAS SOLUCIONES QUE HACEN LA DIFERENCIA
-            </Typography>
-            <Typography 
-                variant="h6" 
-                color='#222831' 
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-                marginBottom={'30px'}
-            >
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            </Typography>
-            <Boton3/>
-            </Grid>
-        </Box>
-        <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
-            <CardActionArea>
-            <CardMedia
-                component="img"
-                height="200"
-                image={cargue}
-                alt="green iguana"
-            />
-            <CardContent 
                 sx={{
-                    background:'#477728', 
-                    height:240, 
-                    opacity:'93%'
+                // background:'#0063b4', 
+                height:'95%', 
+                width:'43%', 
+                opacity:'93%', 
+                borderRadius:'2px',
+                display:'flex',
+                alignItems:'center',
+                justifyContent:'center',
+                borderLeft:'0.5px solid #a7bcb9',
+                // background:'#d9dad7'
+                }}>
+                <Grid
+                sx={{
+                    width:'80%',
+                    height:'95%',
+                    // border:'1px solid red'
+                
                 }}
-            >
+                >
                 <Typography 
                     gutterBottom 
-                    variant="h5" 
+                    fontSize={'28px'} 
                     component="div" 
-                    color='#fafafa'
+                    color='#222831' 
                     fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    marginBottom={'20px'}
+                    marginTop={'20px'}
                 >
-                Lizard
-                </Typography>
-                <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-        >
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
-                </Typography>
-            </CardContent>
-            </CardActionArea>
-        </Card>
-        <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
-            <CardActionArea>
-            <CardMedia
-                component="img"
-                height="200"
-                image={silo}
-                alt="green iguana"
-            />
-            <CardContent 
-                sx={{
-                    // background:'#0063b4', 
-                    height:240, 
-                    opacity:'93%',
-                    background: '#477728',
-                    // background: 'linear-gradient(90deg,#79b353 0%, #559055 90%)',
-                    // background: '-webkit-linear-gradient(90deg,#79b353 0%, #559055 90%)',
-                    // background: '-moz-linear-gradient(90deg,#79b353 0%, #559055 90%)',
-                }}
-            >
-                <Typography 
-                    gutterBottom 
-                    variant="h5" 
-                    component="div" 
-                    color='#fafafa'
-                    fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-                >
-                Lizard
+                NUESTRAS SOLUCIONES QUE HACEN LA DIFERENCIA
                 </Typography>
                 <Typography 
-                    variant="body2" 
-                    color="#ffff"
+                    variant="h6" 
+                    color='#222831' 
                     fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-        
+                    marginBottom={'10px'}
                 >
                 Lizards are a widespread group of squamate reptiles, with over 6,000
                 species, ranging across all continents except Antarctica
                 </Typography>
-            </CardContent>
-            </CardActionArea>
-        </Card>
+                <Boton3/>
+                </Grid>
+            </Box>
+            <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+                <CardActionArea>
+                <CardMedia
+                    component="img"
+                    height="22%"
+                    image={cargue}
+                    alt="green iguana"
+                />
+                <CardContent className={styles.TextTarjet1}
+                    sx={{
+                        background:'#477728', 
+                        height:150, 
+                        opacity:'93%'
+                    }}
+                >
+                    <Typography 
+                        gutterBottom 
+                        variant="h5" 
+                        component="div" 
+                        color='#fafafa'
+                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    >
+                    Lizard
+                    </Typography>
+                    <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            >
+                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                    species, ranging across all continents except Antarctica
+                    </Typography>
+                </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+                <CardActionArea>
+                <CardMedia
+                    component="img"
+                    height="22%"
+                    image={silo}
+                    alt="green iguana"
+                />
+                <CardContent className={styles.TextTarjet1}
+                    sx={{
+                        // background:'#0063b4', 
+                        height:150, 
+                        opacity:'93%',
+                        background: '#477728',
+                        // background: 'linear-gradient(90deg,#79b353 0%, #559055 90%)',
+                        // background: '-webkit-linear-gradient(90deg,#79b353 0%, #559055 90%)',
+                        // background: '-moz-linear-gradient(90deg,#79b353 0%, #559055 90%)',
+                    }}
+                >
+                    <Typography 
+                        gutterBottom 
+                        variant="h5" 
+                        component="div" 
+                        color='#fafafa'
+                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    >
+                    Lizard
+                    </Typography>
+                    <Typography 
+                        variant="body2" 
+                        color="#ffff"
+                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                
+                    >
+                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                    species, ranging across all continents except Antarctica
+                    </Typography>
+                </CardContent>
+                </CardActionArea>
+            </Card>
         </div>
       )
 }

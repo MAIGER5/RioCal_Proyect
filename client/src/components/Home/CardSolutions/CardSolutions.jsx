@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardSolutions.module.css';
 import calidad from '../../../utils/calidad1.jpg'
 import carro from '../../../utils/carro1.png'
@@ -13,7 +13,7 @@ export const CardSolutions = () => {
         <CardActionArea>
           <CardMedia
               component="img"
-              height="200"
+              height="22%"
               image={carro}
               alt="green iguana"
               sx={{
@@ -21,7 +21,7 @@ export const CardSolutions = () => {
                 // imageRendering:'pixelated'
               }}
           />
-          <CardContent sx={{background:'#0063b4', height:240, opacity:'93%'}}>
+          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
               <Typography 
                 gutterBottom 
                 variant="h5" 
@@ -43,11 +43,11 @@ export const CardSolutions = () => {
         <CardActionArea>
           <CardMedia
               component="img"
-              height="200"
+              height="22%"
               image={calidad}
               alt="green iguana"
           />
-          <CardContent sx={{background:'#0063b4', height:240, opacity:'93%'}}>
+          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
               <Typography 
                 gutterBottom 
                 variant="h5" 
@@ -79,7 +79,7 @@ export const CardSolutions = () => {
           display:'flex',
           alignItems:'center',
           justifyContent:'center',
-          // border:'1px solid red'
+          borderRight:'0.5px solid #a7bcb9',
         }}>
         <Grid
           sx={{
@@ -91,7 +91,7 @@ export const CardSolutions = () => {
         >
           <Typography 
             gutterBottom 
-            variant="h4" 
+            fontSize={'28px'} 
             component="div" 
             color='#222831' 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
@@ -103,7 +103,7 @@ export const CardSolutions = () => {
             variant="h6" 
             color='#222831' 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-            marginBottom={'30px'}
+            marginBottom={'0px'}
           >
           Lizards are a widespread group of squamate reptiles, with over 6,000
           species, ranging across all continents except Antarctica

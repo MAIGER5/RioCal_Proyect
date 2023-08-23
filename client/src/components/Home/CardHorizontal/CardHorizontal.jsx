@@ -15,7 +15,7 @@ export const CardHorizontal = () => {
                 alt="planeta"
                 sx={{
                   width:'100%',
-                  height:'90%',
+                  height:'100%',
                   opacity:'80%'
                 }}
             />
@@ -31,6 +31,7 @@ export const CardHorizontal = () => {
           display:'flex',
           alignItems:'center',
           justifyContent:'center',
+          marginBlockStart:'60px'
           // border:'1px solid red'
         }}>
         <Grid
@@ -50,10 +51,10 @@ export const CardHorizontal = () => {
             marginBottom={'20px'}
         >
         <Typography 
-              fontSize={'40px'} 
+              fontSize={'32px'} 
               color={'#0063b4'}
               fontWeight={'100px'}
-              width={'490px'}
+              width={450}
               lineHeight={'normal'}
             >RioCal Acelera el Esfuerzo de Descarbonización con un Diseño de Planta de Cal NET-CERO</Typography>
         </Typography>
@@ -68,8 +69,9 @@ export const CardHorizontal = () => {
         </Typography>
         <Button 
             sx={{
-            width:'50%',
-            height:'12%',
+            width:'70%',
+            height:'9%',
+            fontSize:'15px',
             background:'#0063b4',
             borderRadius:'80px',
             color:'#ffff',
@@ -79,7 +81,7 @@ export const CardHorizontal = () => {
                 boxShadow: 'none',
             },
             }}
-        > <Typography>Nuestro Mercado</Typography></Button>
+        > Sostenibilidad</Button>
         </Grid>
         </CardContent>
       </div>

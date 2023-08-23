@@ -1,9 +1,10 @@
 .contenedor{
-    width: 80%;
-    height: 300px;
+    width: 79%;
+    height: 50%;
     top: 1100px;
     margin: auto;
     margin-top: 300px;
+    /* border: 1px solid red; */
 
 }
 
@@ -13,13 +14,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around; 
-    /* border: 1px solid red; */
+    margin-top: 20px;
+
+    /* border: 1px solid blue; */
 
 }
 
 .box1{
     width: 29%;
-    height: 140px;
+    height: 85%;
     background-color: #79b353;
     background-color: linear-gradient(90deg,#79b353 0%, #559055 90%);
     background-color: -webkit-linear-gradient(90deg,#79b353 0%, #559055 90%);
@@ -35,7 +38,7 @@
 
 .box2{
     width: 29%;
-    height: 140px;
+    height: 85%;
     background-color: #477728;
     background-color: linear-gradient(90deg,#477728 0%, #559055 90%);
     background-color: -webkit-linear-gradient(90deg,#477728 0%, #559055 90%);
@@ -51,9 +54,9 @@
 }
 .box3{
     width: 29%;
-    height: 140px;
+    height: 85%;
     background-color: #628d46;
-    background-color: linear-gradient(90deg,#79a75a 0%, #559055 *0%);
+    background-color: linear-gradient(90deg,#79a85a 0%, #559055 *0%);
     background-color: -webkit-linear-gradient(90deg,#7c9e65 0%, #559055 90%);
     background-color: -moz-linear-gradient(90deg,#7c9e65 0%, #559055 90%);
     display: flex;

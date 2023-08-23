@@ -10,19 +10,19 @@ export const CardProductos = () => {
   return (
     <div className={styles.contenedor}>
       <Typography 
-        marginLeft={'30px'} 
+        marginLeft={'25px'} 
         variant='h4' 
         component={'h1'} 
         color={'#222831'}
         fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
         display={'flex'}
-      >Explora Nuestros Productos Más Vendidos
+      >Explora nuestros productos más vendidos
       </Typography>
       <div className={styles.conboxes}>
         <div className={styles.box1}> 
           <Typography 
             variant='body2' 
-            fontSize={'28px'} 
+            fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 
@@ -31,7 +31,7 @@ export const CardProductos = () => {
         <div className={styles.box2}>
           <Typography 
             variant='body2' 
-            fontSize={'28px'} 
+            fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
           >CAL Hidratada tipo E</Typography>
@@ -39,7 +39,7 @@ export const CardProductos = () => {
         <div className={styles.box3}>
           <Typography 
             variant='body2' 
-            fontSize={'28px'} 
+            fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 

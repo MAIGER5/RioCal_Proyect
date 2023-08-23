@@ -14,6 +14,7 @@ import { FlueGas } from './components/Industrias/FlueGas/FlueGas.jsx'
 import { Metalurgica } from './components/Industrias/Metalurgica/Metalurgica'
 import { NoFerrosos } from './components/Industrias/NoFerrosos/NoFerrosos.jsx'
 import { PulpaPapel } from './components/Industrias/PulpaPapel/PulpaPapel.jsx'
+import { CalDolomita } from './components/ProductsCalDolomita/CalDolomita/CalDolomita'
 
 function App() {
 
@@ -23,7 +24,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Calviva' element={<CalViva/>}/>
+        <Route path='/Calviva25Kg' element={<CalViva/>}/>
         <Route path='/CalHidratada' element={<CalHidratada/>}/>
+        <Route path='/CalHidratada10Kg' element={<CalHidratada/>}/>
+        <Route path='/CalHidratadaTipoE' element={<CalHidratada/>}/>
+        <Route path='/CalDolomita' element={<CalDolomita/>}/>
         <Route path='/Contacto' element={<Contacto/>}/>
         <Route path='/Agricultura' element={<Agricultura/>}/>
         <Route path='/Quimico' element={<Quimico/>}/>

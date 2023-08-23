@@ -35,6 +35,7 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
     /* background-color: #333; */
     /* border: 1px solid red; */
 
@@ -138,9 +139,11 @@
 
   /* Dropdown content (hidden by default) */
   .dropdownContent {
+    text-anchor: none;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #e8e8f0;
+    border: 0.5px solid #dddde7;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(226, 223, 223, 0.2);
     z-index: 1;
@@ -161,6 +164,7 @@
   /* Add a grey background color to dropdown links on hover */
   .dropdownContent a:hover {
     background-color: #ddd;
+    color: forestgreen;
   }
   
   /* Show the dropdown menu on hover */
@@ -201,4 +205,7 @@
       width: 220px;
 
     }
+  }
+  .LinkedA{
+    line-height: 1px;
   }

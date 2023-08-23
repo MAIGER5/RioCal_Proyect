@@ -12,13 +12,14 @@
 
 .ContenedorTarjetas{
     position: absolute;
-    top: 687px;
+    top: 653.1px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 12.5%;
     display: flex;
     justify-content: space-around;
+    z-index: 3;
     /* border: 5px solid red; */
 }
 
@@ -62,15 +63,15 @@
 
 .textImagen{
     width:100%x;
-    height: 40%;
+    height: 35%;
     background-color: #0063b4;
     opacity: 85%;
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     /* border: 1px solid blue; */
     font-family: 'Oxygen', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: lighter;
     color: white;
     font-stretch: extra-condensed;

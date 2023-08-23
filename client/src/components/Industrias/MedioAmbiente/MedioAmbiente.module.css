@@ -204,7 +204,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(70, 130, 180, 0.8));
+    background: #e9b9d7;
+    background: linear-gradient(90deg,#e9b9d7 0%, #bfd0bf 80%);
+    background: -webkit-linear-gradient(90deg,#e9b9d7 0%, #bfd0bf 80%);
+    background: -moz-linear-gradient(90deg,#e9b9d7 0%, #bfd0bf 80%);
     z-index: 1; /* Asegura que la capa esté sobre la imagen */
   }
   

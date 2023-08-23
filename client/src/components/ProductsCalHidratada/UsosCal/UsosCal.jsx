@@ -3,7 +3,7 @@ import styles from './UsosCal.module.css';
 export const UsosCal = () => {
     return (
         <div className={styles.contenedor}>
-            <strong className={styles.title}>USOS DE LA CAL VIVA ALTA EN CALCIO</strong>
+            <strong className={styles.title}>USOS DE LA CAL HIDRATADA ALTA EN CALCIO</strong>
             <br /> <br />
             <p>La cal hidratada con alto contenido de calcio es uno de los reactivos más eficaces para la neutralización de ácidos y el ajuste del pH.
             </p>

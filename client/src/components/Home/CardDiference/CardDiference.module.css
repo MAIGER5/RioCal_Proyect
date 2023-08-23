@@ -1,11 +1,30 @@
 
 .container{
     width: 77%;
-    height: 500px;
+    height: 85%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 90px;
     /* border: 1px solid blue; */
+}
+
+
+.ContenedorTarjet1 img {
+    transition: transform 1s;
+}
+
+.TextTarjet1 {
+    transition: background 1s;
+
+}
+
+.ContenedorTarjet1:hover  img{
+    transform: scale(1.05, 1.05);
+}
+
+.ContenedorTarjet1:hover  .TextTarjet1{
+    background-color: #265c9e;
 }

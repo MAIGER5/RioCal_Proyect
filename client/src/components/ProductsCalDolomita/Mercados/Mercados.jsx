@@ -1,13 +1,8 @@
 import { Box, Paper, Typography } from '@mui/material'
 import { NavLink } from 'react-router-dom';
 import styles from './Mercados.module.css'
-import AgricultureIcon from '@mui/icons-material/Agriculture';
-import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
-import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
-import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
-import GasMeterOutlinedIcon from '@mui/icons-material/GasMeterOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import HouseIcon from '@mui/icons-material/House';
 
 
 export const Mercados = () => {
@@ -53,7 +48,7 @@ export const Mercados = () => {
                         // fontWeight:'li',
                         fontStretch:'ultra-condensed',
                         letterSpacing:'0.5px',
-                        lineHeight:'39.96px',
+                        lineHeight:'30.96px',
                         color:'#265c9e',
                         transition:'color 0.6s'
                         
@@ -66,38 +61,14 @@ export const Mercados = () => {
 
                 }}
                 >
-                
-                <Paper component={NavLink} to={'/Agricultura'}>
-                    <AgricultureIcon className='IconClass'/>
-                    <Typography>Agricultura</Typography>
-                </Paper>
-                <Paper component={NavLink} to={'/Quimico'}>
-                    <ScienceOutlinedIcon className='IconClass'/>
-                    <Typography>Químico</Typography>
-                </Paper>
+
                 <Paper component={NavLink} to={'/IngCivilConst'}>
                     <EngineeringOutlinedIcon className='IconClass'/>
                     <Typography>Ing. Civil & Const.</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/MedioAmbiente'}>
-                    <WaterDropOutlinedIcon className='IconClass'/>
-                    <Typography>Medio Ambiente</Typography>
-                </Paper>
-                <Paper component={NavLink} to={'/FlueGas'}>
-                    <GasMeterOutlinedIcon className='IconClass'/>
-                    <Typography>Tratamiento de Gases</Typography>
-                </Paper>
-                <Paper component={NavLink} to={'/Metalurgica'}>
-                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
-                    <Typography>Metalúrgica</Typography>
-                </Paper>
-                <Paper component={NavLink} to={'/NoFerrosos'}>
-                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
-                    <Typography>No Ferrosos</Typography>
-                </Paper>
-                <Paper component={NavLink} to={'/PulpaPapel'}>
-                    <DescriptionOutlinedIcon className='IconClass'/>
-                    <Typography>PCC & Papel</Typography>
+                <Paper component={NavLink} to={'/IngCivilConst'}>
+                    <HouseIcon className='IconClass'/>
+                    <Typography>Material de<br />Construcción</Typography>
                 </Paper>
 
             </Box>

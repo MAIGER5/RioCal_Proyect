@@ -60,3 +60,22 @@ export const Boton3 = () => {
   )
 }
 
+export const Boton4 = () => {
+  return (
+    <Button 
+      sx={{
+        width:'70%',
+        height:'10%',
+        background:'#265c9e',
+        borderRadius:'80px',
+        color:'#ffff',
+        marginTop:'25px',
+        '&:hover': {
+          backgroundColor: '#50882b',
+          borderColor: '#0062cc',
+          boxShadow: 'none',
+      },
+      }}
+    >Sostenibilidad</Button>
+  )
+}
