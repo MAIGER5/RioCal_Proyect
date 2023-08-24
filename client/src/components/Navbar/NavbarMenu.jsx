@@ -38,7 +38,9 @@ export const NavbarMenu = () => {
       <Link to={'/'} className={styles.links}>
         <a href="#inicio" className={styles.Subtitle}>Inicio</a>
       </Link>
-      <a href="#riocal" className={styles.RioCal}>RioCal +</a>
+      <Link to={'RioCalMas'}>
+        <a href="#riocal" className={styles.RioCal}>RioCal +</a>
+      </Link>
       <div className={styles.dropdown}>
         <button className={styles.dropbtn}>Productos
           <i className="fa fa-caret-down"></i>

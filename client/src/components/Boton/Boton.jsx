@@ -79,3 +79,41 @@ export const Boton4 = () => {
     >Sostenibilidad</Button>
   )
 }
+
+export const Boton5 = () => {
+  return (
+    <Button 
+      sx={{
+        width:'25%',
+        height:'25%',
+        background:'forestgreen',
+        color:'#fafafa',
+        marginTop:'25px',
+        '&:hover': {
+          backgroundColor: 'rgb(30, 70, 122)',
+          borderColor: '#0062cc',
+          boxShadow: 'none',
+      },
+      }}
+    >haz crecer tu negocio</Button>
+  )
+}
+
+export const Boton6 = () => {
+  return (
+    <Button variant='text'
+      sx={{
+        width:'20%',
+        height:'20%',
+        marginLeft:'20px',
+        // background:'forestgreen',
+        color:'rgb(30, 70, 122)',
+        marginTop:'25px',
+        '&:hover': {
+          color:'#fafafa',
+          fontWeight:600
+      },
+      }}
+    >Llama Ahora <br /> +57 356214528</Button>
+  )
+}

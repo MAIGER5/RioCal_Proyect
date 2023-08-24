@@ -15,6 +15,7 @@ import { Metalurgica } from './components/Industrias/Metalurgica/Metalurgica'
 import { NoFerrosos } from './components/Industrias/NoFerrosos/NoFerrosos.jsx'
 import { PulpaPapel } from './components/Industrias/PulpaPapel/PulpaPapel.jsx'
 import { CalDolomita } from './components/ProductsCalDolomita/CalDolomita/CalDolomita'
+import { RioCalMas } from './components/RioCalMas/RioCalMas'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/Metalurgica' element={<Metalurgica/>}/>
         <Route path='/NoFerrosos' element={<NoFerrosos/>}/>
         <Route path='/PulpaPapel' element={<PulpaPapel/>}/>
+        <Route path='/RioCalMas' element={<RioCalMas/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
