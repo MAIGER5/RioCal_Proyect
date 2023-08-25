@@ -1,4 +1,5 @@
-import { Button } from '@mui/material'
+import { Button } from '@mui/material';
+import StoreIcon from '@mui/icons-material/Store';
 
 
 export const Boton = () => {
@@ -86,12 +87,14 @@ export const Boton5 = () => {
       sx={{
         width:'25%',
         height:'25%',
-        background:'forestgreen',
+        background:'#0e4083',
         color:'#fafafa',
         marginTop:'25px',
         '&:hover': {
-          backgroundColor: 'rgb(30, 70, 122)',
-          borderColor: '#0062cc',
+          backgroundColor: '#fafafa',
+          borderColor: '#0e4083',
+          color:'#0e4083',
+          fontWeight:600,
           boxShadow: 'none',
       },
       }}
@@ -115,5 +118,41 @@ export const Boton6 = () => {
       },
       }}
     >Llama Ahora <br /> +57 356214528</Button>
+  )
+}
+
+export const Boton7 = () => {
+  return (
+    <Button variant='text' startIcon={<StoreIcon sx={{ color: 'red', fontSize:50 }}/>}
+      sx={{
+        // width:'20%',
+        // height:'20%',
+        marginLeft:'150px',
+        // background:'forestgreen',
+        color:'#fafafa',
+        '&:hover': {
+          color:'#fafafa',
+          fontWeight:600
+      },
+      }}
+    >PROMICAL</Button>
+  )
+}
+export const Boton8 = () => {
+  return (
+    <Button variant='text' startIcon={<StoreIcon sx={{ color: 'red', fontSize:1000 }} />}
+      sx={{
+        // width:'20%',
+        // height:'20%',
+        marginLeft:'150px',
+        fontSize:'inherit',
+        // background:'forestgreen',
+        color:'#fafafa',
+        '&:hover': {
+          color:'#fafafa',
+          fontWeight:600
+      },
+      }}
+    >PROCECAL</Button>
   )
 }
