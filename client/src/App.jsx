@@ -16,6 +16,7 @@ import { NoFerrosos } from './components/Industrias/NoFerrosos/NoFerrosos.jsx'
 import { PulpaPapel } from './components/Industrias/PulpaPapel/PulpaPapel.jsx'
 import { CalDolomita } from './components/ProductsCalDolomita/CalDolomita/CalDolomita'
 import { Rio_Cal_Mas } from './components/RIO_CAL-MAS/Rio_Cal_Mas'
+import { Promical10kg } from './components/RIO_CAL-MAS/Promical10kg/Promical10kg'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/NoFerrosos' element={<NoFerrosos/>}/>
         <Route path='/PulpaPapel' element={<PulpaPapel/>}/>
         <Route path='/RioCalMas' element={<Rio_Cal_Mas/>}/>
+        <Route path='/Promical10kg' element={<Promical10kg/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

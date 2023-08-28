@@ -1,0 +1,82 @@
+.container{
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 1000px;
+}
+
+.imageContenedor{
+    margin-top: 10px;
+    width: 40%;
+    height: 650px;
+    display: flex;
+    border: 1px solid rgba(131, 156, 189, 0.39);
+    border-radius: 5px;
+    transition: transform 1s;
+
+
+}
+
+.imageContenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.imageContenedor:hover img{
+    transform: scale(1.05, 1.05);
+}
+
+
+.cardText{
+    width: 55%;
+    height: 100%;
+    color: #265c9e;
+    font-size: 17px;
+    line-height: 25px;
+    /* border: 1px solid blue; */
+
+}
+.cardText h5{
+    font-weight: 500;
+    color: darkslategrey;
+    font-size: 15px;
+    /* border: 1px solid blue; */
+
+}
+
+
+.clickComprar{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #61993b;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.benefits{
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.benefits li{
+    text-indent: -15px;
+    padding-left: 15px;
+    color: darkslategrey;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Oxygen', sans-serif;
+    font-stretch: semi-condensed;
+    letter-spacing: 1.5px; 
+
+}
+
+.benefits li::before{
+    content: "\2022"; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
+
+}

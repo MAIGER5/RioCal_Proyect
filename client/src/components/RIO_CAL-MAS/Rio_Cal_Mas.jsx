@@ -4,12 +4,13 @@ import CalHidratadaBlanquearProcecal from '../../utils/_DSC4618.jpg'
 import CalHidratadaIndustrial from '../../utils/_DSC4610.jpg'
 import CalHidratadaTipoN from '../../utils/_DSC4614.jpg';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 
 export const Rio_Cal_Mas = () => {
   return (
     <div className={styles.container}>
         <section className={styles.layout}>
-            <div className={styles.tarjet}>
+            <Link to={'/Promical10kg'} className={styles.tarjet}>
                 <div className={styles.card}>
                     <img src={CalHidratadaBlanquearPromical} alt="" />
                 </div>
@@ -23,8 +24,8 @@ export const Rio_Cal_Mas = () => {
                     <p>Agregar al Carrito</p>
                     <ShoppingCartIcon color='action'/>
                 </div>
-            </div>
-            <div className={styles.tarjet}>
+            </Link>
+            <Link className={styles.tarjet}>
                 <div className={styles.card}>
                     <img src={CalHidratadaBlanquearProcecal} alt="" />
                 </div>
@@ -38,8 +39,8 @@ export const Rio_Cal_Mas = () => {
                     <p>Agregar al Carrito</p>
                     <ShoppingCartIcon color='action'/>
                 </div>
-            </div>
-            <div className={styles.tarjet}>
+            </Link>
+            <Link className={styles.tarjet}>
                 <div className={styles.card}>
                     <img src={CalHidratadaIndustrial} alt="" />
                 </div>
@@ -53,8 +54,8 @@ export const Rio_Cal_Mas = () => {
                     <p>Agregar al Carrito</p>
                     <ShoppingCartIcon color='action'/>
                 </div>
-            </div>
-            <div className={styles.tarjet}>
+            </Link>
+            <Link className={styles.tarjet}>
                 <div className={styles.card}>
                     <img src={CalHidratadaTipoN} alt="" />
                 </div>
@@ -68,7 +69,7 @@ export const Rio_Cal_Mas = () => {
                     <p>Agregar al Carrito</p>
                     <ShoppingCartIcon color='action'/>
                 </div>
-            </div>
+            </Link>
             
         </section>
     </div>
