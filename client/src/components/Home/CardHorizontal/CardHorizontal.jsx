@@ -31,7 +31,8 @@ export const CardHorizontal = () => {
           display:'flex',
           alignItems:'center',
           justifyContent:'center',
-          marginBlockStart:'60px'
+          marginBlockStart:'60px',
+          marginTop: '150px'
           // border:'1px solid red'
         }}>
         <Grid

@@ -1,4 +1,5 @@
 import styles from './CardProductos.module.css';
+import { Link } from 'react-router-dom'
 import { Typography } from "@mui/material";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -19,7 +20,7 @@ export const CardProductos = () => {
       >Explora nuestros productos más vendidos
       </Typography>
       <div className={styles.conboxes}>
-        <div className={styles.box1}> 
+        <Link to={'Promical10kg'} className={styles.box1}> 
           <Typography 
             variant='body2' 
             fontSize={'25px'} 
@@ -27,24 +28,24 @@ export const CardProductos = () => {
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 
           >CAL Hidratada 10KG </Typography>
-        </div>
-        <div className={styles.box2}>
+        </Link>
+        <Link className={styles.box2}>
           <Typography 
             variant='body2' 
             fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-          >CAL Hidratada tipo E</Typography>
-        </div>
-        <div className={styles.box3}>
+          >CAL Hidratada Tipo A</Typography>
+        </Link>
+        <Link className={styles.box3}>
           <Typography 
             variant='body2' 
             fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 
-          >CAL Viva 25KG</Typography>
-        </div>
+          >CAL Hidratada Tipo B</Typography>
+        </Link>
       </div>
     </div>
   )

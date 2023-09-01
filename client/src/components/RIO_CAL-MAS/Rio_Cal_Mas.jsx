@@ -3,12 +3,22 @@ import CalHidratadaBlanquearPromical from '../../utils/_DSC4615.jpg'
 import CalHidratadaBlanquearProcecal from '../../utils/_DSC4618.jpg'
 import CalHidratadaIndustrial from '../../utils/_DSC4610.jpg'
 import CalHidratadaTipoN from '../../utils/_DSC4614.jpg';
+import riocalMas from '../../utils/prin13.jpg';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
+
 
 export const Rio_Cal_Mas = () => {
   return (
     <div className={styles.container}>
+        <div className={styles.imgPrincipal}>
+            <img src={riocalMas} alt="" />
+            <div className={styles.fondoImg}></div>
+        </div>
+        <div className={styles.cardText}>
+            <div className={styles.title1}>RIO CAL + </div>
+            <div className={styles.textPrincipal}>Haz parte de la Red de distribución  Mas grande de Colombia de Cales Hidratadas.</div>
+        </div>
         <section className={styles.layout}>
             <Link to={'/Promical10kg'} className={styles.tarjet}>
                 <div className={styles.card}>
