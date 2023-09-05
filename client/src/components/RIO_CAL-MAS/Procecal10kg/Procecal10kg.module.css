@@ -9,8 +9,9 @@
 }
 
 .imageContenedor{
+    overflow: hidden;
     margin-top: 10px;
-    width: 40%;
+    width: 500px;
     height: 650px;
     display: flex;
     border: 1px solid rgba(131, 156, 189, 0.39);
@@ -26,7 +27,6 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
-    
 }
 
 .imageContenedor:hover img{
@@ -35,11 +35,12 @@
 
 
 .cardText{
-    width: 55%;
+    width: 60%;
     height: 100%;
     color: #265c9e;
     font-size: 17px;
     line-height: 25px;
+    margin-left: 50px;
     /* border: 1px solid blue; */
 
 }

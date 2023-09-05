@@ -9,8 +9,27 @@
 
 .imgPrincipal{
   overflow: hidden;
+  position: relative;
   width: 100%;
   height: 500px;
+  background-repeat: no-repeat; /* Asegura que la imagen de fondo no se repita */
+
+}
+
+.imgPrincipal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  background: #1e3143;
+  background: linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
+  background: -webkit-linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
+  background: -moz-linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
+  z-index: 1; /* Asegura que la capa esté sobre la imagen */
+
 }
 
 .imgPrincipal img{
@@ -18,16 +37,128 @@
   height: 500px;
   object-fit: cover;
   object-position: bottom;
-  opacity: 55%;
+  opacity: 90%;
+  z-index: 2; /* Asegura que la imagen esté sobre la capa de degradado */
+
 }
 
-.fondoImg{
-  width: 100%;
-  height: 500;
-  background-color: #265c9e;
+/* .textoImgPrincipal{
+  position: absolute;
+  top: 150px;
+  left: 190px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: inherit;
+  color: rgb(9, 158, 9);
+  z-index: 3;
+
+} */
+
+.textoImgPrincipalSegundo{
+  position: absolute;
+  top: 190px;
+  left: 190px;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: inherit;
+  color: aliceblue;
+  z-index: 3;
 }
 
-.cardText{
+.textoImgPrincipalTercero{
+  position: absolute;
+  top: 260px;
+  left: 190px;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: inherit;
+  color: aliceblue;
+  z-index: 3;
+}
+
+.boton{
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 320px;
+  left: 190px;
+  z-index: 3;
+  /* border: 1px solid green; */
+}
+
+.cuadroPesos{
+  position: absolute;
+  width: 600px;
+  height: 190px;
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  border-radius: 3px;
+  /* border: 1px solid green; */
+}
+
+.dentroCuadroPesos1{
+  width: 40%;
+  height: 100%;
+  background-color: #79b353;
+  border-radius: 3px 0px 0px 3px;
+
+  /* border: 1px solid blue; */
+}
+
+#titleCuadroPesos1 {
+  width: 92%;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  margin-left: 18px;
+  margin-top: 20px;
+  color: #2b4353;
+  line-height: 18px;
+}
+#parrafoCuadroPesos1 {
+  width: 87%;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 18px;
+  line-height: 15px;
+  color: #2b4353;
+
+}
+
+.dentroCuadroPesos2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 10px 9px 8px -5px rgba(128,119,119,0.66);
+  -webkit-box-shadow: 10px 9px 8px -5px rgba(128,119,119,0.66);
+  -moz-box-shadow: 10px 9px 8px -5px rgba(128,119,119,0.66);
+  border-radius: 0px 3px 3px 0px;
+
+  /* border: 1px solid red; */
+}
+
+.TextoPesos{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #2b4353;
+  border-radius: 10px;
+  font-size: inherit;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  text-justify: auto;
+
+}
+/* .cardText{
   position: absolute;
   display: grid;
   top: 410px;
@@ -38,17 +169,14 @@
   left: 20%;
   transform: translate(-50%, -50%);
   border-radius: 3px;
-  /* border: 1px solid black; */
-
-}
-
+} */
+/* 
 .title1{
   margin: auto;
   margin-left: 60px;
   width: 80%;
   margin-top: 50px;
   height: 100px;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -58,7 +186,7 @@
   color: rgb(153, 245, 153);
   font-stretch: semi-condensed;
   letter-spacing: 1.5px;
-}
+} */
 
 .textPrincipal{
   margin: auto;

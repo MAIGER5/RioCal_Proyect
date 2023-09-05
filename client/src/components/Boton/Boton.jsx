@@ -156,3 +156,67 @@ export const Boton8 = () => {
     >PROCECAL</Button>
   )
 }
+
+export const Boton9 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"150px",
+            height:'40px',
+            background:'#79b353',
+            borderRadius:'3px',
+            color:'white',
+            fontWeight:600,
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    >Contactanos</Button>
+  )
+}
+export const Boton10 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"250px",
+            height:'40px',
+            // background:'white',
+            borderRadius:'3px',
+            color:'white',
+            border:'1px solid white',
+            fontWeight:600,
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    >Llama Ahora +57 356214528</Button>
+  )
+}
+export const Boton11 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"120px",
+            height:'30px',
+            background:'#2b4353',
+            borderRadius:'3px',
+            color:'white',
+            fontWeight:400,
+            fontSize:'10px',
+            marginLeft:'15px',
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    >Contactanos</Button>
+  )
+}

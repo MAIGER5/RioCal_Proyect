@@ -40,7 +40,7 @@ export const Agricultura = () => {
         </div>
         <div className={styles.sugarIndustry}>
             <img src={azucar} alt="azucar" />
-            <div className={styles.textImagenAzucar}><p>Industria de la Azucar</p></div>
+            <div className={styles.textImagenAzucar}><p>Industria del Azucar</p></div>
         </div>
 
     </div>
