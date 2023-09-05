@@ -27,6 +27,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    transition: transform 0.5s;
 }
 
 .imageContenedor:hover img{

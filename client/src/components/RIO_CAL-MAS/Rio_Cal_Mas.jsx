@@ -7,6 +7,9 @@ import riocalMas from '../../utils/prin13.jpg';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import { Boton10, Boton11, Boton9 } from '../Boton/Boton';
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit';
+import LineStyleIcon from '@mui/icons-material/LineStyle';
 
 
 export const Rio_Cal_Mas = () => {
@@ -30,9 +33,18 @@ export const Rio_Cal_Mas = () => {
                 <Boton11/>
             </div>
             <div className={styles.dentroCuadroPesos2}>
-                <div className={styles.TextoPesos}>10 <br /> KG</div>
-                <div className={styles.TextoPesos}>25 <br /> KG</div>
-                <div className={styles.TextoPesos}>1 <br /> TON</div>
+                <div className={styles.cajonPeso}>
+                    <LineStyleIcon fontSize='large' color='success'/>
+                    <div className={styles.TextoPesos}>10 <br /> KG</div>
+                </div>
+                <div className={styles.cajonPeso}>
+                    <HorizontalSplitIcon fontSize='large' color='success'/>
+                    <div className={styles.TextoPesos}>25 <br /> KG</div>
+                </div>
+                <div className={styles.cajonPeso}>
+                    <CheckBoxOutlineBlankIcon fontSize='large' color='success'/>
+                    <div className={styles.TextoPesos}>1 <br /> TON</div>
+                </div>
             </div>
         </div>
         {/* <div className={styles.cardText}>

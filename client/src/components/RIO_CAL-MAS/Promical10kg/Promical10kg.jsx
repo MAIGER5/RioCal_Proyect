@@ -7,9 +7,9 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 export const Promical10kg = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContenedor}> 
+      <section className={styles.imageContenedor}> 
         <img src={imageCal} alt="" />
-      </div>
+      </section>
       <div className={styles.cardText}>
         <h3>Cal Hidratada para Blanquear(Promical)</h3>
         <h3>COP$ 0.00 <Link to={'/Contacto'} className={styles.clickComprar}>Click para Contactar un Comercial</Link></h3>

@@ -3,6 +3,7 @@ const RAL6002 = '#2D572' //azul 265c9e
 const RAL6002 = 'forestgreen' //verde
 const RAL6002 = '#265c9e' //azul principal
 //#61993b verde menu
+// #79b353 riocal mas
 
 
 

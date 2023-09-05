@@ -3,6 +3,7 @@ import styles from './CardSolutions.module.css';
 import calidad from '../../../utils/calidad1.jpg'
 import carro from '../../../utils/carro1.png'
 import { Boton3 } from "../../Boton/Boton";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -39,7 +40,7 @@ export const CardSolutions = () => {
           </CardContent>
         </CardActionArea>
       </Card>
-      <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+      <Card component={NavLink} to={'/Calidad'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none'}}>
         <CardActionArea>
           <CardMedia
               component="img"
@@ -55,7 +56,7 @@ export const CardSolutions = () => {
                 color='#fafafa'
                 fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
               >
-              Lizard
+              Calidad
               </Typography>
               <Typography 
                 variant="body2" 

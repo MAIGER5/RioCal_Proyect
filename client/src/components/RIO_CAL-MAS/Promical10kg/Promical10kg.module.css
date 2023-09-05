@@ -17,6 +17,7 @@
     border-radius: 5px;
     transition: transform 1s;
     cursor: pointer;
+    
 
 
 }
@@ -26,6 +27,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    transition: transform 0.5s;
     
 }
 
