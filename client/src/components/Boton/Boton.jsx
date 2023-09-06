@@ -1,5 +1,8 @@
 import { Button } from '@mui/material';
 import StoreIcon from '@mui/icons-material/Store';
+import VerifiedIcon from '@mui/icons-material/Verified';
+import StackedLineChartIcon from '@mui/icons-material/StackedLineChart';
+import RecyclingIcon from '@mui/icons-material/Recycling';
 
 
 export const Boton = () => {
@@ -218,5 +221,70 @@ export const Boton11 = () => {
         },
         }}
     >Contactanos</Button>
+  )
+}
+
+export const Boton12 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"50px",
+            height:'50px',
+            background:'white',
+            borderRadius:'3px',
+            color:'#596e79',
+            fontWeight:600,
+            fontSize:'12px',
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    ><StackedLineChartIcon/></Button>
+  )
+}
+export const Boton13 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"50px",
+            height:'50px',
+            background:'white',
+            borderRadius:'3px',
+            color:'#596e79',
+            fontWeight:600,
+            fontSize:'12px',
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    ><VerifiedIcon/></Button>
+  )
+}
+export const Boton14 = () => {
+  return (
+    <Button 
+        sx={{
+            width:"50px",
+            height:'50px',
+            background:'white',
+            borderRadius:'3px',
+            color:'#596e79',
+            fontWeight:600,
+            fontSize:'12px',
+            marginTop:'8px',
+            '&:hover': {
+                backgroundColor: '#50882b',
+                // borderColor: '#0062cc',
+                boxShadow: 'none',
+                color:'white'
+        },
+        }}
+    ><RecyclingIcon/></Button>
   )
 }

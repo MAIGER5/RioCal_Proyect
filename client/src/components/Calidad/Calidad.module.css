@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 1000px;
+    height: 1800px;
     position: relative;
 }
 
@@ -11,31 +11,82 @@
     background: linear-gradient(90deg,#c2cfd8 0%, #596e79 80%);
     background: -webkit-linear-gradient(90deg,#c2cfd8 0%, #596e79 80%);
     background: -moz-linear-gradient(90deg,#c2cfd8 0%, #596e79 80%);
+    /* border: 1px solid blue; */
+
 }
 
+.imgLaboratorio{
+    overflow: hidden;
+    width: 30%;
+    height: 450px;
+    position: absolute;
+    left: 65%;
+    top: 50px;
+    /* border: 1px solid blue; */
+}
+
+.imgLaboratorio img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    opacity: 50%;
+    /* mix-blend-mode: lighten; */
+}
+
+
+
 .layout {
-  width: 100%;
+  width: 80%;
   height: 200px;
+  /* border: 1px solid green; */
 
   display: flex;
-  margin: 0;
+  margin: auto;
   padding: 0;
   /* gap: 16px; */
 
 }
 
 .grow1 { 
-    flex-grow: 1; 
+    width: 33.33%;
     background-color: #8cbeaa;
+    cursor: pointer;
+}
+
+.grow1:hover .MuiButton-root{
+    background-color: #50882b;
+    box-shadow: none;
+    color: white;
 }
 .grow2 { 
-    flex-grow: 1; 
+    width: 33.33%;
     background-color: #748599;
 
 }
 .grow3 { 
-    flex-grow: 1; 
+    width: 33.33%;
     background-color: #b6cae2;
+
+}
+
+.titleGrow{
+    width: 80%;
+    margin-left: 35px;
+    color: white;
+}
+.textGorw{
+    width: 85%;
+    margin-left: 35px;
+    color: white;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+
+.boton12{
+    margin-left: 35px;
 
 }
 
@@ -68,3 +119,35 @@
     z-index: 3;
     /* border: 1px solid green; */
   }
+
+  
+
+/* AQUI SIGUE LOS ESTILOS DE SUBCALIDAD */
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+    /* border: 1px solid blue; */
+}
+
+.ContenedorTarjet1 img {
+    transition: transform 1s;
+}
+
+.TextTarjet1 {
+    transition: background 1s;
+
+}
+
+.ContenedorTarjet1:hover  img{
+    transform: scale(1.05, 1.05);
+}
+
+.ContenedorTarjet1:hover  .TextTarjet1{
+    background-color: forestgreen;
+}
