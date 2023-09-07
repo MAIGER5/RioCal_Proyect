@@ -2,6 +2,7 @@
     width: 100%;
     height: 1800px;
     position: relative;
+    font-family: inherit;
 }
 
 .containerImg{
@@ -132,7 +133,7 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 90px;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 .ContenedorTarjet1 img {
@@ -150,4 +151,26 @@
 
 .ContenedorTarjet1:hover  .TextTarjet1{
     background-color: forestgreen;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.list li{
+    width: 90%;
+    text-indent: -15px;
+    padding-left: 15px;
+    color: white;
+    font-size: 100%;
+    font-family: inherit;
+    line-height: 22px;
+}
+
+.list li::before{
+    content: "\2022";
+    color: white; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
+
 }

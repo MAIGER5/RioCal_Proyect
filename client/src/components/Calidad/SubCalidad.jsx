@@ -7,11 +7,15 @@ import { NavLink } from "react-router-dom";
 export const SubCalidad = () => {
   return (
     <div className={styles.contenedor}>
-      <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+      <Card className={styles.ContenedorTarjet1} 
+        sx={{ 
+          maxWidth: '24%', 
+          background:'none' 
+        }}>
         <CardActionArea>
           <CardMedia
               component="img"
-              height="22%"
+              height="18%"
               image={carro}
               alt="green iguana"
               sx={{
@@ -19,59 +23,29 @@ export const SubCalidad = () => {
                 // imageRendering:'pixelated'
               }}
           />
-          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
-              <Typography 
-                gutterBottom 
-                variant="h5" 
-                component="div" 
-                color='#fafafa'
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-              >
-              Lizard
-              </Typography>
-              <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
->
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-              </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-      <Card component={NavLink} to={'/Calidad'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none'}}>
-        <CardActionArea>
-          <CardMedia
-              component="img"
-              height="22%"
-              image={calidad}
-              alt="green iguana"
-          />
-          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
-              <Typography 
-                gutterBottom 
-                variant="h5" 
-                component="div" 
-                color='#fafafa'
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-              >
-              Calidad
-              </Typography>
-              <Typography 
-                variant="body2" 
-                color="#ffff"
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+          <CardContent className={styles.TextTarjet1} 
+            sx={{
+              background:'#0063b4', 
+              height:210,
+              opacity:'93%'
+            }}>
 
-              >
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-              </Typography>
+              <ul className={styles.list}>
+                <li>Mejoramos la capacidad de los procesos para cumplir las espectativas de nuestros clientes sin problemas de calidad</li>
+                <li>Aumentamos la eficiencia del proceso, para reducir los tiempos de inactividad, la interrupción del producto y las quejas de los clientes</li>
+              </ul>
           </CardContent>
         </CardActionArea>
       </Card>
-      <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+      <Card className={styles.ContenedorTarjet1} 
+        sx={{ 
+          maxWidth: '24%', 
+          background:'none' 
+        }}>
         <CardActionArea>
           <CardMedia
               component="img"
-              height="22%"
+              height="18%"
               image={carro}
               alt="green iguana"
               sx={{
@@ -79,24 +53,51 @@ export const SubCalidad = () => {
                 // imageRendering:'pixelated'
               }}
           />
-          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
-              <Typography 
-                gutterBottom 
-                variant="h5" 
-                component="div" 
-                color='#fafafa'
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-              >
-              Lizard
-              </Typography>
-              <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
->
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-              </Typography>
+          <CardContent className={styles.TextTarjet1} 
+            sx={{
+              background:'#0063b4', 
+              height:210,
+              opacity:'93%'
+            }}>
+
+              <ul className={styles.list}>
+                <li>Mejoramos la capacidad de los procesos para cumplir las espectativas de nuestros clientes sin problemas de calidad</li>
+                <li>Aumentamos la eficiencia del proceso, para reducir los tiempos de inactividad, la interrupción del producto y las quejas de los clientes</li>
+              </ul>
           </CardContent>
         </CardActionArea>
       </Card>
+      <Card className={styles.ContenedorTarjet1} 
+        sx={{ 
+          maxWidth: '24%', 
+          background:'none' 
+        }}>
+        <CardActionArea>
+          <CardMedia
+              component="img"
+              height="18%"
+              image={carro}
+              alt="green iguana"
+              sx={{
+                imageRendering:'-webkit-optimize-contrast',
+                // imageRendering:'pixelated'
+              }}
+          />
+          <CardContent className={styles.TextTarjet1} 
+            sx={{
+              background:'#0063b4', 
+              height:210,
+              opacity:'93%'
+            }}>
+
+              <ul className={styles.list}>
+                <li>Mejoramos la capacidad de los procesos para cumplir las espectativas de nuestros clientes sin problemas de calidad</li>
+                <li>Aumentamos la eficiencia del proceso, para reducir los tiempos de inactividad, la interrupción del producto y las quejas de los clientes</li>
+              </ul>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+     
     </div>
   )
 }
