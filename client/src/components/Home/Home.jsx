@@ -1,6 +1,6 @@
 
 import styles from './Home.module.css';
-import principal from '../../utils/PORTADA.jpg'
+import principalHome from '../../utils/principalHome.jpg'
 import { CardHome1 } from './CardHome1/CardHome1';
 import { CardHorizontal } from './CardHorizontal/CardHorizontal';
 import { CardProductos } from './CardProductos/CardProductos';
@@ -16,8 +16,9 @@ export const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imagePinc}>
-        <img src={principal} alt="" />
+        <img src={principalHome} alt="" />
       </div>
+      {/* <div className={styles.titlePrincipal}>NUESTRO PRODUCTOS IMPACTAN </div> */}
       <CardHome1 className={styles.tarjetasMargin}/>
       {/* <div className={styles.cardHorizontal}>
         <div className={styles.texSutentabilidad}>

@@ -14,7 +14,7 @@ export const Agricultura = () => {
             <img src={imagePrincipal} alt="" />
         </div>
         <div className={styles.cardText}>
-            <div className={styles.title1}>SOLUCIONES AGRÍCOLAS</div>
+            <div className={styles.title1}>INDUSTRIA AGRÍCOLA</div>
             <div className={styles.textPrincipal}>Hoy en día, la agricultura es un negocio complejo con una variedad de necesidades. Ya sea aumentando el pH de su suelo, gestionando la salud de sus animales, controlando los desechos animales para controlar los olores, eliminando las impurezas del jugo en el proceso de azúcar, maximizando sus rendimientos o aumentando la eficiencia de su alimentación, obtener ganancias es su prioridad número uno. Vamos más allá de las simples transacciones; colaboramos con nuestros clientes a largo plazo, ofreciéndole el apoyo que necesita para crecer.</div>
         </div>
         <div className={styles.contenedorCards}>

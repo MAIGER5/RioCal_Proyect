@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
-const Industrias = ['Agricultura', 'Químico', 'Ing. Civil & Const', 'Medio Ambiente','Tratamiento de Gases', 'Métalurgica', 'No Ferrosos', 'PCC & Papel']
+const Industrias = ['Agrícola', 'Química', 'Ing. Civil & Const', 'Medio Ambiente','Tratamiento de Gases', 'Métalurgica', 'No Ferrosos', 'PCC & Papel']
 
 const paths = ['Agricultura', 'Quimico', 'IngCivilConst', 'MedioAmbiente', 'FlueGas', 'Metalurgica', 'NoFerrosos', 'PulpaPapel'];
 

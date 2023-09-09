@@ -1,8 +1,11 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardDiference.module.css';
 import cargue from '../../../utils/cargue1.png'
-import silo from '../../../utils/silo1.jpg'
+import silo from '../../../utils/silo1.jpg';
+import calidad from '../../../utils/calidad1.jpg'
+
 import { Boton3 } from "../../Boton/Boton";
+import { NavLink } from "react-router-dom";
 
 export const CardDiference = () => {
     return (
@@ -51,12 +54,12 @@ export const CardDiference = () => {
                 <Boton3/>
                 </Grid>
             </Box>
-            <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+            <Card component={NavLink} to={'/Calidad'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none' }}>
                 <CardActionArea>
                 <CardMedia
                     component="img"
                     height="22%"
-                    image={cargue}
+                    image={calidad}
                     alt="green iguana"
                 />
                 <CardContent className={styles.TextTarjet1}
@@ -73,12 +76,11 @@ export const CardDiference = () => {
                         color='#fafafa'
                         fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
                     >
-                    Lizard
+                    Calidad
                     </Typography>
                     <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
             >
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    Garantizamos y mantenemos la calidad de nuestros productos y de los procesos administrativos
                     </Typography>
                 </CardContent>
                 </CardActionArea>
@@ -109,7 +111,7 @@ export const CardDiference = () => {
                         color='#fafafa'
                         fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
                     >
-                    Lizard
+                    Sistemas para Llenado y Cargue
                     </Typography>
                     <Typography 
                         variant="body2" 

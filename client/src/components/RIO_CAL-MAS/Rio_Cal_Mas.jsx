@@ -19,7 +19,7 @@ export const Rio_Cal_Mas = () => {
             <img src={riocalMas} alt="" />
             {/* <div className={styles.textoImgPrincipal}>Rio Cal +</div> */}
             <div className={styles.textoImgPrincipalSegundo}>HAZ PARTE DE LA RED RIO CAL +</div>
-            <div className={styles.textoImgPrincipalTercero}>La Red de distribución más grande de Colomia de Cales Hidratadas
+            <div className={styles.textoImgPrincipalTercero}>La Red de distribución de Cales Hidratadas más grande de Colombia
             </div>
             <div className={styles.boton}>
                 <Boton9 />
@@ -28,7 +28,7 @@ export const Rio_Cal_Mas = () => {
         </div>
         <div className={styles.cuadroPesos}>
             <div className={styles.dentroCuadroPesos1}> 
-                <p id={styles.titleCuadroPesos1}>18 Años en el Mercado de las Cales Hidratadas</p>
+                <p id={styles.titleCuadroPesos1}>Con más de 50 años de experiencia en Cales Hidratadas</p>
                 <p id={styles.parrafoCuadroPesos1}>Nuestros productos se encuentran posicionados como las mejores Cales del mercado</p>
                 <Boton11/>
             </div>

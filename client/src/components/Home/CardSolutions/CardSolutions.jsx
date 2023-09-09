@@ -1,7 +1,7 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import styles from './CardSolutions.module.css';
-import calidad from '../../../utils/calidad1.jpg'
-import carro from '../../../utils/carro1.png'
+import agricola from '../../../utils/agricola.webp'
+import piedraGris from '../../../utils/piedraGris.jpg'
 import { Boton3 } from "../../Boton/Boton";
 import { NavLink } from "react-router-dom";
 
@@ -10,12 +10,12 @@ import { NavLink } from "react-router-dom";
 export const CardSolutions = () => {
   return (
     <div className={styles.container}>
-      <Card className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none' }}>
+      <Card component={NavLink} to={'/PiedraCaliza'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none' }}>
         <CardActionArea>
           <CardMedia
               component="img"
               height="22%"
-              image={carro}
+              image={piedraGris}
               alt="green iguana"
               sx={{
                 imageRendering:'-webkit-optimize-contrast',
@@ -30,22 +30,21 @@ export const CardSolutions = () => {
                 color='#fafafa'
                 fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
               >
-              Lizard
+              Piedra Caliza
               </Typography>
               <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 >
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              Producto increíblemente versátil y usado en muchas industrias, desde la agricultura hasta la siderurgia
               </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
-      <Card component={NavLink} to={'/Calidad'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none'}}>
+      <Card component={NavLink} to={'/CalesAgricolas'} className={styles.ContenedorTarjet1} sx={{ maxWidth: '25%', background:'none', textDecoration:'none'}}>
         <CardActionArea>
           <CardMedia
               component="img"
               height="22%"
-              image={calidad}
+              image={agricola}
               alt="green iguana"
           />
           <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
@@ -56,7 +55,7 @@ export const CardSolutions = () => {
                 color='#fafafa'
                 fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
               >
-              Calidad
+              Cales Agricolas
               </Typography>
               <Typography 
                 variant="body2" 
@@ -64,8 +63,7 @@ export const CardSolutions = () => {
                 fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
 
               >
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              Garantizamos y mantenemos la calidad de nuestros productos y de los procesos administrativos
               </Typography>
           </CardContent>
         </CardActionArea>
@@ -98,7 +96,7 @@ export const CardSolutions = () => {
             fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
             marginBottom={'20px'}
           >
-          SOLUCIONES PARA SATISFACER LAS NECESIDADES DE SU NEGOCIO
+          TAMBIEN PUEDES ENCONTRAR CON NOSOTROS (Piedra Caliza y Cales Agrícolas)
           </Typography>
           <Typography 
             variant="h6" 

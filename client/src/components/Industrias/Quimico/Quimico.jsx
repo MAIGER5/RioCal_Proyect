@@ -14,7 +14,7 @@ export const Quimico = () => {
             <img src={imagePrincipal} alt="" />
         </div>
         <div className={styles.cardText}>
-            <div className={styles.title1}>QUÍMICO</div>
+            <div className={styles.title1}>INDUSTRIA QUÍMICA</div>
             <div className={styles.textPrincipal}>Rio Cal ofrece productos esenciales para la industria química. Nuestros productos proporcionan una fuente de calcio, álcali, desecante, agente caustificante, agente saponificante, agente aglutinante, floculante, precipitante, agente fundente, agente formador de vidrio, degradador de materia orgánica, lubricante, relleno y agente hidrolizante.
 .</div>
         </div>

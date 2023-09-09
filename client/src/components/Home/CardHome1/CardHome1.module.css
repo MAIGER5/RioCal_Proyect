@@ -12,13 +12,14 @@
 
 .ContenedorTarjetas{
     position: absolute;
-    top: 500px;
+    top: 705px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 12.5%;
     display: flex;
     justify-content: space-around;
+    z-index: 3;
     /* border: 5px solid red; */
 }
 

@@ -28,8 +28,7 @@
   background: linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
   background: -webkit-linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
   background: -moz-linear-gradient(90deg,#1e3143 20%, #434d5d 100%);
-  z-index: 1; /* Asegura que la capa esté sobre la imagen */
-
+  z-index: 1; 
 }
 
 .imgPrincipal img{

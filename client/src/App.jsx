@@ -19,6 +19,8 @@ import { Rio_Cal_Mas } from './components/RIO_CAL-MAS/Rio_Cal_Mas'
 import { Promical10kg } from './components/RIO_CAL-MAS/Promical10kg/Promical10kg'
 import { Procecal10kg } from './components/RIO_CAL-MAS/Procecal10kg/Procecal10kg'
 import { Calidad } from './components/Calidad/Calidad'
+import { PiedraCaliza } from './components/ProductsPiedraCaliza/PiedraCaliza/PiedraCaliza'
+import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricolas/CalesAgricolas'
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
         <Route path='/Promical10kg' element={<Promical10kg/>}/>
         <Route path='/Procecal10kg' element={<Procecal10kg/>}/>
         <Route path='/Calidad' element={<Calidad/>}/>
+        <Route path='/PiedraCaliza' element={<PiedraCaliza/>}/>
+        <Route path='/CalesAgricolas' element={<CalesAgricolas/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
