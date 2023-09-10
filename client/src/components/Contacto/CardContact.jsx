@@ -65,7 +65,7 @@ export const CardContact = () => {
                                 fontWeight:400,
                                 fontSize:'15px',
                             }}
-                        >Estamos aquí para responder cualquier pregunta y/o inquietud que pueda tener. Es solo a través de asociaciones cercanas y una conversación continua con nuestros clientes que podemos abordar mejor sus necesidades. <br /> <br />Si tiene preguntas generales, llame al 412-995-5500. <br /> Para conocer los precios y la disponibilidad de los productos, llame al
+                        >Estamos aquí para responder cualquier pregunta y/o inquietud que pueda tener. Es solo a través de asociaciones cercanas y una conversación continua con nuestros clientes que podemos abordar mejor sus necesidades. <br /> <br />Para preguntas generales, llame al 412-995-5500. <br /> <br /> Para conocer los precios y la disponibilidad de los productos, llame al
                         1-866-780-0974.</Typography>
                     </CardContent>
                 </Box>

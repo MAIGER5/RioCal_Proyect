@@ -5,7 +5,7 @@ import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 
 export const Findoffice = () => {
   return (
-    <div className={styles.findoffice}>
+    <div >
         <div className={styles.boxes}>
             <div className={styles.iconFone}>
                 <PhoneForwardedIcon fontSize='inherit' color='success'/>

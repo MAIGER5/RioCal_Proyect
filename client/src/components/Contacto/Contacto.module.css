@@ -1,12 +1,11 @@
 .contenedor{
-    height: 2100px;
+    height: 1690px;
     position: relative;
+    display: grid;
 
 }
 
 .images{
-    position: absolute;
-    top: 0;
     width: 100%;
 }
 
@@ -16,35 +15,35 @@
   
 }
 
-.formulario{
+/* .formulario{
     position: absolute;
     top: 1000px;
     width: 1000px;
     height: 870px;
-    /* background: #fafafa; */
+    background: #fafafa;
     display: grid;
     border-radius: 5px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
-}
+} */
 
-.containerInput{
+/* .containerInput{
     margin: auto;
     width: 80%;
     display: grid;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
-}
-
+} */
+/* 
 .lineInput{
     margin: auto;
     width: 90%;
     display: flex;
     justify-content: center;
     font-family: 'Oxygen', sans-serif;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
-}
+} */
 
 /* .inpuTextField{
     width: 1055%;
@@ -52,37 +51,24 @@
 } */
 
 .titles{
-    position: absolute;
-    top: 700px;
-    left: 100px;
-    margin-top: 150px;
-    width: 560px;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 45px;
+    margin-left: 120px;
+    margin-top: 60px;
+    width: 45%;
+    font-family: inherit;
+    font-size: 35px;
     font-weight: 600;
-    color: #394046;
+    color: #0063b4;
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
+    line-height: 50px;
+        /* border: 1px solid blue; */
+
 }
 
-
-.findoffice{
-    position: absolute;
-    top: 1050px;
-    left: 1100px;
-    width: 400px;
-    height: 500px;
-    color: #394046;
-    background-color: rgb(214, 217, 226);
-    border-radius: 5px;
-    /* border: 1px solid blue; */
-}
 
 .boxes{
     margin: auto;
-    margin-top: 30px;
     width: 80%;
-    height: 80%;
     display: grid;
     /* border: 1px solid rgb(255, 0, 0); */
     
@@ -90,7 +76,8 @@
 
 .buton{
     margin: auto;
-    width: 50%;
+    width: 60%;
+    text-align: center;
     /* border: 1px solid rgb(255, 0, 0); */
 }
 .iconFone{
@@ -102,14 +89,17 @@
 }
 
 .oficinas{
-    position: absolute;
-    top: 1900px;
+
     width: 100%;
     height: 400px;
+    display: grid;
+    align-items: center;
     margin-top: 100px;
-    display: grid;align-items: center;
     
-    background-color: rgb(214, 217, 226);
+    /* background-color: rgb(214, 217, 226);
+        border: 1px solid rgb(255, 0, 0); */
+
+    
 }
 
 .ofiDiv{
