@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 import { Navbar } from './components/Navbar/Navbar'
 import { Home } from './components/Home/Home'
 import { CalViva } from './components/ProductsCalviva/CalViva/CalViva'
@@ -20,12 +21,13 @@ import { Promical10kg } from './components/RIO_CAL-MAS/Promical10kg/Promical10kg
 import { Procecal10kg } from './components/RIO_CAL-MAS/Procecal10kg/Procecal10kg'
 import { Calidad } from './components/Calidad/Calidad'
 import { PiedraCaliza } from './components/ProductsPiedraCaliza/PiedraCaliza/PiedraCaliza'
-import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricolas/CalesAgricolas'
+import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricolas/CalesAgricolas';
 
 function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Navbar  />
       <Routes>
         <Route path='/' element={<Home/>}/>

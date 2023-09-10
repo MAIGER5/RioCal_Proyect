@@ -3,7 +3,7 @@ import styles from './UsosCal.module.css';
 export const UsosCal = () => {
     return (
         <div className={styles.contenedor}>
-            <strong className={styles.title}>USOS DE LA CAL HIDRATADA ALTA EN CALCIO</strong>
+            <strong className={styles.title}>USOS DE LA CAL DOLOMITA</strong>
             <br /> <br />
             <p>Muchos procesos y sistemas industriales requieren cal viva dolomítica, o doli, para aplicaciones específicas, que incluyen:</p>
             <br />

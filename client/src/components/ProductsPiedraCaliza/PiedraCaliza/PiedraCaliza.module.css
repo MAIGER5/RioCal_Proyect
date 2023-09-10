@@ -85,6 +85,11 @@
     padding-left: 15px;
 }
 
+
+.benefits li::before{
+    content: "\2022"; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
+
+}
 .tituloPrincipal{
     font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 55px;

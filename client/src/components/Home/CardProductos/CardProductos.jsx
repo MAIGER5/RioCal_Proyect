@@ -15,7 +15,7 @@ export const CardProductos = () => {
         variant='h4' 
         component={'h1'} 
         color={'#222831'}
-        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+        fontFamily={'inherit'}
         display={'flex'}
       >Explora nuestros productos más vendidos
       </Typography>
@@ -25,7 +25,7 @@ export const CardProductos = () => {
             variant='body2' 
             fontSize={'25px'} 
             color={'#ffff'} 
-            fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            fontFamily={'inherit'}
 
           >CAL Hidratada 10KG </Typography>
         </Link>
@@ -34,7 +34,7 @@ export const CardProductos = () => {
             variant='body2' 
             fontSize={'25px'} 
             color={'#ffff'} 
-            fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            fontFamily={'inherit'}
           >CAL Hidratada Tipo A</Typography>
         </Link>
         <Link className={styles.box3}>
@@ -42,7 +42,7 @@ export const CardProductos = () => {
             variant='body2' 
             fontSize={'25px'} 
             color={'#ffff'} 
-            fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            fontFamily={'inherit'}
 
           >CAL Hidratada Tipo B</Typography>
         </Link>

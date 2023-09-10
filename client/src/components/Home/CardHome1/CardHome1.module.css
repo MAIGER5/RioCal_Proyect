@@ -78,7 +78,7 @@
     justify-content: start;
     align-items: center;
     /* border: 1px solid blue; */
-    font-family: 'Oxygen', sans-serif;
+    font-family: inherit;
     font-size: 28px;
     font-weight: lighter;
     color: white;

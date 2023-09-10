@@ -1,7 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import { Typography } from '@mui/material';
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
+import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
+import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
+import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
+import GasMeterOutlinedIcon from '@mui/icons-material/GasMeterOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 
 const Industrias = ['Agrícola', 'Química', 'Ing. Civil & Const', 'Medio Ambiente','Tratamiento de Gases', 'Métalurgica', 'No Ferrosos', 'PCC & Papel']
+
+const IndustriasIcon = [<AgricultureIcon/>, <ScienceOutlinedIcon/>, <EngineeringOutlinedIcon/>, <WaterDropOutlinedIcon/>, <ConfirmationNumberOutlinedIcon/>, <GasMeterOutlinedIcon/>, <DescriptionOutlinedIcon/>, <DescriptionOutlinedIcon/>]
 
 const paths = ['Agricultura', 'Quimico', 'IngCivilConst', 'MedioAmbiente', 'FlueGas', 'Metalurgica', 'NoFerrosos', 'PulpaPapel'];
 
@@ -17,9 +27,10 @@ export const NavbarMenu = () => {
     for (let i = 0; i < paths.length; i++) {
       if ( index == i) {
         var direccion = paths[i];
+        var icons = IndustriasIcon[i]
       } 
     }
-    return <a href='#' key={index}> <Link to={direccion} className={styles.LinkedA}>{ele} </Link> </a>
+    return <a href='#' key={index}> <Link to={direccion} className={styles.LinkedA}> {icons} {ele} </Link> </a>
   }
   ) 
   const lisItemsProducts = Productos.map((ele, index)=>{
@@ -29,7 +40,7 @@ export const NavbarMenu = () => {
         var direccion = paths1[i];
       } 
     }
-    return <a href='#' key={index}> <Link to={direccion} className={styles.LinkedA}>{ele} </Link> </a>
+    return <a href='#' key={index}> <Link to={direccion} className={styles.LinkedA}> { ele} </Link> </a>
   }
   ) 
 
@@ -38,9 +49,21 @@ export const NavbarMenu = () => {
       <Link to={'/'} className={styles.links}>
         <a href="#inicio" className={styles.Subtitle}>Inicio</a>
       </Link>
-      <Link to={'RioCalMas'}>
-        <a href="#riocal" className={styles.RioCal}>RioCal +</a>
-      </Link>
+      <Typography component={NavLink} to={'/RioCalMas'}
+        sx={{
+          letterSpacing:'1.5px',
+          width:'110px',
+          backgroundColor:'forestgreen',
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
+          color:'white',
+          '&:hover':{
+            backgroundColor:'inherit',
+            color:'white'
+          }
+        }}  
+      >RioCal +</Typography>
       <div className={styles.dropdown}>
         <button className={styles.dropbtn}>Productos
           <i className="fa fa-caret-down"></i>

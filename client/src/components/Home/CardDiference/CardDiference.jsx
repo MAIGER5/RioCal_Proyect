@@ -36,7 +36,7 @@ export const CardDiference = () => {
                     fontSize={'28px'} 
                     component="div" 
                     color='#222831' 
-                    fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    fontFamily={'inherit'}
                     marginBottom={'20px'}
                     marginTop={'20px'}
                 >
@@ -45,7 +45,7 @@ export const CardDiference = () => {
                 <Typography 
                     variant="h6" 
                     color='#222831' 
-                    fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    fontFamily={'inherit'}
                     marginBottom={'10px'}
                 >
                 Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -74,11 +74,11 @@ export const CardDiference = () => {
                         variant="h5" 
                         component="div" 
                         color='#fafafa'
-                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                        fontFamily={'inherit'}
                     >
                     Calidad
                     </Typography>
-                    <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                    <Typography variant="body2" color="#ffff" fontFamily={'inherit'}
             >
                     Garantizamos y mantenemos la calidad de nuestros productos y de los procesos administrativos
                     </Typography>
@@ -109,14 +109,14 @@ export const CardDiference = () => {
                         variant="h5" 
                         component="div" 
                         color='#fafafa'
-                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                        fontFamily={'inherit'}
                     >
                     Sistemas para Llenado y Cargue
                     </Typography>
                     <Typography 
                         variant="body2" 
                         color="#ffff"
-                        fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                        fontFamily={'inherit'}
                 
                     >
                     Lizards are a widespread group of squamate reptiles, with over 6,000

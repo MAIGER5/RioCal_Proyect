@@ -28,11 +28,11 @@ export const CardSolutions = () => {
                 variant="h5" 
                 component="div" 
                 color='#fafafa'
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-              >
+                fontFamily={'inherit'}
+                >
               Piedra Caliza
               </Typography>
-              <Typography variant="body2" color="#ffff" fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+              <Typography variant="body2" color="#ffff"  fontFamily={'inherit'}
 >
               Producto increíblemente versátil y usado en muchas industrias, desde la agricultura hasta la siderurgia
               </Typography>
@@ -53,14 +53,14 @@ export const CardSolutions = () => {
                 variant="h5" 
                 component="div" 
                 color='#fafafa'
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
-              >
+                fontFamily={'inherit'}
+                >
               Cales Agricolas
               </Typography>
               <Typography 
                 variant="body2" 
                 color="#ffff"
-                fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+                fontFamily={'inherit'}
 
               >
               Garantizamos y mantenemos la calidad de nuestros productos y de los procesos administrativos
@@ -93,7 +93,7 @@ export const CardSolutions = () => {
             fontSize={'28px'} 
             component="div" 
             color='#222831' 
-            fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            fontFamily={'inherit'}
             marginBottom={'20px'}
           >
           TAMBIEN PUEDES ENCONTRAR CON NOSOTROS (Piedra Caliza y Cales Agrícolas)
@@ -101,7 +101,7 @@ export const CardSolutions = () => {
           <Typography 
             variant="h6" 
             color='#222831' 
-            fontFamily={'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif'}
+            fontFamily={'inherit'}
             marginBottom={'0px'}
           >
           Lizards are a widespread group of squamate reptiles, with over 6,000
