@@ -17,6 +17,11 @@ export const Home = () => {
     <div className={styles.container}>
       <div className={styles.imagePinc}>
         <img src={principalHome} alt="" />
+        <div className={styles.resenaPrincipal}>
+          <h1>IMPACTAMOS LA VIDA COTIDIANA</h1>
+          <h4>Crece con Nosotros</h4>
+          <div className={styles.botontext}>Descubre nuestras soluciones</div>
+        </div>
       </div>
       {/* <div className={styles.titlePrincipal}>NUESTRO PRODUCTOS IMPACTAN </div> */}
       <CardHome1 className={styles.tarjetasMargin}/>
