@@ -19,7 +19,7 @@ export const Findoffice = () => {
                     fontSize:'30px',
                     fontWeight:600
                 }}
-            >¿Algún problema urgente o buscas hablar con alguien?</Typography>
+            >¿Buscas hablar con alguien?</Typography>
             <br /><br />
             <Typography align='center'
                 sx={{
@@ -29,7 +29,7 @@ export const Findoffice = () => {
                     letterSpacing:'1.1px',
                     
                 }}
-            >Si desea comunicarse con nosotros con urgencia, llame a la oficina más cercana a su ubicación</Typography><br /><br />
+            >Si desea comunicarse con nosotros, llame a la oficina más cercana a su ubicación</Typography><br /><br />
 
         </div>
         <div className={styles.buton}>

@@ -55,10 +55,27 @@ const paises = [
 export const FormularioContacto = () => {
 
     const [form, setForm] = useState({
+        nombres:"",
+        apellidos:"",
+        posicion:"",
+        compania:'',
+        telefono:'',
+        email:'',
+        areaRequerimiento:'',
+        pais:'',
+        mensaje:'',
+
     });
 
-    const handleForm = () => {
-        
+    const handleForm = (event) => {
+        event.preventDefault();
+
+        const property = event.target.name;
+        const value = event.target.value;
+
+        setForm({...form, [property]:value})
+
+
     }
 
   return (
@@ -66,68 +83,109 @@ export const FormularioContacto = () => {
         spacing={4} 
         component={'form'}
         sx={{
+            zIndex:1,
             // position: 'absolute',
             // top:'1100px',
             // left:'100px',
             margin:'auto',
             '& .MuiTextField-root':{
-                width:'30ch'
+                width:'30ch',
             },
         }}
     >
         <Stack direction={'row'} spacing={3}>
             <TextField 
+                type='text'
+                name='nombres'
+                value={form.nombres}
                 required
                 label='Name'
+                onChange={handleForm}
             />
             <TextField 
+                type='text'
+                name='apellidos'
+                value={form.apellidos}
                 required
                 label='Apellidos'
+                onChange={handleForm}
+
             />
         </Stack>
         <Stack direction={'row'} spacing={3}>
             <TextField 
+                type='text'
+                name='compania'
+                value={form.compania}
                 label='Compañia'
+                onChange={handleForm}
+
             />
             <TextField 
+                type='text'
+                name='posicion'
+                value={form.posicion}
                 label='Posición'
+                onChange={handleForm}
+
             />
         </Stack>
         <Stack direction={'row'} spacing={3}>
             <TextField 
+                type='number'
+                name='telefono'
+                value={form.telefono}
                 required
                 label='Teléfono'
                 InputProps={{
                     startAdornment: <InputAdornment position='start'>+57 </InputAdornment>
                 }}
+                onChange={handleForm}
+
                 
             />
             <TextField 
+                type='email'
+                name='email'
+                value={form.email}
                 required
                 label='Correo Electrónico'
+                onChange={handleForm}
+
             />
         </Stack>
         <Stack direction={'row'} spacing={3}>
 
             <TextField
-                label='Área de Requerimiento'
+                type='text'
+                name='areaRequerimiento'
+                value={form.areaRequerimiento}
                 defaultValue={'Comercial'}
+                helperText={'Seleccione el Área'}
                 select
                 SelectProps={{native:true}}
                 size=''
+                onChange={handleForm}
+
             >
                 {currencies.map((option) => (
                     <option key={option.value} value={option.value}>
                         {option.label}
                     </option>
                 ))}
+                
             </TextField>
             <TextField
-                label='País'
+                type='text'
+                name='pais'
+                value={form.pais}
                 defaultValue={'Colombia'}
+                helperText={'Seleccione el País'}
                 select
                 SelectProps={{native:true}}
                 size=''
+                onChange={handleForm}
+
             >
                 {paises.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -139,8 +197,12 @@ export const FormularioContacto = () => {
         </Stack>
         <Stack direction={'row'} >
             <TextField 
+                type='text'
+                name='mensaje'
+                value={form.mensaje}
                 multiline
-                label='Área de Requerimiento'
+                label='Mensaje'
+                onChange={handleForm}
                 sx={{
                     '&.MuiTextField-root': {
                         width: '63ch', // Estilo global para los otros TextField
