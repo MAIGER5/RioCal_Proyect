@@ -81,13 +81,13 @@
 
 .cuadroImage h3{
     text-align: center;
-    width: 80%;
+    width: 99%;
     color: white;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 20px;
     font-family: inherit;
     /* border: 1px solid red; */
 
@@ -102,7 +102,7 @@
     transition: transform 1s;
 }
 
-.textImagen{
+/* .textImagen{
     width:100%x;
     height: 35%;
     background-color: #0063b4;
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     font-family: inherit;
     font-size: 28px;
     font-weight: lighter;
@@ -128,8 +128,8 @@
 
 .textImagen p{
     margin-left: 20px;
-    /* border: 1px solid red; */
-}
+    border: 1px solid red;
+} */
 /* 
 .ContenedorTarjet1{
     transition: transform 0.2s;

@@ -5,6 +5,7 @@ import hidratada from '../../../utils/hidratada1.webp';
 import caliza from '../../../utils/caliza2.webp';
 import { Link } from 'react-router-dom';
 
+
 export const CardHome1 = () => {
     return (
         <div className={styles.ContenedorTarjetas}>

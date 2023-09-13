@@ -11,7 +11,7 @@ export const Procecal10kg = () => {
         <img src={imageCal} alt="" />
       </div>
       <div className={styles.cardText}>
-        <h3>Cal Hidratada para Blanquear(Procecal)</h3>
+        <h3>Cal Hidratada para Blanquear Marca(Procecal)</h3>
         <h3>COP$ 0.00 <Link to={'/Contacto'} className={styles.clickComprar}>Click para Contactar un Comercial</Link></h3>
         <h4> <LocalShippingIcon sx={{marginRight:'11px', fontSize:'31px'}}/> Envío Incluido o Recogida en planta por el cliente)</h4>
         <h5>Despacho Mínimo: 10ton previa programación con el departamento de operaciones. Aplica sábado, domingo y festivos. <br /><br />

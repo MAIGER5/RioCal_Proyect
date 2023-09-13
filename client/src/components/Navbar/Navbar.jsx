@@ -43,6 +43,7 @@ export const Navbar = () => {
           <Link to={'/'} className={styles.links}>
             <div className={styles.Logo}>
                     <img src={logo} alt="logo RioCal" />
+                    <p>Member of Carmeuse Group</p>
             </div>
           </Link>
           <NavbarMenu/>

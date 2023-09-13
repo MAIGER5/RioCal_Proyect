@@ -1,0 +1,43 @@
+.contenedor{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 90px;
+    color: #47525c;
+    /* border: 1px solid green; */
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.contenedorCard{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid blue; */
+}
+
+.title{
+
+    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: inherit;
+    font-stretch: semi-condensed;
+    letter-spacing: 1.5px;
+}
+
+.contenedorCard div{
+    width: 15%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200;
+
+    /* border: 1px solid green; */
+}
+

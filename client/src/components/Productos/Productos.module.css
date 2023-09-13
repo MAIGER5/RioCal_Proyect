@@ -1,0 +1,167 @@
+
+.boxPrincipal{
+    display: grid; 
+    color: #47525c; 
+}
+
+.contenedorPrincipal{
+    width: 100%;
+    padding-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid green;    */
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+
+}
+
+.containerInterno{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.titles{
+    width: 30%;
+}
+
+.titles a{
+    padding-left: 20px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    color:  #265c9e;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    display: block;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+    font-stretch: ultra-condensed;
+
+
+    /* border: 1px solid red; */
+
+}
+
+.description p, li{
+    font-family: inherit;
+    font-size: 16px;
+    color: #47525c;
+    font-weight: lighter;
+    font-style: initial;
+    text-rendering: optimizelegibility;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-stretch: ultra-condensed;
+
+    /* border: 1px solid red; */
+
+}
+
+.description{
+    width: 75%;
+    /* border: 1px solid red; */
+
+}
+
+.benefits{
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.benefits li{
+    text-indent: -15px;
+    padding-left: 15px;
+}
+
+.benefits li::before{
+    content: "\2022"; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
+
+}
+
+.tituloPrincipal{
+    font-family: inherit;
+    font-size: 55px;
+    font-weight: bold;
+    color:  #265c9e;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+
+}
+
+.titleDescription{
+    font-family: inherit;
+    color: #265c9e;
+    font-size: 24px;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.subtitles{
+    font-family: inherit;
+    font-size: 50px;
+    font-weight: 500;
+    color:  #265c9e;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1px;
+    margin-top: 65px;
+}
+
+.layout {
+    width: 100%;
+
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-block: 80px;
+  }
+
+  .cuadro{
+    width: 150px;
+    height: 150px;
+    background-color: #265c9e;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+
+    font-size: inherit;
+    font-weight: 600;
+    /* border: 1px solid red; */
+  }
+
+#dos, #cuatro, #seis {
+    background-color: #3272c0;
+}
+
+.cuadro:hover,
+#dos:hover,
+#cuatro:hover,
+#seis:hover{
+    background-color: #79b353;
+}
+
+.IconClass{
+    color: #265c9e;
+}

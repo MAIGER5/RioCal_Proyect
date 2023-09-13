@@ -57,7 +57,7 @@ export const Rio_Cal_Mas = () => {
                     <img src={CalHidratadaBlanquearPromical} alt="" />
                 </div>
                 <div className={styles.textTarjet}>
-                    Cal Hidradata para Blanquear Promical
+                    Cal Hidradata para Blanquear Marca Promical
                 </div>
                 <div className={styles.peso}>
                     10 kg
@@ -72,7 +72,7 @@ export const Rio_Cal_Mas = () => {
                     <img src={CalHidratadaBlanquearProcecal} alt="" />
                 </div>
                 <div className={styles.textTarjet}>
-                Cal Hidradata para Blanquear Procecal
+                Cal Hidradata para Blanquear Marca Procecal
                 </div>
                 <div className={styles.peso}>
                     10 kg
@@ -87,7 +87,7 @@ export const Rio_Cal_Mas = () => {
                     <img src={CalHidratadaIndustrial} alt="" />
                 </div>
                 <div className={styles.textTarjet}>
-                Cal Hidradata Industrial
+                Cal Hidradata Industrial Marca Procecal
                 </div>
                 <div className={styles.peso}>
                     25 kg

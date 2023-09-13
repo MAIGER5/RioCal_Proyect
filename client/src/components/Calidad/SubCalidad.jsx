@@ -10,7 +10,7 @@ export const SubCalidad = () => {
     <div className={styles.contenedor}>
       <Card className={styles.ContenedorTarjet1} 
         sx={{ 
-          width: '24%', 
+          width: '27%', 
           background:'none',
         }}>
         <CardActionArea>
@@ -41,7 +41,7 @@ export const SubCalidad = () => {
       </Card>
       <Card className={styles.ContenedorTarjet1} 
         sx={{ 
-          width: '24%', 
+          width: '27%', 
           background:'none' 
         }}>
         <CardActionArea>
@@ -71,7 +71,7 @@ export const SubCalidad = () => {
       </Card>
       <Card className={styles.ContenedorTarjet1} 
         sx={{ 
-          width: '24%', 
+          width: '27%', 
           background:'none' 
         }}>
         <CardActionArea>

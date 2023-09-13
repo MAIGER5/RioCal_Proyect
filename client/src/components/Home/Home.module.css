@@ -73,13 +73,13 @@
 .resenaPrincipal h1{
     color: white;
     font-family: inherit;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     font-stretch: ultra-expanded;
     text-align: center;
     margin: 0;
     padding: 0;
-    line-height: 2;
+    line-height: 1.1;
     transform: scaleY(1.1);
 
     /* border: 1px solid green; */

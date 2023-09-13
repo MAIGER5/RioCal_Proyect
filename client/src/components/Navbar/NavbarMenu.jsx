@@ -65,9 +65,11 @@ export const NavbarMenu = () => {
         }}  
       >RioCal +</Typography>
       <div className={styles.dropdown}>
-        <button className={styles.dropbtn}>Productos
-          <i className="fa fa-caret-down"></i>
-        </button>
+        <Link to={'/Productos'}>
+          <button className={styles.dropbtn}>Productos
+            <i className="fa fa-caret-down"></i>
+          </button>
+        </Link>
         <div className={styles.dropdownContent}>
           {lisItemsProducts}
         </div>
