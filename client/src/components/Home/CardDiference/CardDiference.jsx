@@ -33,9 +33,9 @@ export const CardDiference = () => {
                 >
                 <Typography 
                     gutterBottom 
-                    fontSize={'28px'} 
+                    fontSize={'24px'} 
                     component="div" 
-                    color='#222831' 
+                    color='#393e46' 
                     fontFamily={'inherit'}
                     marginBottom={'20px'}
                     marginTop={'20px'}
@@ -43,13 +43,19 @@ export const CardDiference = () => {
                 NUESTRAS SOLUCIONES QUE HACEN LA DIFERENCIA
                 </Typography>
                 <Typography 
-                    variant="h6" 
-                    color='#222831' 
+
+                    color='#393e46' 
                     fontFamily={'inherit'}
-                    marginBottom={'10px'}
+                    marginBottom={'0px'}
+                    sx={{
+                        fontWeight:'400'
+                      }}
                 >
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                    Pruebas técnicas de laboratorios<br />
+                    Métodos de ensayo <br />
+                    Técnica de control estadístico <br />
+                    Estandarización de porcesos <br />
+                    Sistemas automaticos <br />
                 </Typography>
                 <Boton3/>
                 </Grid>
@@ -78,7 +84,7 @@ export const CardDiference = () => {
                     >
                     Calidad
                     </Typography>
-                    <Typography variant="body2" color="#ffff" fontFamily={'inherit'}
+                    <Typography variant="body2" color="#ffff" fontFamily={'inherit'}           sx={{fontWeight:'400'}}
             >
                     Garantizamos y mantenemos la calidad de nuestros productos y de los procesos administrativos
                     </Typography>

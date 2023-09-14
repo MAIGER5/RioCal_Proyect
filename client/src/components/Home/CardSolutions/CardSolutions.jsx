@@ -82,7 +82,7 @@ export const CardSolutions = () => {
         }}>
         <Grid
           sx={{
-            width:'75%',
+            width:'79%',
             height:'95%',
             // border:'1px solid red'
 
@@ -90,22 +90,29 @@ export const CardSolutions = () => {
         >
           <Typography 
             gutterBottom 
-            fontSize={'28px'} 
+            fontSize={'24px'} 
             component="div" 
-            color='#222831' 
+            color='#393e46' 
             fontFamily={'inherit'}
             marginBottom={'20px'}
           >
           TAMBIEN PUEDES ENCONTRAR CON NOSOTROS (Piedra Caliza y Cales Agrícolas)
           </Typography>
           <Typography 
-            variant="h6" 
-            color='#222831' 
+            color='#393e46' 
             fontFamily={'inherit'}
             marginBottom={'0px'}
+            sx={{
+              fontWeight:'400'
+            }}
           >
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Enmienda de suelos <br />
+          Fertilizante <br />
+          Tratamientos fitosanitarios <br />
+          Biocida <br />
+          Alimentación animal <br />
+
+          
           </Typography>
           <Boton3/>
         </Grid>

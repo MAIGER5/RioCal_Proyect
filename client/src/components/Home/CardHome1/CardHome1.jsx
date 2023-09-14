@@ -21,6 +21,7 @@ export const CardHome1 = () => {
                 <div className={styles.cuadroImage}>
                     <img src={hidratada} alt="" />
                     <h3>CAL HIDRATADA</h3>
+                    {/* <div className={styles.cuadroImageHover}></div> */}
                 </div>
             </Link>
             <Link to={'/CalDolomita'} className={styles.contenedorInforCard}>

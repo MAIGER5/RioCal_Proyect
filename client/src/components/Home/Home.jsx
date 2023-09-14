@@ -1,5 +1,6 @@
 
 import styles from './Home.module.css';
+import { Link } from 'react-router-dom'
 import principalHome from '../../utils/principalHome.jpg'
 import { CardHome1 } from './CardHome1/CardHome1';
 import { CardHorizontal } from './CardHorizontal/CardHorizontal';
@@ -20,7 +21,7 @@ export const Home = () => {
         <div className={styles.resenaPrincipal}>
           <h1>IMPACTAMOS LA VIDA COTIDIANA </h1>
           <h4>Crece con Nosotros</h4>
-          <div className={styles.botontext}>Descubre nuestras soluciones</div>
+          <Link to={'/Productos'} className={styles.botontext}>Descubre nuestras soluciones</Link>
         </div>
       </div>
       {/* <div className={styles.titlePrincipal}>NUESTRO PRODUCTOS IMPACTAN </div> */}

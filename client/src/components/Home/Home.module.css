@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 60%;
+    opacity: 40%;
 
     /* background: #315d8b;
     background: linear-gradient(0deg,#315d8b 0%, #e5ecee 99%);
@@ -110,6 +110,7 @@
     font-weight: 500;
     border-radius: 60px;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.5s;
 }
 

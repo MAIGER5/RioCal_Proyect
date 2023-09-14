@@ -3,6 +3,10 @@ import { Button, Checkbox, FormControlLabel, InputAdornment, Stack, TextField, T
 
 const currencies = [
     {
+      value: '',
+      label: '',
+    },
+    {
       value: 'Comercial',
       label: 'Comercial',
     },
@@ -19,7 +23,59 @@ const currencies = [
       label: 'Calidad',
     },
 ];
+
+const industries = [
+    {
+        value: '',
+        label: '',
+    },  
+    {
+      value: 'Agricola',
+      label: 'Agricola',
+    },
+    {
+      value: 'Quimca',
+      label: 'Química',
+    },
+    {
+      value: 'IngCivil&Const',
+      label: 'Ing. Civil & Constgeni',
+    },
+    {
+      value: 'Metalurgica',
+      label: 'Metalúrgica',
+    },
+    {
+      value: 'NoFerrosos',
+      label: 'No Ferrosos',
+    },
+    {
+      value: 'TratamientoGases',
+      label: 'Tratamiento de Gases',
+    },
+    {
+      value: 'PapelPulpa',
+      label: 'PCC & Papel',
+    },
+    {
+      value: 'MedioAmbiente',
+      label: 'Medio Ambiente',
+    },
+    {
+      value: 'Otro',
+      label: 'Otro',
+    },
+    {
+      value: 'Ninguna',
+      label: 'Ninguna',
+    },
+];
+
 const paises = [
+    {
+        value: '',
+        label: '',
+    },  
     {
       value: 'Colombia',
       label: 'Colombia',
@@ -57,7 +113,7 @@ export const FormularioContacto = () => {
     const [form, setForm] = useState({
         nombres:"",
         apellidos:"",
-        posicion:"",
+        indutria:"",
         compania:'',
         telefono:'',
         email:'',
@@ -121,14 +177,25 @@ export const FormularioContacto = () => {
                 onChange={handleForm}
 
             />
-            <TextField 
+            <TextField
                 type='text'
-                name='posicion'
-                value={form.posicion}
-                label='Posición'
+                name='industria'
+                value={form.industria}
+                defaultValue={''}
+                label={'Seleccione la Industria'}
+                select
+                SelectProps={{native:true}}
+                size=''
                 onChange={handleForm}
 
-            />
+            >
+                {industries.map((option) => (
+                    <option key={option.value} value={option.value}>
+                        {option.label}
+                    </option>
+                ))}
+                
+            </TextField>
         </Stack>
         <Stack direction={'row'} spacing={3}>
             <TextField 
@@ -160,8 +227,8 @@ export const FormularioContacto = () => {
                 type='text'
                 name='areaRequerimiento'
                 value={form.areaRequerimiento}
-                defaultValue={'Comercial'}
-                helperText={'Seleccione el Área'}
+                defaultValue=''
+                label={'Seleccione el Área'}
                 select
                 SelectProps={{native:true}}
                 size=''
@@ -179,8 +246,8 @@ export const FormularioContacto = () => {
                 type='text'
                 name='pais'
                 value={form.pais}
-                defaultValue={'Colombia'}
-                helperText={'Seleccione el País'}
+                defaultValue=''
+                label={'Seleccione el País'}
                 select
                 SelectProps={{native:true}}
                 size=''

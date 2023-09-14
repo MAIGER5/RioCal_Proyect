@@ -5,6 +5,6 @@ const RAL6002 = '#265c9e' //azul principal
 //#61993b verde menu
 // #79b353 riocal mas
 
-
+const = letra = '#222831'
 
 //#265c9e
