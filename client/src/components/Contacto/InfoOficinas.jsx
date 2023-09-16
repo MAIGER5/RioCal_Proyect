@@ -1,7 +1,9 @@
 import styles from './Contacto.module.css';
 import Avatar from '@mui/material/Avatar';
 import colombia from '../../utils/COLOMBIA.jpg'
-import { Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom'
+import { Box,Typography } from '@mui/material';
+import map from '../../utils/map.png'
 
 export const InfoOficinas = () => {
   return (
@@ -29,9 +31,11 @@ export const InfoOficinas = () => {
       >
         <Avatar alt="colombia" src={colombia} marg/>
         <Typography>Area Comercial</Typography>
-        <Typography>riocal@riocal.com.co</Typography>
+        {/* <Typography>riocal@riocal.com.co</Typography> */}
         <Typography>604-5974265</Typography>
         <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
+        <div className={styles.maps}> <img src={map} alt="" /> </div>
+
       </Box>
       <div className={styles.lineDivisor}></div>
       <Box className={styles.ofiDiv}
@@ -46,9 +50,11 @@ export const InfoOficinas = () => {
       >
         <Avatar alt="colombia" src={colombia} marg/>
         <Typography>Area Comercial</Typography>
-        <Typography>riocal@riocal.com.co</Typography>
+        {/* <Typography>riocal@riocal.com.co</Typography> */}
         <Typography>604-5974265</Typography>
         <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
+        <Link className={styles.maps}> <img src={map} alt="" /> </Link>
+
       </Box>
 
     </div>

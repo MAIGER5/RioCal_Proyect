@@ -75,9 +75,11 @@ export const NavbarMenu = () => {
         </div>
       </div>
       <div className={styles.dropdown}>
-        <button className={styles.dropbtn}>Industria
-          <i className="fa fa-caret-down"></i>
-        </button>
+        <Link to={'/Industrias'}>
+          <button className={styles.dropbtn}>Industria
+            <i className="fa fa-caret-down"></i>
+          </button>
+        </Link>
         <div className={styles.dropdownContent}>
           {lisItemsIndustry}
         </div>

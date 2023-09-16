@@ -113,7 +113,7 @@ export const FormularioContacto = () => {
     const [form, setForm] = useState({
         nombres:"",
         apellidos:"",
-        indutria:"",
+        industria:"",
         compania:'',
         telefono:'',
         email:'',
@@ -155,7 +155,7 @@ export const FormularioContacto = () => {
                 name='nombres'
                 value={form.nombres}
                 required
-                label='Name'
+                label={ form.pais!=='Estados Unidos'? 'Nombre': 'Name'}
                 onChange={handleForm}
             />
             <TextField 
@@ -163,26 +163,37 @@ export const FormularioContacto = () => {
                 name='apellidos'
                 value={form.apellidos}
                 required
-                label='Apellidos'
+                label={ form.pais!=='Estados Unidos'? 'Apellidos': 'Last Name'}
                 onChange={handleForm}
 
             />
         </Stack>
         <Stack direction={'row'} spacing={3}>
-            <TextField 
-                type='text'
-                name='compania'
-                value={form.compania}
-                label='Compañia'
-                onChange={handleForm}
+          <TextField
+              type='text'
+              name='pais'
+              value={form.pais}
+              defaultValue=''
+              label={ form.pais!=='Estados Unidos'? 'Nacionalidad': 'Nationality'}
+              select
+              SelectProps={{native:true}}
+              size=''
+              onChange={handleForm}
 
-            />
+            >
+              {paises.map((option) => (
+                  <option key={option.value} value={option.value}>
+                      {option.label}
+                  </option>
+              ))}
+            </TextField>
+
             <TextField
                 type='text'
                 name='industria'
                 value={form.industria}
                 defaultValue={''}
-                label={'Seleccione la Industria'}
+                label={ form.pais!=='Estados Unidos'? 'Seleccione la Industria': 'Select a Industry'}
                 select
                 SelectProps={{native:true}}
                 size=''
@@ -198,37 +209,22 @@ export const FormularioContacto = () => {
             </TextField>
         </Stack>
         <Stack direction={'row'} spacing={3}>
-            <TextField 
-                type='number'
-                name='telefono'
-                value={form.telefono}
-                required
-                label='Teléfono'
-                InputProps={{
-                    startAdornment: <InputAdornment position='start'>+57 </InputAdornment>
-                }}
-                onChange={handleForm}
-
-                
-            />
-            <TextField 
-                type='email'
-                name='email'
-                value={form.email}
-                required
-                label='Correo Electrónico'
+            
+        <TextField 
+                type='text'
+                name='compania'
+                value={form.compania}
+                label={ form.pais!=='Estados Unidos'? 'Compañia': 'Company'}
                 onChange={handleForm}
 
             />
-        </Stack>
-        <Stack direction={'row'} spacing={3}>
 
             <TextField
                 type='text'
                 name='areaRequerimiento'
                 value={form.areaRequerimiento}
                 defaultValue=''
-                label={'Seleccione el Área'}
+                label={ form.pais!=='Estados Unidos'? 'Seleccione el Área a contactar': 'Select Contact Area'}
                 select
                 SelectProps={{native:true}}
                 size=''
@@ -242,33 +238,49 @@ export const FormularioContacto = () => {
                 ))}
                 
             </TextField>
-            <TextField
-                type='text'
-                name='pais'
-                value={form.pais}
-                defaultValue=''
-                label={'Seleccione el País'}
-                select
-                SelectProps={{native:true}}
-                size=''
-                onChange={handleForm}
-
-            >
-                {paises.map((option) => (
-                    <option key={option.value} value={option.value}>
-                        {option.label}
-                    </option>
-                ))}
-            </TextField>
                 
         </Stack>
+        <Stack direction={'row'} spacing={3}>
+            <TextField 
+                type='number'
+                name='telefono'
+                value={form.telefono}
+                required
+                label={ form.pais!=='Estados Unidos'? 'Número de Teléfono': 'Telephone Number'}
+                InputProps={{
+                    startAdornment: <InputAdornment position='start'>{ 
+                      form.pais ==='Estados Unidos'? '+1':
+                      form.pais ==='Perú'? '+51':
+                      form.pais ==='Ecuador'? '+593':
+                      form.pais ==='Chile'? '+56':
+                      form.pais ==='Brasil'? '+55':
+                      form.pais ==='Colombia'? '+57'
+                      :''
+                    
+                    } </InputAdornment>
+                }}
+                onChange={handleForm}
+
+                
+            />
+            <TextField 
+                type='email'
+                name='email'
+                value={form.email}
+                required
+                label={ form.pais!=='Estados Unidos'? 'Correo Electrónico': 'Email'}
+                onChange={handleForm}
+
+            />
+        </Stack>
+
         <Stack direction={'row'} >
             <TextField 
                 type='text'
                 name='mensaje'
                 value={form.mensaje}
                 multiline
-                label='Mensaje'
+                label={ form.pais!=='Estados Unidos'? 'Mensaje': 'Message'}
                 onChange={handleForm}
                 sx={{
                     '&.MuiTextField-root': {
@@ -280,7 +292,7 @@ export const FormularioContacto = () => {
         </Stack>
         <FormControlLabel 
             control={<Checkbox defaultChecked/>} 
-            label= {<Typography color={'#0063b4'}>Acepto recibir correos electrónicos</Typography>} 
+            label= {<Typography color={'#0063b4'}>{ form.pais!=='Estados Unidos'? 'Acepto recibir correos electrónicos': 'I agree to receive emails'}</Typography>} 
             sx={{
               marginLeft:'150px'
             }}
@@ -305,7 +317,7 @@ export const FormularioContacto = () => {
                 },
                 }}
             >
-            Enviar
+             { form.pais!=='Estados Unidos'? 'Enviar': 'Submit'}
         </Button>
         </Stack>
     </Stack>

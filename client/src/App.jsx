@@ -23,6 +23,7 @@ import { Calidad } from './components/Calidad/Calidad'
 import { PiedraCaliza } from './components/ProductsPiedraCaliza/PiedraCaliza/PiedraCaliza'
 import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricolas/CalesAgricolas';
 import { Productos } from './components/Productos/Productos'
+import { Industrias } from './components/Industrias/INDUSTRIAS/industrias'
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
         <Route path='/PiedraCaliza' element={<PiedraCaliza/>}/>
         <Route path='/CalesAgricolas' element={<CalesAgricolas/>}/>
         <Route path='/Productos' element={<Productos/>}/>
+        <Route path='/Industrias' element={<Industrias/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
