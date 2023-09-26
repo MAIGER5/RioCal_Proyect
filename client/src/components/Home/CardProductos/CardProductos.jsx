@@ -10,15 +10,6 @@ import '@fontsource/roboto/700.css';
 export const CardProductos = () => {
   return (
     <div className={styles.contenedor}>
-      <Typography 
-        marginLeft={'25px'} 
-        variant='h4' 
-        component={'h1'} 
-        color={'#222831'}
-        fontFamily={'inherit'}
-        display={'flex'}
-      >Explora nuestros productos más vendidos
-      </Typography>
       <div className={styles.conboxes}>
         <Link to={'Promical10kg'} className={styles.box1}> 
           <Typography 
@@ -26,6 +17,7 @@ export const CardProductos = () => {
             fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'inherit'}
+            borderBottom={'3px solid white'}
 
           >CAL Hidratada 10KG </Typography>
         </Link>
@@ -35,6 +27,7 @@ export const CardProductos = () => {
             fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'inherit'}
+            borderBottom={'3px solid white'}
           >CAL Hidratada Tipo A</Typography>
         </Link>
         <Link className={styles.box3}>
@@ -43,7 +36,7 @@ export const CardProductos = () => {
             fontSize={'25px'} 
             color={'#ffff'} 
             fontFamily={'inherit'}
-
+            borderBottom={'3px solid white'}
           >CAL Hidratada Tipo B</Typography>
         </Link>
       </div>

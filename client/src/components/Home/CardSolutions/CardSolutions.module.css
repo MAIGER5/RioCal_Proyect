@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 120px;
+    margin-top: 55px;
     /* border: 1px solid blue; */
 }
 
@@ -14,7 +14,7 @@
 }
 
 .TextTarjet1 {
-    transition: background 1s;
+    transition: background 0.5s;
 
 }
 
@@ -23,7 +23,7 @@
 }
 
 .ContenedorTarjet1:hover  .TextTarjet1{
-    background-color: forestgreen;
+    background-color: #0067B3;
 }
 
 

@@ -17,7 +17,7 @@
 }
 
 .TextTarjet1 {
-    transition: background 1s;
+    transition: background 0.5s;
 
 }
 
@@ -26,5 +26,5 @@
 }
 
 .ContenedorTarjet1:hover  .TextTarjet1{
-    background-color: #265c9e;
+    background-color: #61993b;
 }

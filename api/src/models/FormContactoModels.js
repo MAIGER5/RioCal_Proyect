@@ -16,11 +16,19 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true,
         },
+        nacionalidad: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        industria: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         compañia: {
             type: DataTypes.STRING,
             allowNull: true,
         },
-        email: {
+        areaContacto: {
             type: DataTypes.STRING,
             allowNull: true,
         },
@@ -28,7 +36,7 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true,
         },
-        celular: {
+        email: {
             type: DataTypes.STRING,
             allowNull: true,
         },
@@ -36,5 +44,9 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true,
         },
+        // consentimientoCorreo: {
+        //     type: DataTypes.BOOLEAN,
+        //     allowNull: false,
+        // },
     })
 }

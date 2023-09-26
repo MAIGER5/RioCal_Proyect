@@ -2,7 +2,7 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } f
 import styles from './CardSolutions.module.css';
 import agricola from '../../../utils/agricola.webp'
 import piedraGris from '../../../utils/piedraGris.jpg'
-import { Boton3 } from "../../Boton/Boton";
+import { Boton3, Boton31 } from "../../Boton/Boton";
 import { NavLink } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ export const CardSolutions = () => {
                 // imageRendering:'pixelated'
               }}
           />
-          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
+          <CardContent className={styles.TextTarjet1} sx={{background:'#61993b', height:150, opacity:'93%'}}>
               <Typography 
                 gutterBottom 
                 variant="h5" 
@@ -30,7 +30,7 @@ export const CardSolutions = () => {
                 color='#fafafa'
                 fontFamily={'inherit'}
                 >
-              Piedra Caliza
+              Carbonato de Calcio
               </Typography>
               <Typography variant="body2" color="#ffff"  fontFamily={'inherit'}
 >
@@ -47,7 +47,7 @@ export const CardSolutions = () => {
               image={agricola}
               alt="green iguana"
           />
-          <CardContent className={styles.TextTarjet1} sx={{background:'#0063b4', height:150, opacity:'93%'}}>
+          <CardContent className={styles.TextTarjet1} sx={{background:'#61993b', height:150, opacity:'93%'}}>
               <Typography 
                 gutterBottom 
                 variant="h5" 
@@ -92,18 +92,18 @@ export const CardSolutions = () => {
             gutterBottom 
             fontSize={'24px'} 
             component="div" 
-            color='#393e46' 
+            color='inherit' 
             fontFamily={'inherit'}
             marginBottom={'20px'}
           >
-          TAMBIEN PUEDES ENCONTRAR CON NOSOTROS (Piedra Caliza y Cales Agrícolas)
+          TAMBIEN PUEDES ENCONTRAR CON NOSOTROS (Carbonato de Calcio y Cales Agrícolas)
           </Typography>
           <Typography 
-            color='#393e46' 
+            color='inherit' 
             fontFamily={'inherit'}
             marginBottom={'0px'}
             sx={{
-              fontWeight:'400'
+              fontWeight:'500'
             }}
           >
           Enmienda de suelos <br />
@@ -114,7 +114,7 @@ export const CardSolutions = () => {
 
           
           </Typography>
-          <Boton3/>
+          <Boton31/>
         </Grid>
       </Box>
     </div>

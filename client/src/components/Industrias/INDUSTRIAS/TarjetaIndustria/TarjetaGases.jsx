@@ -6,13 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import GasMeterOutlinedIcon from '@mui/icons-material/GasMeterOutlined';
+import { NavLink } from 'react-router-dom';
 
 
 
 export const TarjetaGases = () => {
     
     return (
-        <Card 
+        <Card component={NavLink} to={'/FlueGas'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -21,6 +22,7 @@ export const TarjetaGases = () => {
                 marginTop:'90px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',
@@ -68,7 +70,7 @@ export const TarjetaGases = () => {
             sx={{ 
                 width: '100%',
                 objectFit:'cover',
-                objectPosition:'top' 
+                objectPosition:'center' 
             }}
           />
         </Card>

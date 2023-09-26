@@ -1,7 +1,9 @@
 .contenedor{
-    width: 79%;
+    width: 80%;
     height: 160px;
     margin: auto;
+    margin-top: 18px;
+    margin-bottom: 70px;
     /* border: 1px solid red; */
 
 }
@@ -21,14 +23,15 @@
 .box1{
     width: 29%;
     height: 90%;
-    background-color: #79b353;
-    background-color: linear-gradient(90deg,#79b353 0%, #559055 90%);
-    background-color: -webkit-linear-gradient(90deg,#79b353 0%, #559055 90%);
-    background-color: -moz-linear-gradient(90deg,#79b353 0%, #559055 90%);
+    background-color: #0067b3;
+    /* background-color: #248dc1; */
+    background-color: linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -webkit-linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -moz-linear-gradient(90deg,#248dc1 0%, #559055 90%);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    padding-inline-start: 30px;
+    /* padding-inline-start: 30px; */
     border-radius: 2px;
     cursor: pointer;    
     transition: background-color 0.8s ease;
@@ -38,14 +41,15 @@
 .box2{
     width: 29%;
     height: 85%;
-    background-color: #477728;
-    background-color: linear-gradient(90deg,#477728 0%, #559055 90%);
-    background-color: -webkit-linear-gradient(90deg,#477728 0%, #559055 90%);
-    background-color: -moz-linear-gradient(90deg,#477728 0%, #559055 90%);
+    background-color: #10497c;
+    /* background-color: #248dc1; */
+    background-color: linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -webkit-linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -moz-linear-gradient(90deg,#248dc1 0%, #559055 90%);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    padding-inline-start: 30px;
+    /* padding-inline-start: 30px; */
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.8s ease;
@@ -56,18 +60,20 @@
 .box3{
     width: 29%;
     height: 85%;
-    background-color: #628d46;
-    background-color: linear-gradient(90deg,#79a85a 0%, #559055 *0%);
-    background-color: -webkit-linear-gradient(90deg,#7c9e65 0%, #559055 90%);
-    background-color: -moz-linear-gradient(90deg,#7c9e65 0%, #559055 90%);
+    background-color: #0067b3;
+    /* background-color: #248dc1; */
+    background-color: linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -webkit-linear-gradient(90deg,#248dc1 0%, #559055 90%);
+    background-color: -moz-linear-gradient(90deg,#248dc1 0%, #559055 90%);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    padding-inline-start: 30px;
+    /* padding-inline-start: 30px; */
     border-radius: px;
     cursor: pointer;
     transition: background-color 0.8s ease;
     text-decoration:  none;
+    
 
 
 }
@@ -75,8 +81,8 @@
 .box1:hover, 
 .box2:hover, 
 .box3:hover {
-    background-color: #0063b4;
-    background-color: linear-gradient(90deg,#0063b4 0%, #4091d5 150%);
-    background-color: -webkit-linear-gradient(90deg,#0063b4 0%, #4091d5 150%);
-    background-color: -moz-linear-gradient(90deg,#0063b4 0%, #4091d5 150%);
+    background-color: #61993b;
+    background-color: linear-gradient(90deg,#61993b 0%, #307b81 150%);
+    background-color: -webkit-linear-gradient(90deg,#61993b 0%, #307b81 150%);
+    background-color: -moz-linear-gradient(90deg,#61993b 0%, #307b81 150%);
 }

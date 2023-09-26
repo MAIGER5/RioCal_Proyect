@@ -6,12 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
+import { NavLink } from 'react-router-dom';
 
 
 export const TarjetaMetalurgia = () => {
     
     return (
-        <Card 
+        <Card component={NavLink} to={'/Metalurgica'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -20,6 +21,7 @@ export const TarjetaMetalurgia = () => {
                 marginTop:'90px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',
@@ -67,7 +69,7 @@ export const TarjetaMetalurgia = () => {
             sx={{ 
                 width: '100%',
                 objectFit:'cover',
-                objectPosition:'top' 
+                objectPosition:'center' 
             }}
           />
         </Card>

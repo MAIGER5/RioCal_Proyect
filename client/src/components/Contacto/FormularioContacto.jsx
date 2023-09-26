@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Button, Checkbox, FormControlLabel, InputAdornment, Stack, TextField, Typography } from '@mui/material';
+import { useDispatch } from 'react-redux'
+import { Button, Checkbox, Dialog, DialogContent, FormControlLabel, InputAdornment, Stack, TextField, Typography } from '@mui/material';
+import { postFormActions } from '../../Redux/Actions/postFormActions';
 
 const currencies = [
     {
@@ -71,7 +73,7 @@ const industries = [
     },
 ];
 
-const paises = [
+const nacionalidades = [
     {
         value: '',
         label: '',
@@ -110,18 +112,22 @@ const paises = [
 
 export const FormularioContacto = () => {
 
-    const [form, setForm] = useState({
-        nombres:"",
-        apellidos:"",
-        industria:"",
-        compania:'',
-        telefono:'',
-        email:'',
-        areaRequerimiento:'',
-        pais:'',
-        mensaje:'',
+  const dispatch = useDispatch()
 
-    });
+  const [boxEmerg, SetBoxEmerg] = useState(false);
+
+  const [form, setForm] = useState({
+    nombres:"",
+    apellidos:"",
+    nacionalidad:'',
+    industria:"",
+    compania:'',
+    areaRequerimiento:'',
+    telefono:'',
+    email:'',
+    mensaje:'',
+    consentimientoCorreo:""
+  });
 
     const handleForm = (event) => {
         event.preventDefault();
@@ -134,8 +140,35 @@ export const FormularioContacto = () => {
 
     }
 
+    const handleSumit = (event)=> {
+      event.preventDefault()
+      console.log(form)
+      dispatch(postFormActions(form))
+
+
+      SetBoxEmerg(true)
+    }
+
+  function handleClose() {
+    SetBoxEmerg(false);
+    setForm({
+      nombres:"",
+      apellidos:"",
+      nacionalidad:'',
+      industria:"",
+      compania:'',
+      areaRequerimiento:'',
+      telefono:'',
+      email:'',
+      mensaje:'',
+      consentimientoCorreo:""
+
+    });
+    // window.location.reload();
+  }
+
   return (
-    <Stack 
+    <Stack onSubmit={handleSumit}
         spacing={4} 
         component={'form'}
         sx={{
@@ -155,7 +188,7 @@ export const FormularioContacto = () => {
                 name='nombres'
                 value={form.nombres}
                 required
-                label={ form.pais!=='Estados Unidos'? 'Nombre': 'Name'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Nombre': 'Name'}
                 onChange={handleForm}
             />
             <TextField 
@@ -163,7 +196,7 @@ export const FormularioContacto = () => {
                 name='apellidos'
                 value={form.apellidos}
                 required
-                label={ form.pais!=='Estados Unidos'? 'Apellidos': 'Last Name'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Apellidos': 'Last Name'}
                 onChange={handleForm}
 
             />
@@ -171,17 +204,17 @@ export const FormularioContacto = () => {
         <Stack direction={'row'} spacing={3}>
           <TextField
               type='text'
-              name='pais'
-              value={form.pais}
+              name='nacionalidad'
+              value={form.nacionalidad}
               defaultValue=''
-              label={ form.pais!=='Estados Unidos'? 'Nacionalidad': 'Nationality'}
+              label={ form.nacionalidad!=='Estados Unidos'? 'Nacionalidad': 'Nationality'}
               select
               SelectProps={{native:true}}
               size=''
               onChange={handleForm}
 
             >
-              {paises.map((option) => (
+              {nacionalidades.map((option) => (
                   <option key={option.value} value={option.value}>
                       {option.label}
                   </option>
@@ -193,7 +226,7 @@ export const FormularioContacto = () => {
                 name='industria'
                 value={form.industria}
                 defaultValue={''}
-                label={ form.pais!=='Estados Unidos'? 'Seleccione la Industria': 'Select a Industry'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Seleccione la Industria': 'Select a Industry'}
                 select
                 SelectProps={{native:true}}
                 size=''
@@ -214,7 +247,7 @@ export const FormularioContacto = () => {
                 type='text'
                 name='compania'
                 value={form.compania}
-                label={ form.pais!=='Estados Unidos'? 'Compañia': 'Company'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Compañia': 'Company'}
                 onChange={handleForm}
 
             />
@@ -224,7 +257,7 @@ export const FormularioContacto = () => {
                 name='areaRequerimiento'
                 value={form.areaRequerimiento}
                 defaultValue=''
-                label={ form.pais!=='Estados Unidos'? 'Seleccione el Área a contactar': 'Select Contact Area'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Seleccione el Área a contactar': 'Select Contact Area'}
                 select
                 SelectProps={{native:true}}
                 size=''
@@ -246,15 +279,15 @@ export const FormularioContacto = () => {
                 name='telefono'
                 value={form.telefono}
                 required
-                label={ form.pais!=='Estados Unidos'? 'Número de Teléfono': 'Telephone Number'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Número de Teléfono': 'Telephone Number'}
                 InputProps={{
                     startAdornment: <InputAdornment position='start'>{ 
-                      form.pais ==='Estados Unidos'? '+1':
-                      form.pais ==='Perú'? '+51':
-                      form.pais ==='Ecuador'? '+593':
-                      form.pais ==='Chile'? '+56':
-                      form.pais ==='Brasil'? '+55':
-                      form.pais ==='Colombia'? '+57'
+                      form.nacionalidad ==='Estados Unidos'? '+1':
+                      form.nacionalidad ==='Perú'? '+51':
+                      form.nacionalidad ==='Ecuador'? '+593':
+                      form.nacionalidad ==='Chile'? '+56':
+                      form.nacionalidad ==='Brasil'? '+55':
+                      form.nacionalidad ==='Colombia'? '+57'
                       :''
                     
                     } </InputAdornment>
@@ -268,7 +301,7 @@ export const FormularioContacto = () => {
                 name='email'
                 value={form.email}
                 required
-                label={ form.pais!=='Estados Unidos'? 'Correo Electrónico': 'Email'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Correo Electrónico': 'Email'}
                 onChange={handleForm}
 
             />
@@ -280,7 +313,7 @@ export const FormularioContacto = () => {
                 name='mensaje'
                 value={form.mensaje}
                 multiline
-                label={ form.pais!=='Estados Unidos'? 'Mensaje': 'Message'}
+                label={ form.nacionalidad!=='Estados Unidos'? 'Mensaje': 'Message'}
                 onChange={handleForm}
                 sx={{
                     '&.MuiTextField-root': {
@@ -290,16 +323,19 @@ export const FormularioContacto = () => {
             />
 
         </Stack>
-        <FormControlLabel 
-            control={<Checkbox defaultChecked/>} 
-            label= {<Typography color={'#0063b4'}>{ form.pais!=='Estados Unidos'? 'Acepto recibir correos electrónicos': 'I agree to receive emails'}</Typography>} 
-            sx={{
-              marginLeft:'150px'
-            }}
+        <FormControlLabel  
+          name='consentimientoCorreo'
+          defaultChecked='true'
+          value={form.consentimientoCorreo}
+          control={<Checkbox defaultChecked/>} 
+          label= {<Typography color={'#0063b4'}>{ form.nacionalidad!=='Estados Unidos'? 'Acepto recibir correos electrónicos': 'I agree to receive emails'}</Typography>} 
+          sx={{
+            marginLeft:'150px'
+          }}
         />
 
         <Stack>
-            <Button 
+            <Button type='submit'
                 sx={{
                 width:'25%',
                 height:'40px',
@@ -317,9 +353,16 @@ export const FormularioContacto = () => {
                 },
                 }}
             >
-             { form.pais!=='Estados Unidos'? 'Enviar': 'Submit'}
+             { form.nacionalidad!=='Estados Unidos'? 'Enviar': 'Submit'}
         </Button>
         </Stack>
+        <Dialog onClose={handleClose} open={boxEmerg} maxWidth="md" PaperProps={{ sx: { width: '400px', height:'190', maxWidth: 'none' }}} >
+          <DialogContent>
+            <Typography align="center" variant="h5" marginBottom={5}>Su mensaje ha sido enviado con éxito</Typography>
+            <Typography align="center" variant="body1">Pausado/Activado con exito</Typography>
+            <Button onClick={handleClose} variant="contained" sx={{ marginLeft: '140px', marginTop:'40px'}}>Finalizar</Button>
+          </DialogContent>
+        </Dialog>
     </Stack>
   )
 }

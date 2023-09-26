@@ -70,7 +70,7 @@ export const CardDiference = () => {
                 />
                 <CardContent className={styles.TextTarjet1}
                     sx={{
-                        background:'#477728', 
+                        background:'#0067b3', 
                         height:150, 
                         opacity:'93%'
                     }}
@@ -104,7 +104,7 @@ export const CardDiference = () => {
                         // background:'#0063b4', 
                         height:150, 
                         opacity:'93%',
-                        background: '#477728',
+                        background: '#0067b3',
                         // background: 'linear-gradient(90deg,#79b353 0%, #559055 90%)',
                         // background: '-webkit-linear-gradient(90deg,#79b353 0%, #559055 90%)',
                         // background: '-moz-linear-gradient(90deg,#79b353 0%, #559055 90%)',

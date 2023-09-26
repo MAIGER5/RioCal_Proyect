@@ -50,12 +50,31 @@ export const Boton3 = () => {
       sx={{
         width:'70%',
         height:'10%',
-        background:'#265c9e',
+        background:'#0067B3',
         borderRadius:'80px',
         color:'#ffff',
         marginTop:'25px',
         '&:hover': {
-          backgroundColor: '#50882b',
+          backgroundColor: '#61993b',
+          borderColor: '#0062cc',
+          boxShadow: 'none',
+      },
+      }}
+    >Crece con Nosotros</Button>
+  )
+}
+export const Boton31 = () => {
+  return (
+    <Button 
+      sx={{
+        width:'70%',
+        height:'10%',
+        background:'#61993b',
+        borderRadius:'80px',
+        color:'#ffff',
+        marginTop:'25px',
+        '&:hover': {
+          backgroundColor: '#0067B3',
           borderColor: '#0062cc',
           boxShadow: 'none',
       },
@@ -184,7 +203,7 @@ export const Boton10 = () => {
   return (
     <Button 
         sx={{
-            width:"250px",
+            width:"350px",
             height:'40px',
             // background:'white',
             borderRadius:'3px',

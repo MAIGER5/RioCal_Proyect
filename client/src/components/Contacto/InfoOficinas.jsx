@@ -34,7 +34,7 @@ export const InfoOficinas = () => {
         {/* <Typography>riocal@riocal.com.co</Typography> */}
         <Typography>604-5974265</Typography>
         <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
-        <div className={styles.maps}> <img src={map} alt="" /> </div>
+        <Link to={'/MyComponent'} className={styles.maps}> <img src={map} alt="" /> </Link>
 
       </Box>
       <div className={styles.lineDivisor}></div>
@@ -53,7 +53,7 @@ export const InfoOficinas = () => {
         {/* <Typography>riocal@riocal.com.co</Typography> */}
         <Typography>604-5974265</Typography>
         <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
-        <Link className={styles.maps}> <img src={map} alt="" /> </Link>
+        <Link to={'/MyComponent'} className={styles.maps}> <img src={map} alt="" /> </Link>
 
       </Box>
 

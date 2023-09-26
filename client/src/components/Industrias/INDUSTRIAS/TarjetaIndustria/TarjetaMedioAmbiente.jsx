@@ -6,12 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
+import { NavLink } from 'react-router-dom';
 
 
 export const TarjetaMedioAmbiente = () => {
     
     return (
-        <Card 
+        <Card component={NavLink} to={'/MedioAmbiente'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -20,6 +21,7 @@ export const TarjetaMedioAmbiente = () => {
                 marginTop:'90px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',

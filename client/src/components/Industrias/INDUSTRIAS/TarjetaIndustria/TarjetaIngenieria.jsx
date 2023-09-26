@@ -6,12 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
+import { NavLink } from 'react-router-dom';
 
 
 export const TarjetaIngenieria = () => {
     
     return (
-        <Card 
+        <Card component={NavLink} to={'/IngCivilConst'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -20,6 +21,7 @@ export const TarjetaIngenieria = () => {
                 marginTop:'90px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',

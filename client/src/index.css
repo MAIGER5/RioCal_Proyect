@@ -1,11 +1,18 @@
 :root {
   /* font-weight: 400; */
   background-color: #fcfcfc;
-  font-family: 'Roboto', sans-serif;
+  font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;;
+  /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Oxygen', sans-serif; */
-  font-stretch: semi-condensed;
+  /* font-stretch: semi-condensed; */
   letter-spacing: 1.5px;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  line-height: 22px;
 
+  font-stretch: extra-condensed;
+  vertical-align: top;
+  color: #323e48;
 
 }
 

@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 40%;
+    opacity: 30%;
 
     /* background: #315d8b;
     background: linear-gradient(0deg,#315d8b 0%, #e5ecee 99%);
@@ -67,7 +67,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    z-index: 3;
+    z-index: 2;
 }
 
 .resenaPrincipal h1{
@@ -85,29 +85,47 @@
     /* border: 1px solid green; */
 
 }
-.resenaPrincipal h4{
+
+.leyendaH4 {
+    margin: auto;
+    width: 750px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 93, 122, 0.8); /* Ajusta el último valor (0.5) para controlar la opacidad */
+    /* opacity: 50%; */ /* No es necesario aplicar opacidad al contenedor */
+    margin-block: 50px;
+    border-radius: 3px;
+}
+
+.leyendaH4 h4 {
     color: white;
     font-family: inherit;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
     font-stretch: ultra-expanded;
+    vertical-align: top;
     text-align: center;
-    padding: 0;
-
+    text-wrap: balance;
+    padding: 35px;
+    letter-spacing: 1px;
+    /* No es necesario establecer estilos de color y fuente nuevamente aquí */
     /* border: 1px solid red; */
 }
+
 
 .botontext{
     margin: auto;
     width: 350px;
     height: 45px;
-    background-color: #50882b;
+    background-color: #0067b3;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 60px;
     cursor: pointer;
     text-decoration: none;
@@ -115,7 +133,7 @@
 }
 
 .botontext:hover {
-    background-color: #265c9e;
+    background-color: #79b353;
 }
 /* .imagePinc::before {
     content: "";
@@ -145,9 +163,9 @@
     width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
     height: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
     object-fit: cover; /* Recorta la imagen para ajustarla al contenedor */
-    object-position: center; /* Centra la imagen dentro del contenedor */
+    object-position: left; /* Centra la imagen dentro del contenedor */
     z-index: 2;
-    opacity: 70%;
+    opacity: 95%;
 }
 
 .titlePrincipal{
@@ -162,6 +180,134 @@
     font-weight: bolder;
     font-stretch: ultra-condensed;
     z-index: 3;
+}
+
+.leyendaCarmeus {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 77%;
+    padding: 20px;
+    /* border: 1px solid green; */
+  }
+  
+.grow { 
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid blue; */
+
+
+}
+
+#grow1{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+}
+#grow2{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#grow3{
+    width: 0px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.puntasBorder1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 4px solid #10497c;
+    border-left: 4px solid #10497c;
+}
+
+.puntasBorder2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-bottom: 4px solid #10497c;
+    border-right: 4px solid #10497c;
+}
+
+.logoCarmeus{
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    padding: 40px;
+    /* border: 1px solid red; */
+
+    
+}
+
+.logoCarmeus img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    object-position: center;
+}
+
+
+.sectionCarmeus {
+    margin: auto;
+    width: 95%;
+  
+    display: flex;
+    gap: 16px;
+
+    /* border: 1px solid green; */
+  }
+  
+  .growCarmeus { 
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    text-wrap: balance;
+    color: #323e48;
+    background-color: #CFD2D3 ;
+    /* border: 1px solid green; */
+ 
+}
+
+.divCarmeus{
+    width: 20%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+}
+.divCarmeus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 .container2{
@@ -217,6 +363,16 @@
     z-index: 2;
 }
 
+.titleProductos{
+    margin: auto;
+    margin-top: 50px;
+    width: 77%;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: normal;
+    opacity: 95%;
+    
+}
 
 @media screen and (max-width: 1445px){
     .contenedorCards{

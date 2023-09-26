@@ -24,6 +24,7 @@ import { PiedraCaliza } from './components/ProductsPiedraCaliza/PiedraCaliza/Pie
 import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricolas/CalesAgricolas';
 import { Productos } from './components/Productos/Productos'
 import { Industrias } from './components/Industrias/INDUSTRIAS/industrias'
+import MyComponent from './components/Contacto/Maps/MyComponent'
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         <Route path='/CalesAgricolas' element={<CalesAgricolas/>}/>
         <Route path='/Productos' element={<Productos/>}/>
         <Route path='/Industrias' element={<Industrias/>}/>
+        <Route path='/MyComponent' element={<MyComponent/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

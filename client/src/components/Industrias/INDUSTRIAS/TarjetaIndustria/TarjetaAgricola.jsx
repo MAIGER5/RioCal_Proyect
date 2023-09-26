@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import images from '../../../../utils/agriculture2.jpg'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -11,7 +12,7 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 export const TarjetaAgricola = () => {
     
     return (
-        <Card 
+        <Card component={Link} to={'/Agricultura'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -20,6 +21,7 @@ export const TarjetaAgricola = () => {
                 marginTop:'310px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',

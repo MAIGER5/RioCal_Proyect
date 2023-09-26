@@ -53,11 +53,13 @@ export const NavbarMenu = () => {
         sx={{
           letterSpacing:'1.5px',
           width:'110px',
-          backgroundColor:'forestgreen',
+          backgroundColor:'#61993b',
           display:'flex',
           justifyContent:'center',
           alignItems:'center',
           color:'white',
+          fontFamily:'inherit',
+          fontSize:'11px',
           '&:hover':{
             backgroundColor:'inherit',
             color:'white'

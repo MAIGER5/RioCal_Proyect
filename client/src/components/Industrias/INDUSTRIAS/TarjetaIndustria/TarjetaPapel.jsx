@@ -6,12 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import { NavLink } from 'react-router-dom';
 
 
 export const TarjetaPapel = () => {
     
     return (
-        <Card 
+        <Card component={NavLink} to={'/PulpaPapel'}
             sx={{ 
                 display: 'flex', 
                 width:'60%', height:'190px', 
@@ -20,6 +21,7 @@ export const TarjetaPapel = () => {
                 marginTop:'90px',
                 overflow:'hidden',
                 borderRadius:'2px',
+                textDecoration:'none',
                 '& .MuiTypography-root': { 
                     fontFamily: 'inherit',
                     fontSize:'31px',
@@ -67,7 +69,7 @@ export const TarjetaPapel = () => {
             sx={{ 
                 width: '100%',
                 objectFit:'cover',
-                objectPosition:'top' 
+                objectPosition:'bottom' 
             }}
           />
         </Card>
