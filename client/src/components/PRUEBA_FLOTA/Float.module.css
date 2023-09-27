@@ -1,0 +1,26 @@
+.container{
+    margin: auto;
+    width: 90%;
+    /* display: flex; */
+    border: 1px solid green;
+    margin-block: 200px;
+}
+
+.div1{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+.div2{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 238, 0);
+    float: left;
+}
+.div3{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(0, 255, 136);
+    float: left;
+}

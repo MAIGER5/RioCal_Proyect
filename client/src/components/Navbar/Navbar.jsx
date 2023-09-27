@@ -51,11 +51,10 @@ export const Navbar = () => {
         <div className={styles.toggle_btn} onClick={toggleDropdown}>
           <Toolbar>
             <IconButton onClick={toggleDropdown}
-              size="large"
+              size="small"
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}
             >
             <div className={styles.iconmenu}>
               {

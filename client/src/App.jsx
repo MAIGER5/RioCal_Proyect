@@ -25,6 +25,7 @@ import { CalesAgricolas } from './components/ProductsCalesAgricolas/CalesAgricol
 import { Productos } from './components/Productos/Productos'
 import { Industrias } from './components/Industrias/INDUSTRIAS/industrias'
 import MyComponent from './components/Contacto/Maps/MyComponent'
+import { Float } from './components/PRUEBA_FLOTA/Float'
 
 function App() {
 
@@ -58,8 +59,9 @@ function App() {
         <Route path='/Productos' element={<Productos/>}/>
         <Route path='/Industrias' element={<Industrias/>}/>
         <Route path='/MyComponent' element={<MyComponent/>}/>
+        <Route path='/Float' element={<Float/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
   )
 }

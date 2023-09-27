@@ -55,7 +55,7 @@ export const CardHorizontal = () => {
               fontSize={'32px'} 
               color={'#0063b4'}
               fontWeight={'100px'}
-              width={450}
+              width={'100%'}
               lineHeight={'normal'}
             >RioCal Acelera el Esfuerzo de Descarbonización con un Diseño de Planta de Cal NET-CERO</Typography>
         </Typography>

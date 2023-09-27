@@ -10,12 +10,12 @@
 
 .imagePinc{
     width: 100%;
-    height: 650px;
+    height: 85%;
     overflow: hidden; /* Oculta el contenido que excede el contenedor */
     position: relative; /* Necesario para alinear correctamente el contenido */
     background-size: cover;
     background-repeat: no-repeat; /* Asegura que la imagen de fondo no se repita */
-    /* transition: transform 1s; */
+    
 
 }
 
@@ -28,31 +28,6 @@
     height: 100%;
     opacity: 30%;
 
-    /* background: #315d8b;
-    background: linear-gradient(0deg,#315d8b 0%, #e5ecee 99%);
-    background: -webkit-linear-gradient(0deg,#315d8b 0%, #e5ecee 99%);
-    background: -moz-linear-gradient(0deg,#315d8b 0%, #e5ecee 99%); */
-
-    /* background: #315d8b;
-    background: linear-gradient(0deg,#315d8b 0%, #e5ecee 140%);
-    background: -webkit-linear-gradient(0deg,#315d8b 0%, #e5ecee 140%);
-    background: -moz-linear-gradient(0deg,#315d8b 0%, #e5ecee 140%); */
-
-    /* background: #315d8b;
-    background: linear-gradient(0deg,#315d8b 0%, #e5ecee 100%);
-    background: -webkit-linear-gradient(0deg,#315d8b 0%, #e5ecee 100%);
-    background: -moz-linear-gradient(0deg,#315d8b 0%, #e5ecee 100%); */
-
-    /* background: #315d8b;
-    background: linear-gradient(0deg,#315d8b 0%, #b2e2f3 100%);
-    background: -webkit-linear-gradient(0deg,#315d8b 0%, #b2e2f3 100%);
-    background: -moz-linear-gradient(0deg,#315d8b 0%, #b2e2f3 100%); */
-
-    /* background: #315d8b;
-    background: linear-gradient(0deg,#315d8b 0%, #8ed3ec 100%);
-    background: -webkit-linear-gradient(0deg,#315d8b 0%, #8ed3ec 100%);
-    background: -moz-linear-gradient(0deg,#315d8b 0%, #8ed3ec 100%); */
-
     background: #315d8b;
     background: linear-gradient(0deg,#315d8b 0%, #8ed3ec 120%);
     background: -webkit-linear-gradient(0deg,#315d8b 0%, #8ed3ec 120%);
@@ -60,64 +35,70 @@
     z-index: 1; 
 }
 
+.imagePinc img{
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    height: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    object-fit: cover; /* Recorta la imagen para ajustarla al contenedor */
+    object-position: left; /* Centra la imagen dentro del contenedor */
+    z-index: 2;
+    opacity: 85%;
+}
 
 .resenaPrincipal{
+    width: 78%;
     position: absolute;
-    top: 350px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
     z-index: 2;
+    /* border: 1px solid red; */
 }
+
+
 
 .resenaPrincipal h1{
     color: white;
     font-family: inherit;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: bold;
     font-stretch: ultra-expanded;
     text-align: center;
-    margin: 0;
-    padding: 0;
     line-height: 1.1;
     transform: scaleY(1.1);
-
-    /* border: 1px solid green; */
-
 }
+
 
 .leyendaH4 {
     margin: auto;
-    width: 750px;
-    height: 90px;
+    width: 70%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(60, 93, 122, 0.8); /* Ajusta el último valor (0.5) para controlar la opacidad */
+    /* background-color: rgba(60, 93, 122, 0.8); Ajusta el último valor (0.5) para controlar la opacidad */
     /* opacity: 50%; */ /* No es necesario aplicar opacidad al contenedor */
-    margin-block: 50px;
+    margin-block: 5%;
     border-radius: 3px;
 }
 
 .leyendaH4 h4 {
     color: white;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     font-stretch: ultra-expanded;
     vertical-align: top;
     text-align: center;
     text-wrap: balance;
-    padding: 35px;
+    padding: 1%;
     letter-spacing: 1px;
-    /* No es necesario establecer estilos de color y fuente nuevamente aquí */
-    /* border: 1px solid red; */
 }
 
 
 .botontext{
     margin: auto;
-    width: 350px;
+    width: 35%;
     height: 45px;
     background-color: #0067b3;
     display: flex;
@@ -135,65 +116,19 @@
 .botontext:hover {
     background-color: #79b353;
 }
-/* .imagePinc::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 50%;
-    background: #c5dfdd;
-    background: linear-gradient(180deg,#c5dfdd 0%, #505067 80%);
-    background: -webkit-linear-gradient(180deg,#c5dfdd 0%, #505067 80%);
-    background: -moz-linear-gradient(180deg,#c5dfdd 0%, #505067 80%);  
-  } */
-/* .imagePinc::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to left, rgba(37, 34, 34, 0), rgba(70, 130, 180, 0.8));
-    z-index: 1; Asegura que la capa esté sobre la imagen
-} */
 
-.imagePinc img{
-    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
-    height: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
-    object-fit: cover; /* Recorta la imagen para ajustarla al contenedor */
-    object-position: left; /* Centra la imagen dentro del contenedor */
-    z-index: 2;
-    opacity: 95%;
-}
-
-.titlePrincipal{
-    position: absolute;
-    top: 200px;
-    left: 40%;
-    width: 30%;
-    color: white;
-    font-family: inherit;
-    font-size: 40px;
-    text-align: center;
-    font-weight: bolder;
-    font-stretch: ultra-condensed;
-    z-index: 3;
-}
 
 .leyendaCarmeus {
     position: relative;
     margin: auto;
-    margin-top: 50px;
-    /* height: 400px; */
+    margin-top: -50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
     width: 77%;
-    padding: 20px;
-    /* border: 1px solid green; */
+    padding: 15px;
   }
   
 .grow { 
@@ -201,10 +136,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border: 1px solid blue; */
-
-
 }
 
 #grow1{
@@ -226,10 +157,6 @@
 }
 #grow3{
     width: 0px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .puntasBorder1{
@@ -257,8 +184,6 @@
     height: 100px;
     overflow: hidden;
     padding: 40px;
-    /* border: 1px solid red; */
-
     
 }
 
@@ -276,9 +201,7 @@
   
     display: flex;
     gap: 16px;
-
-    /* border: 1px solid green; */
-  }
+}
   
   .growCarmeus { 
     width: 40%;
@@ -291,15 +214,12 @@
     font-size: 15px;
     text-wrap: balance;
     color: #323e48;
-    background-color: #CFD2D3 ;
-    /* border: 1px solid green; */
- 
+    background-color: #CFD2D3 ; 
 }
 
 .divCarmeus{
     width: 20%;
     overflow: hidden;
-    /* border: 1px solid red; */
 
 }
 .divCarmeus img{
@@ -310,58 +230,11 @@
 
 }
 
-.container2{
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    border-style: none;
+.botonCarmeusInternational{
+    display: none;
+
 }
 
-.GridPincipal {
-
-    width: 100%;
-    height: 650px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    opacity: 90%;
-    object-fit: cover;
-    border-style: none;
-
-    /* border: 1px solid red; */
-}
-
-.contenedorCards{
-    position: absolute;
-    top: 650px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 12.5%;
-    /* border: 5px solid red; */
-}
-
-
-.cardHorizontal{
-    width: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    top: 360px;
-    z-index: 2;
-    /* border: 5px solid red; */
-}
-
-.texSutentabilidad{
-    margin-left: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    top: 380px;
-    z-index: 2;
-}
 
 .titleProductos{
     margin: auto;
@@ -374,6 +247,19 @@
     
 }
 
+.productos {
+    margin: auto;
+    width: 78%;
+    height: 500px;
+  
+    display: none;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+
+/* 
 @media screen and (max-width: 1445px){
     .contenedorCards{
         display: flex;
@@ -382,4 +268,186 @@
     .tarjetasMargin{
         margin-bottom: 10px;
     }
+} */
+
+
+@media only screen and (max-width: 450px) {
+
+
+    .imagePinc{
+        height: 300%;    
+    }
+    .resenaPrincipal h1{
+        font-size: 20px;
+        margin-block: 30px;
+    }
+    .leyendaH4 {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .leyendaH4 h4 {
+        font-size: 12px;
+    }
+    .botontext{
+        margin-top: 40px;
+        width: 95%;
+        height: 40px;
+    }
+    
+    .leyendaCarmeus {
+        margin-top: 120%;
+        /* border: 1px solid blue; */
+
+    }
+    .sectionCarmeus {
+        display: grid;
+    }
+    #divCarmeus2{
+        display: none;
+    }
+    .divCarmeus{
+        margin: auto;
+        width: 100%;
+    }
+    .growCarmeus{
+        margin: auto;
+        width: 100%;
+        flex-grow: none;
+        padding: 0;
+        background-color: #fcfcfc;
+        text-wrap: balance;
+    }
+    .botonCarmeusInternational{
+        display: grid;
+        background-color: #0067b3;
+        color: white;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 60px;
+        font-size: 19px;
+        cursor: pointer;
+    
+    }
+
+    .titleProductos{
+        display: none;
+        
+    }
+    .productos {
+        margin: auto;
+        width: 78%;
+        height: 280px;
+      
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .productosDivs{
+        background-color: #0067b3;
+        color: white;
+        padding: 15px;
+        font-size: 23px;
+        cursor: pointer;
+      }
+      #divdiferente{
+        background-color: #10497c;
+      }
+      .flecha{
+        float: right;
+      }
+
+      .tarjetasOcultar{
+        display: none;
+      }
+
+}
+
+@media only screen and (min-width:451px) and (max-width:640px) {
+
+
+    .imagePinc{
+        height: 250%;
+    
+    }
+
+    .resenaPrincipal h1{
+        font-size: 29px;
+        margin-block: 30px;
+        margin-bottom: 90px;
+    }
+    .leyendaH4 {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .leyendaH4 h4 {
+        font-size: 15px;
+        text-wrap: balance;
+    }
+    .botontext{
+        margin: auto;
+        margin-top: 90px;
+        width: 95%;
+        height: 50px;
+    }
+    
+
+    .leyendaCarmeus {
+        margin-top: 90%;
+        /* border: 1px solid blue; */
+
+    }
+    .sectionCarmeus {
+        display: grid;
+    }
+    #divCarmeus2{
+        display: none;
+    }
+    .divCarmeus{
+        margin: auto;
+        width: 100%;
+    }
+    .growCarmeus{
+        margin: auto;
+        width: 100%;
+        flex-grow: none;
+        padding: 0;
+        background-color: #fcfcfc;
+        text-wrap: balance;
+    }
+
+}
+
+@media only screen and (min-width:641px) and (max-width:950px) {
+
+
+    .imagePinc{
+        height: 180%;
+    
+    }
+
+    .resenaPrincipal h1{
+        font-size: 35px;
+        margin-block: 30px;
+        margin-bottom: 100px;
+    }
+    .leyendaH4 {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .leyendaH4 h4 {
+        font-size: 15px;
+        text-wrap: balance;
+    }
+    .botontext{
+        margin: auto;
+        margin-top: 110px;
+        width: 95%;
+        height: 60px;
+    }
+    
 }
