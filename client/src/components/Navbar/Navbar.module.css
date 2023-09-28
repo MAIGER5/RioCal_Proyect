@@ -1,16 +1,20 @@
 
 .Contenedor1 {
-    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
     margin-bottom: 10px;
-    width: 100vw;
-    height: 70px;
-    max-width: 1800px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
+    transition: background-color 0.3s ease;
+    z-index: 3;
     /* border: 1px solid rgb(238, 6, 6); */
 }
+
+
 .Barra {
-    width: 80%;
+    width: 82%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,13 +22,19 @@
 }
 
 .Logo img {
+    filter: brightness(0) invert(1);
     cursor: pointer;
     width: 180px;
+    margin-top: 19px;
     /* border: 1px solid green; */   
 }
 
-.Logo p {
-    color: rgb(152, 155, 161);
+.scrolledLogo img{
+  filter: none;
+}
+
+.logoP {
+    color: white;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -35,6 +45,9 @@
     /* border: 1px solid green; */   
 }
 
+.scrolledLogoP{
+  color: rgb(104, 108, 114);
+}
 
 .links{
   text-decoration: none;
@@ -68,7 +81,6 @@
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    background-color: #f9f9f9;
     z-index: 1;
   }
   .navreponse1{
@@ -103,9 +115,15 @@
   .Subtitle {
     font-family: inherit;
     letter-spacing: 1.5px;    
-    color: #0067b3;
+    color: white;
     font-size: 16px;
+    transition: color 0.3s ease;
+
+    
   }
+
+
+
   /* Links inside the navbar */
   .navbar a{
     display: flex;
@@ -117,9 +135,9 @@
     text-decoration: none;
     font-family: inherit;
     font-weight: 700;
-    transition: background-color .5s;
     cursor: pointer;
     border-radius: 5px;
+
   }
   
   .navreponse a, .navreponse1 a {
@@ -146,21 +164,28 @@
   }
   
   /* Dropdown button */
-  .dropdown .dropbtn {
+  .dropbtn {
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: inherit;
+    background-color: transparent;
     font-family: inherit;
     letter-spacing: 1.2px;    
     font-weight:700;
-    color: #0067b3;
+    color: white;
     font-size: medium;
-    transition: background-color .5s;
     cursor: pointer;
+    transition: color 0.3s ease;
+
     
     /* margin: 0; Important for vertical align on mobile phones */
   }
+
+  .scrolled {
+    background-color: white; /* Cambia a fondo blanco al hacer scroll */
+    color: #0067b3;
+  }
+
   
   /* Add a red background color to navbar links on hover */
   .navreponse a:hover, .navreponse1 a:hover, .navbar a:hover, .dropdown:hover .dropbtn {

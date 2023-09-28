@@ -1,5 +1,5 @@
 .container{
-    width: 80%;
+    width: 79%;
     height: 79%;
     margin: auto;
     display: flex;
@@ -25,5 +25,6 @@
 .ContenedorTarjet1:hover  .TextTarjet1{
     background-color: #0067B3;
 }
+
 
 

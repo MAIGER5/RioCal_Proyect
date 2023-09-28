@@ -8,6 +8,7 @@ import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
 import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
 import GasMeterOutlinedIcon from '@mui/icons-material/GasMeterOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import { useEffect, useState } from 'react';
 
 const Industrias = ['Agrícola', 'Química', 'Ing. Civil & Const', 'Medio Ambiente','Tratamiento de Gases', 'Métalurgica', 'No Ferrosos', 'PCC & Papel']
 
@@ -21,6 +22,27 @@ const paths1 = ['Calviva', 'CalHidratada', 'CalDolomita', 'CalHidratada10Kg', 'C
 
 
 export const NavbarMenu = () => {
+
+  const [scrolled, setScrolled] = useState(false);
+
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpiamos el evento al desmontar el componente para evitar problemas de memoria.
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const lisItemsIndustry = Industrias.map((ele, index)=>{
 
@@ -47,7 +69,7 @@ export const NavbarMenu = () => {
   return (
     <div className={styles.navbar}>
       <Link to={'/'} className={styles.links}>
-        <a href="#inicio" className={styles.Subtitle}>Inicio</a>
+        <a href="#inicio" className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Inicio</a>
       </Link>
       <Typography component={NavLink} to={'/RioCalMas'}
         sx={{
@@ -68,7 +90,7 @@ export const NavbarMenu = () => {
       >RioCal +</Typography>
       <div className={styles.dropdown}>
         <Link to={'/Productos'}>
-          <button className={styles.dropbtn}>Productos
+          <button className={`${styles.dropbtn} ${scrolled ? styles.scrolled : ''}`}>Productos
             <i className="fa fa-caret-down"></i>
           </button>
         </Link>
@@ -78,7 +100,7 @@ export const NavbarMenu = () => {
       </div>
       <div className={styles.dropdown}>
         <Link to={'/Industrias'}>
-          <button className={styles.dropbtn}>Industria
+          <button className={`${styles.dropbtn} ${scrolled ? styles.scrolled : ''}`}>Industria
             <i className="fa fa-caret-down"></i>
           </button>
         </Link>
@@ -86,8 +108,8 @@ export const NavbarMenu = () => {
           {lisItemsIndustry}
         </div>
       </div>
-      <a href="#news" className={styles.Subtitle}>Sostenible</a>
-      <Link to={'/Contacto'} className={styles.Subtitle}>Contacto</Link>
+      <a href="#news" className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Sostenible</a>
+      <Link to={'/Contacto'} className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Contacto</Link>
     </div>
   )
 }

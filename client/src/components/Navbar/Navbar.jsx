@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import { IconButton, Toolbar } from '@mui/material';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavbarMenu } from './NavbarMenu';
 
 
 export const Navbar = () => {
+
+  const [scrolled, setScrolled] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,31 +24,43 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
     const handleResize = () => {
       if (window.innerWidth > 1245) {
         setIsOpen(false);
       }
     };
 
+    window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
+
 
     // Limpiamos el evento al desmontar el componente para evitar problemas de memoria.
     return () => {
+      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <div>
-      <div className={styles.Contenedor1}>
+      <div className={`${styles.Contenedor1} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.Barra}>
           <Link to={'/'} className={styles.links}>
-            <div className={styles.Logo}>
+            <div className={`${styles.Logo} ${scrolled ? styles.scrolledLogo : ''}`}>
                     <img src={logo} alt="logo RioCal" />
-                    <p>Member of Carmeuse Group</p>
+                    <p className={`${styles.logoP} ${scrolled ? styles.scrolledLogoP : ''}`}>Member of Carmeuse Group</p>
             </div>
           </Link>
-          <NavbarMenu/>
+          <NavbarMenu scrolled={scrolled}/>
         </div>
         <div className={styles.toggle_btn} onClick={toggleDropdown}>
           <Toolbar>
