@@ -38,6 +38,20 @@ export const CardHome1 = () => {
                     <h3>CAL AGRICOLA</h3>
                 </div>
             </Link>
+            <Link to={'/CalDolomita'} className={styles.contenedorInforCard}>
+                {/* <div className={styles.textImagen}><p>Cal Dolomita</p></div> */}
+                <div className={styles.cuadroImage}>
+                    <img src={caliza} alt="" />
+                    <h3>CAL AGRICOLA</h3>
+                </div>
+            </Link>
+            <Link to={'/CalDolomita'} className={styles.contenedorInforCard}>
+                {/* <div className={styles.textImagen}><p>Cal Dolomita</p></div> */}
+                <div className={styles.cuadroImage}>
+                    <img src={caliza} alt="" />
+                    <h3>CAL AGRICOLA</h3>
+                </div>
+            </Link>
         </div>       
     )
 }

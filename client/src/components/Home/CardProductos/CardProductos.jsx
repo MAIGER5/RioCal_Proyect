@@ -11,6 +11,24 @@ export const CardProductos = () => {
   return (
     <div className={styles.contenedor}>
       <div className={styles.conboxes}>
+        <Link className={styles.box1}>
+          <Typography 
+            variant='body2' 
+            fontSize={'25px'} 
+            color={'#ffff'} 
+            fontFamily={'inherit'}
+            borderBottom={'3px solid white'}
+          >CAL Hidratada Tipo A</Typography>
+        </Link>
+        <Link className={styles.box2}>
+          <Typography 
+            variant='body2' 
+            fontSize={'25px'} 
+            color={'#ffff'} 
+            fontFamily={'inherit'}
+            borderBottom={'3px solid white'}
+          >CAL Hidratada Tipo B</Typography>
+        </Link>
         <Link to={'Promical10kg'} className={styles.box1}> 
           <Typography 
             variant='body2' 
@@ -20,24 +38,6 @@ export const CardProductos = () => {
             borderBottom={'3px solid white'}
 
           >CAL Hidratada 10KG </Typography>
-        </Link>
-        <Link className={styles.box2}>
-          <Typography 
-            variant='body2' 
-            fontSize={'25px'} 
-            color={'#ffff'} 
-            fontFamily={'inherit'}
-            borderBottom={'3px solid white'}
-          >CAL Hidratada Tipo A</Typography>
-        </Link>
-        <Link className={styles.box3}>
-          <Typography 
-            variant='body2' 
-            fontSize={'25px'} 
-            color={'#ffff'} 
-            fontFamily={'inherit'}
-            borderBottom={'3px solid white'}
-          >CAL Hidratada Tipo B</Typography>
         </Link>
       </div>
     </div>
