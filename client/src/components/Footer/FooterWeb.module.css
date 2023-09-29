@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    max-height: 1850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding-block: 100px;
+
+    background-color: rgb(12, 24, 39);
+  }
+
+  .cajas{
+    width: 600px;
+    height: 290px;
+    /* border: 1px solid red; */
+
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+  }
+
+.cajasInternas{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+#cajaDiferente{
+    display: grid;
+}
+
+.Logo img {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    width: 180px;
+    /* border: 1px solid green;    */
+}
+
+.Logo:hover img {
+    filter: none;
+}
+
+.logoP {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    list-style: none;
+    /* border: 1px solid green; */   
+}
+
+.links{
+    text-decoration: none;
+  }
+
+
+
+
+  .socialMedia{
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    font-weight: 700;
+
+  }

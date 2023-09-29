@@ -5,7 +5,7 @@ import { Navbar } from './components/Navbar/Navbar'
 import { Home } from './components/Home/Home'
 import { CalViva } from './components/ProductsCalviva/CalViva/CalViva'
 import { CalHidratada } from './components/ProductsCalHidratada/CalHidratada/CalHidratada'
-import { Footer } from './components/Footer/Footer'
+// import { Footer } from './components/Footer/Footer'
 import { Contacto } from './components/Contacto/Contacto'
 import { Agricultura } from './components/Industrias/Agricultura/Agricultura'
 import { Quimico } from './components/Industrias/Quimico/Quimico'
@@ -26,6 +26,7 @@ import { Productos } from './components/Productos/Productos'
 import { Industrias } from './components/Industrias/INDUSTRIAS/industrias'
 import MyComponent from './components/Contacto/Maps/MyComponent'
 import { Float } from './components/PRUEBA_FLOTA/Float'
+import { FooterWeb } from './components/Footer/FooterWeb'
 
 function App() {
 
@@ -61,7 +62,7 @@ function App() {
         <Route path='/MyComponent' element={<MyComponent/>}/>
         <Route path='/Float' element={<Float/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <FooterWeb/>
     </BrowserRouter>
   )
 }
