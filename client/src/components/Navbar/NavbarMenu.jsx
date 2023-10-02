@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { Typography } from '@mui/material';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
@@ -22,6 +22,10 @@ const paths1 = ['Calviva', 'CalHidratada', 'CalDolomita', 'CalHidratada10Kg', 'C
 
 
 export const NavbarMenu = () => {
+
+  const location = useLocation();
+  const rutacontacto = '/'
+
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -69,7 +73,11 @@ export const NavbarMenu = () => {
   return (
     <div className={styles.navbar}>
       <Link to={'/'} className={styles.links}>
-        <a href="#inicio" className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Inicio</a>
+        <a href="#inicio" className={`${styles.Subtitle} ${(location.pathname == rutacontacto && scrolled)
+        ? styles.scrolled 
+        : location.pathname != rutacontacto
+        ? styles.scrolled
+        : ''}`}>Inicio</a>
       </Link>
       <Typography component={NavLink} to={'/RioCalMas'}
         sx={{
@@ -90,7 +98,12 @@ export const NavbarMenu = () => {
       >RioCal +</Typography>
       <div className={styles.dropdown}>
         <Link to={'/Productos'}>
-          <button className={`${styles.dropbtn} ${scrolled ? styles.scrolled : ''}`}>Productos
+          <button className={`${styles.dropbtn} ${
+            (location.pathname == rutacontacto && scrolled)
+            ? styles.scrolled 
+            : location.pathname != rutacontacto
+            ? styles.scrolled
+            : ''}`}>Productos
             <i className="fa fa-caret-down"></i>
           </button>
         </Link>
@@ -100,7 +113,12 @@ export const NavbarMenu = () => {
       </div>
       <div className={styles.dropdown}>
         <Link to={'/Industrias'}>
-          <button className={`${styles.dropbtn} ${scrolled ? styles.scrolled : ''}`}>Industria
+          <button className={`${styles.dropbtn} ${
+            (location.pathname == rutacontacto && scrolled)
+            ? styles.scrolled 
+            : location.pathname != rutacontacto
+            ? styles.scrolled
+            : ''}`}>Industria
             <i className="fa fa-caret-down"></i>
           </button>
         </Link>
@@ -108,8 +126,17 @@ export const NavbarMenu = () => {
           {lisItemsIndustry}
         </div>
       </div>
-      <a href="#news" className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Sostenible</a>
-      <Link to={'/Contacto'} className={`${styles.Subtitle} ${scrolled ? styles.scrolled : ''}`}>Contacto</Link>
+      <a href="#news" className={`${styles.Subtitle} ${
+        (location.pathname == rutacontacto && scrolled)
+        ? styles.scrolled 
+        : location.pathname != rutacontacto
+        ? styles.scrolled
+        : ''}`}>Sostenible</a>
+      <Link to={'/Contacto'} className={`${styles.Subtitle} ${(location.pathname == rutacontacto && scrolled)
+        ? styles.scrolled 
+        : location.pathname != rutacontacto
+        ? styles.scrolled
+        : ''}`}>Contacto</Link>
     </div>
   )
 }

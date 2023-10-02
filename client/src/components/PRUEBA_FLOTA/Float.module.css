@@ -1,3 +1,8 @@
+.contenedorGenral{
+    width: 100%;
+    display: grid;
+}
+
 .container{
     margin: auto;
     width: 90%;
@@ -23,4 +28,15 @@
     height: 100px;
     background-color: rgb(0, 255, 136);
     float: left;
+}
+
+.contenedorCarrusel{
+    margin: auto;
+    width: 80%;
+}
+
+.carruselCard{
+    width: 80%;
+    height: 200px;
+    background-color: blueviolet;
 }

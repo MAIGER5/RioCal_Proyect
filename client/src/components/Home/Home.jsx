@@ -1,10 +1,16 @@
 
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom'
+import Carousel from '@itseasy21/react-elastic-carousel';
 import principalHome from '../../utils/principalHome.jpg'
 import carmeus1 from '../../utils/carmeus1.jpg'
 import carmeus2 from '../../utils/carmeus2.webp'
-import { CardHome1 } from './CardHome1/CardHome1';
+import CalViva from '../../utils/viva.jpg';
+import CalDolomita from '../../utils/dolomitas.webp' 
+import hidratada from '../../utils/hidratada1.webp';
+import caliza from '../../utils/caliza2.webp';
+import neutramol from '../../utils/neutramol.webp';
+// import { CardHome1 } from './CardHome1/CardHome1';
 import { CardHorizontal } from './CardHorizontal/CardHorizontal';
 import { CardProductos } from './CardProductos/CardProductos';
 import { CardSolutions } from './CardSolutions/CardSolutions';
@@ -16,9 +22,41 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import TextMobileStepper from './ResponsiveHome/ResTabPanel';
+import { CardCarrusel } from './Carusel/CardCarrusel';
 
+
+// const inforCardCarrusel = [
+//   {
+//     id:1,
+//     image:{CalViva},
+//     title:'Cal Viva'
+//   },
+//   {
+//     id:2,
+//     image:{CalDolomita},
+//     title:'Cal Dolomita'
+//   },
+//   {
+//     id:3,
+//     image:{hidratada},
+//     title:'Cal Hidratada'
+//   },
+//   {
+//     id:4,
+//     image:{caliza},
+//     title:'Carbonato de Calcio'
+//   },
+// ]
 
 export const Home = () => {
+
+  const breakPoints = [
+    {width:1, itemsToShow:1},
+    {width:500, itemsToShow:2},
+    {width:768, itemsToShow:3},
+    {width:1200, itemsToShow:4},
+  ]
+
   return (
     <div className={styles.container}>
       <div className={styles.imagePinc}>
@@ -51,8 +89,15 @@ export const Home = () => {
         <div className={styles.productosDivs}><p>RioCal +</p> <ArrowForwardIosIcon className={styles.flecha}/></div>
 
       </div>
-      <div className={styles.tarjetasOcultar}>
-        <CardHome1 />
+      <div id={styles.carruselContainer} className={styles.tarjetasOcultar}>
+        <Carousel breakPoints={breakPoints}>
+          <CardCarrusel image={CalViva} title='Cal Viva'/>
+          <CardCarrusel image={CalDolomita} title='Cal Dolomita'/>
+          <CardCarrusel image={hidratada} title='Cal Hidratada'/>
+          <CardCarrusel image={neutramol} title='Neutramol'/>
+          <CardCarrusel image={caliza} title='Carbonato de Calcio'/>
+          <CardCarrusel image={caliza} title='Cal Agrícola'/>
+        </Carousel>
       </div>
       <div className={styles.titleProductos}>Explora nuestros productos destacados</div>
       <div className={styles.tarjetasOcultar}>

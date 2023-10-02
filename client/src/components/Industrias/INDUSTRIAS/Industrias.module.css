@@ -2,9 +2,12 @@
     display: flexbox;
     position: relative;
     width: 100vw;
+    margin-top: 100px;
+
 }
 
 .imagePinc{
+    margin-top: 50px;
     width: 100%;
     height: 600px;
     overflow: hidden; /* Oculta el contenido que excede el contenedor */

@@ -1,10 +1,11 @@
 
 import React from 'react';
+import styles from './MyComponent.module.css'
 import Map from "./Map";
 
 const MyComponent = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <h2>Ubicación Oficinas RioCal Poblado Medellin</h2>
       <Map />
     </div>

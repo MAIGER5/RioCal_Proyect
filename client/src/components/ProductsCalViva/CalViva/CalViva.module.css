@@ -2,6 +2,7 @@
 .boxPrincipal{
     display: grid; 
     color: #47525c; 
+    margin-top: 100px;
 }
 
 .contenedorPrincipal{
@@ -90,6 +91,7 @@
     color:  #265c9e;
     font-stretch: ultra-condensed;
     letter-spacing: 1px;
+    margin-bottom: 50px;
 
 }
 

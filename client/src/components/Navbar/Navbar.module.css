@@ -1,6 +1,7 @@
 
 .Contenedor1 {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: transparent;
     margin-bottom: 10px;
@@ -12,7 +13,15 @@
     /* border: 1px solid rgb(238, 6, 6); */
 }
 
-
+.scrolledContenedor1{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
 .Barra {
     width: 82%;
     display: flex;
@@ -118,8 +127,14 @@
     color: white;
     font-size: 16px;
     transition: color 0.3s ease;
+  }
 
-    
+  .scrolledSubtitle {
+    font-family: inherit;
+    letter-spacing: 1.5px;    
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
   }
 
 

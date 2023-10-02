@@ -1,15 +1,19 @@
 
 import styles from './Navbar.module.css';
 import logo from '../Utils/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import { IconButton, Toolbar } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+
 import { NavbarMenu } from './NavbarMenu';
 
 
 export const Navbar = () => {
+
+  const location = useLocation();
+  const rutacontacto = '/'
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -52,12 +56,23 @@ export const Navbar = () => {
 
   return (
     <div>
-      <div className={`${styles.Contenedor1} ${scrolled ? styles.scrolled : ''}`}>
+      <div className={`${styles.Contenedor1} ${
+        (location.pathname == rutacontacto && scrolled)
+        ? styles.scrolled 
+        : location.pathname != rutacontacto
+        ? styles.scrolledContenedor1
+        : ''}`}>
         <div className={styles.Barra}>
           <Link to={'/'} className={styles.links}>
-            <div className={`${styles.Logo} ${scrolled ? styles.scrolledLogo : ''}`}>
+            <div className={`${styles.Logo} ${
+              (location.pathname == rutacontacto && scrolled)
+              ? styles.scrolledLogo 
+              : location.pathname != rutacontacto
+              ? styles.scrolledLogo
+              :""}`
+              }>
                     <img src={logo} alt="logo RioCal" />
-                    <p className={`${styles.logoP} ${scrolled ? styles.scrolledLogoP : ''}`}>Member of Carmeuse Group</p>
+                    <p className={`${styles.logoP} ${(location.pathname == rutacontacto && scrolled)? styles.scrolledLogoP : ''}`}>Member of Carmeuse Group</p>
             </div>
           </Link>
           <NavbarMenu scrolled={scrolled}/>
