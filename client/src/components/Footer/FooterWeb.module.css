@@ -7,9 +7,9 @@
     gap: 80px;
     flex-wrap: wrap;
     padding-block: 100px;
-
     background-color: rgb(12, 24, 39);
-  }
+}
+
 
   .cajas{
     width: 600px;

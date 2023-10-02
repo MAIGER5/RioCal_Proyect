@@ -6,11 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import { IconButton, Toolbar } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-
 import { NavbarMenu } from './NavbarMenu';
 
 
 export const Navbar = () => {
+
 
   const location = useLocation();
   const rutacontacto = '/'
@@ -19,8 +19,10 @@ export const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+
   const toggleDropdown = ()=> {
     setIsOpen(!isOpen);
+
   };
 
   const handleClick = ()=>{
@@ -54,14 +56,19 @@ export const Navbar = () => {
     };
   }, []);
 
+  
+
   return (
     <div>
+
       <div className={`${styles.Contenedor1} ${
         (location.pathname == rutacontacto && scrolled)
         ? styles.scrolled 
         : location.pathname != rutacontacto
         ? styles.scrolledContenedor1
-        : ''}`}>
+        : isOpen
+        ? styles.scrolled:
+        ''}`}>
         <div className={styles.Barra}>
           <Link to={'/'} className={styles.links}>
             <div className={`${styles.Logo} ${
@@ -69,10 +76,19 @@ export const Navbar = () => {
               ? styles.scrolledLogo 
               : location.pathname != rutacontacto
               ? styles.scrolledLogo
-              :""}`
+              :isOpen
+              ? styles.scrolledLogo:
+              ''}`
               }>
-                    <img src={logo} alt="logo RioCal" />
-                    <p className={`${styles.logoP} ${(location.pathname == rutacontacto && scrolled)? styles.scrolledLogoP : ''}`}>Member of Carmeuse Group</p>
+                <img src={logo} alt="logo RioCal" />
+                <p className={`${styles.logoP} ${
+                  (location.pathname == rutacontacto && scrolled)
+                  ? styles.scrolledLogoP 
+                  :location.pathname != rutacontacto
+                  ? styles.scrolledLogoP
+                  : isOpen
+                  ? styles.scrolledLogoP:
+                  ''}`}>Member of Carmeuse Group</p>
             </div>
           </Link>
           <NavbarMenu scrolled={scrolled}/>
@@ -95,15 +111,39 @@ export const Navbar = () => {
         </div>
 
       </div>
-      <div className={isOpen? styles.navreponse1: styles.navreponse}>
-        <a href="#inicio" className={styles.Subtitle}>Nosotros</a>
-        <a href="#riocal" className={styles.RioCal}>RioCal +</a>
-        <a href="#productos" className={styles.Subtitle}>Productos</a>
-        <a href="#productos" className={styles.Subtitle}>Industria</a>
-        <a href="#news" className={styles.Subtitle}>Sostenible</a>
-        <Link to={'/Contacto'} className={styles.Subtitle}>Contacto</Link>
+      <div className={
+        (isOpen && location.pathname == rutacontacto)
+        ? styles.navreponse1
+        :(location.pathname != rutacontacto && isOpen)
+        ? styles.navreponse2
+        :styles.navreponse
+        }>
+        <div className={styles.navreponseMenu}>
+          <Link className={styles.likMenuResonse} onClick={handleClick}>
+            <a href="#inicio" className={styles.Subtitle}>Nosotros</a>
+          </Link>
+          <Link to={'/RioCalMas'} className={styles.likMenuResonse} onClick={handleClick}>
+            <a href="#riocal" className={styles.Subtitle}>RioCal +</a>
+          </Link>
+          <Link to={'/Productos'} className={styles.likMenuResonse} onClick={handleClick}>
+            <a href="#productos" className={styles.Subtitle}>Productos</a>
+          </Link>
+          <Link to={'/Industrias'} className={styles.likMenuResonse} onClick={handleClick}>
+            <a href="#productos" className={styles.Subtitle}>Industria</a>
+          </Link>
+          <Link className={styles.likMenuResonse} onClick={handleClick}>
+            <a href="#news" className={styles.Subtitle}>Sostenible</a>
+          </Link>
+          <Link to={'/Contacto'} className={styles.likMenuResonse} onClick={handleClick} >
+            <a href="#news" className={styles.Subtitle}>Contacto</a>
+          </Link>
+        </div>
+        <div className={isOpen? styles.navresponseContactanos: styles.navreponse}>
+          <p>Contactanos</p>
+        </div>
       </div>
     </div>
   )
 }
+
 

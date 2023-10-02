@@ -1,4 +1,4 @@
-import React from 'react';
+import React, from 'react';
 import logo from '.././Utils/logo.png';
 import styles from './FooterWeb.module.css'
 import { Link, NavLink } from 'react-router-dom';

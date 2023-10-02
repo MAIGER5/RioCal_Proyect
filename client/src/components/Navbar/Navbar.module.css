@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .Barra {
     width: 82%;
     display: flex;
@@ -93,18 +94,64 @@
     z-index: 1;
   }
   .navreponse1{
-    width: 90%;
-    height: 400px;
+    position: fixed;
+    width: 100%;
+    height: 90%;
     margin: auto;
+    background-color: #ffff;
+    margin-top: 100px;
+
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(226, 223, 223, 0.2); */
+    z-index: 3;
+    
+  }
+  .navreponse2{ 
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background-color: #ffff;
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(226, 223, 223, 0.2); */
+    z-index: 3;
+    
+  }
+
+  .navreponseMenu{
+    width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-    /* min-width: 160px; */
-    /* box-shadow: 0px 8px 16px 0px rgba(226, 223, 223, 0.2); */
-    z-index: 1;
+    padding: 60px;
+
+    
+
+  }
+
+
+  .navresponseContactanos{
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    background-color: #0067b3;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+  }
+
+  .navresponseContactanos p{
+    color: white;
+    font-size: 23px;
+    padding-block: 50px;
+    cursor: pointer;
+
+  }
+
+  .likMenuResonse a{
+    background-color: none;
   }
 
   .RioCal{
@@ -155,7 +202,7 @@
 
   }
   
-  .navreponse a, .navreponse1 a {
+  .navreponse a, .navreponse1 a, .navreponse2 a {
     /* float: left; */
     font-size: 22px;
     text-align: left;
@@ -166,6 +213,8 @@
     transition: background-color .5s;
     cursor: pointer;
     border-radius: 5px;
+    color: #0067b3;
+
   }
   
 
@@ -203,12 +252,18 @@
 
   
   /* Add a red background color to navbar links on hover */
-  .navreponse a:hover, .navreponse1 a:hover, .navbar a:hover, .dropdown:hover .dropbtn {
-    color:  forestgreen;
+  .navreponse a:hover, .navreponse1 a:hover, .navreponse2 a:hover, .navbar a:hover, .dropdown:hover .dropbtn {
+    color:  #61993b;
     ;
-    /* background-color: #0063b4; */
   }
 
+  
+  .likMenuResonse:hover {
+    background-color: #0063b4;;
+  }
+  .likMenuResonse:hover a{
+    color:  white;
+  }
 
 
   /* Dropdown content (hidden by default) */
