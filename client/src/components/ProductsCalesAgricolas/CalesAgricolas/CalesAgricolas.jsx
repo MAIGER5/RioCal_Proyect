@@ -8,7 +8,7 @@ import { Mercados } from "../Mercados/Mercados"
 import { PreguntasFrec } from "../PreguntasFrec/PreguntasFrec"
 import { Link } from "react-router-dom"
 
-export const CalesAgricolas= () => {
+export const CalesAgricolas = () => {
   return (
     <div className={styles.boxPrincipal}>
         <div className={styles.contenedorPrincipal}>
@@ -24,30 +24,29 @@ export const CalesAgricolas= () => {
                     <div className={styles.description}>
                         <div className={styles.titleDescription}>Descripción</div>
                         <br />
-                        <p>La cal dolomítica se utiliza en diversas aplicaciones industriales, agrícolas y en materiales de construcción como morteros. Hay cuatro tipos de cal hidratada que se utilizan en aplicaciones de construcción: Tipo N, Tipo NA, Tipo S y Tipo SA. Rio Cal produce Tipo S y Tipo SA.
+                        <p>Rio Cal proporciona cal viva dolomítica de calidad para aplicaciones industriales que requieren el equilibrio adecuado de contenido de calcio y magnesio. La cal viva dolomítica, conocida químicamente como óxido de calcio y magnesio (CaO•MgO), o comúnmente denominada dolima, se deriva de piedra caliza con un contenido de carbonato de magnesio del 35 % al 46 %. Nuestro material se prueba periódicamente en cuanto a calidad y consistencia, para garantizar las propiedades químicas y físicas adecuadas para aplicaciones industriales.
                         </p>
                         <br /><br />
                         <div className={styles.titleDescription}>Beneficios</div>
 
                         <ul className={styles.benefits}>
-                            <li>Cumple con las especificaciones ASTM C207 - Tipo S</li>
-                            <li>Mejor trabajabilidad y elasticidad.</li>
-                            <li>Imparte baja penetración o fuga de agua al producto terminado.</li>
-                            <li>Fuerza flexible</li>
-                            <li>Ahorro de costos en comparación con el cemento de mampostería tradicional</li>
-                            <li>Agrega fuerza de unión y resistencia sísmica</li>
-                            <li>Ideal para mezclar lotes pequeños o grandes. </li>
+                            <li>Contenido de calcio y magnesio para necesidades de aplicación específicas.</li>
+                            <li>Fuente eficiente para el ajuste del pH y el control de la acidez.</li>
+                            <li>Pruebas de rutina para calidad y consistencia.</li>
+                            <li>Disponible en una variedad de tamaños, desde guijarros hasta finos.</li>
+                            <li>Ofrece ventajas de seguridad cuando se usa para reemplazar la soda cáustica.</li>
+
                         </ul>
                         <br />
-                        <p>La cal hidratada tipo S y la cal hidratada tipo SA están disponibles en bolsas de 50 libras, súper sacos o a granel. Para obtener información adicional, para ver nuestras hojas típicas de productos o para analizar la disponibilidad con nuestro grupo de ventas, comuníquese con nosotros..</p>
+                        <p>Para obtener información adicional, para ver nuestras hojas típicas de productos o para analizar la disponibilidad con nuestro grupo de ventas, comuníquese con nosotros..</p>
                         <br /><br />
                         <Link to={'/Contacto'}>
                             <Button
                                 sx={{
-                                width:'550px',
+                                width:'100%',
                                 height:'40px',
                                 color:'#ffff',
-                                fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                                fontFamily: 'inherit',
                                 fontSize:'12px',
                                 backgroundColor:'#265c9e',
                                 borderRadius:'80px',
@@ -56,8 +55,11 @@ export const CalesAgricolas= () => {
                                     borderColor: '#0062cc',
                                     boxShadow: 'none',
                                 },
+                                // '@media only screen and (max-width: 1000px)': {
+                                //     width:'70%'
+                                // }
                                 }}
-                            > Solicite una Cotización para Cal Hidratada Dolomítica (Tipos S/SA)</Button>
+                            > Solicite una Cotización para Cal Dolomítica </Button>
                         </Link>
                     </div>
                 </div>

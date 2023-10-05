@@ -1,12 +1,16 @@
 import styles from './PiedraImage.module.css'
-import dolomita from '../../../utils/dolomita.webp'
-import hidratada1 from '../../../utils/hidratada1.jpg'
+import dolomita from '../../../utils/dolomita1.webp'
+import CalViva from '../../../utils/viva.jpg'
 
 export const PiedraImage = () => {
   return (
     <div className={styles.container}>
-        <img src={dolomita} alt="hidratada" className={styles.piedra}/>
-        <img src={hidratada1} alt="hidratada1" className={styles.piedra} />
+      <div className={styles.piedra}>
+        <img src={CalViva} alt="hidratada" />
+      </div>
+      <div className={styles.piedra}>
+        <img src={dolomita} alt="hidratada1"/>
+      </div>
     </div>
   )
 }

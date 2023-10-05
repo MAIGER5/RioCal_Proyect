@@ -43,10 +43,10 @@ export const CalDolomita = () => {
                         <Link to={'/Contacto'}>
                             <Button
                                 sx={{
-                                width:'490px',
+                                width:'100%',
                                 height:'40px',
                                 color:'#ffff',
-                                fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                                fontFamily: 'inherit',
                                 fontSize:'12px',
                                 backgroundColor:'#265c9e',
                                 borderRadius:'80px',
@@ -55,6 +55,9 @@ export const CalDolomita = () => {
                                     borderColor: '#0062cc',
                                     boxShadow: 'none',
                                 },
+                                // '@media only screen and (max-width: 1000px)': {
+                                //     width:'70%'
+                                // }
                                 }}
                             > Solicite una Cotización para Cal Dolomítica </Button>
                         </Link>

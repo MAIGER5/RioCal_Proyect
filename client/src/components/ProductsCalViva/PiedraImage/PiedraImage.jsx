@@ -5,8 +5,12 @@ import piedra2 from '../../../utils/piedra2.png'
 export const PiedraImage = () => {
   return (
     <div className={styles.container}>
-        <img src={piedra1} alt="piedra1" className={styles.piedra}/>
-        <img src={piedra2} alt="piedra2" className={styles.piedra} />
+      <div className={styles.piedra}>
+        <img src={piedra1} alt="piedra1" />
+      </div>
+      <div className={styles.piedra}>
+        <img src={piedra2} alt="piedra2"/>
+      </div>
     </div>
   )
 }

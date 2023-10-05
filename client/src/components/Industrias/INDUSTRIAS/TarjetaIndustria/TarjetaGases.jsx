@@ -40,9 +40,23 @@ export const TarjetaGases = () => {
                     transition:'color 0.6s',
 
                 },
+                '@media only screen and (max-width:400px)': {
+                  width:'80%',
+                  '& .MuiTypography-root': {
+                    fontSize: '18px', 
+                    lineHeight:'25px' // Cambio del tamaño de la typography
+                  },
+                },
+                '@media only screen and (min-width:401px) and (max-width:700px)': {
+                  width:'80%',
+                  '& .MuiTypography-root': {
+                    fontSize: '22px', 
+                    lineHeight:'25px' // Cambio del tamaño de la typography
+                  }
+                }
             }}
         >
-          <Box sx={{ display: 'flex', flexDirection: 'column', width:'60%' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', width:'40%'}}>
             <CardContent 
                 sx={{ 
                     flex: '1 0 auto' 
@@ -68,7 +82,7 @@ export const TarjetaGases = () => {
             image={images}
             alt="Live from space album cover"
             sx={{ 
-                width: '100%',
+                width: '60%',
                 objectFit:'cover',
                 objectPosition:'center' 
             }}

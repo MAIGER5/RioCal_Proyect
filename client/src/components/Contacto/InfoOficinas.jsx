@@ -12,47 +12,66 @@ export const InfoOficinas = () => {
         sx={{
           color:'#394046',
           fontSize:'30px',
-          fontFamily: 'Oxygen, sans-serif',
+          fontFamily: 'inherit',
           fontStretch:'extra-condensed',
           letterSpacing:'1.1px',
-          marginLeft:'150px',
-          fontWeight:600
+          marginLeft:'10%',
+          fontWeight:600,
+          
         }}
       >Nuestras Oficinas</Typography>
       <Box className={styles.ofiDiv}
         sx={{
+          marginBlock:'50px',
+          '@media only screen and (max-width:1000px)':{
+            display:'flex',
+            flexDirection:'column',
+            alignItems:'start',
+            justifyContent:'space-between',
+            height:'300px'
+          },
           '& .MuiTypography-root': { 
             color:'#394046',
-            fontFamily: 'Oxygen, sans-serif',
+            fontFamily: 'inherit',
             fontStretch:'extra-condensed',
             letterSpacing:'1.1px',
-        }
+          }
         }}
       >
         <Avatar alt="colombia" src={colombia} marg/>
         <Typography>Area Comercial</Typography>
         {/* <Typography>riocal@riocal.com.co</Typography> */}
-        <Typography>604-5974265</Typography>
-        <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
+        <Typography>604-4407400 <br /> 3188355014</Typography>
+        <Typography>contacto@carmeuse.com.co</Typography>
+        <Typography>Kra 39 # 5A 95 <br />Medellín-Colombia</Typography>
         <Link to={'/MyComponent'} className={styles.maps}> <img src={map} alt="" /> </Link>
 
       </Box>
       <div className={styles.lineDivisor}></div>
       <Box className={styles.ofiDiv}
         sx={{
+          marginBlock:'50px',
+          '@media only screen and (max-width:1000px)':{
+            display:'flex',
+            flexDirection:'column',
+            alignItems:'start',
+            justifyContent:'space-between',
+            height:'300px'
+          },
           '& .MuiTypography-root': { 
             color:'#394046',
-            fontFamily: 'Oxygen, sans-serif',
+            fontFamily: 'inherit',
             fontStretch:'extra-condensed',
             letterSpacing:'1.1px',
-        }
+          }
         }}
       >
         <Avatar alt="colombia" src={colombia} marg/>
         <Typography>Area Comercial</Typography>
         {/* <Typography>riocal@riocal.com.co</Typography> */}
-        <Typography>604-5974265</Typography>
-        <Typography>Calle 10 # 20E 170 <br />Medellín-Colombia</Typography>
+        <Typography>604-4407400</Typography>
+        <Typography>contacto@carmeuse.com.co</Typography>
+        <Typography>Kra 39 # 5A 95 <br />Medellín-Colombia</Typography>
         <Link to={'/MyComponent'} className={styles.maps}> <img src={map} alt="" /> </Link>
 
       </Box>

@@ -1,6 +1,6 @@
 .contenedor{
-    position: relative;
     width: 100%;
+    position: relative;
     margin-top: 100px;
 
     /* height: 1790px; */
@@ -9,71 +9,72 @@
 
 .images{
     width: 100%;
+    height: 600px;
     overflow: hidden;
     z-index: 1;
 }
 
 .images img{
     width: 100%;
+    height: 100%;
     opacity: 98%;
     object-fit: cover;
   
 }
 
-/* .formulario{
+.cardText{
     position: absolute;
-    top: 1000px;
-    width: 1000px;
-    height: 870px;
-    background: #fafafa;
     display: grid;
-    border-radius: 5px;
-    border: 1px solid red;
+    top: 530px;
+    width: 450px;
+    height: 500px;
+    background-color: #265c9e;
+    opacity: 90%;
+    left: 27%;
+    line-height: 30px;
+    transform: translate(-50%, -50%);;
+}
 
-} */
+.title1{
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 130px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-stretch: semi-condensed;
+    letter-spacing: 1.5px;
+}
 
-/* .containerInput{
+.textPrincipal{
     margin: auto;
     width: 80%;
-    display: grid;
-    border: 1px solid blue;
-
-} */
-/* 
-.lineInput{
-    margin: auto;
-    width: 90%;
+    height: 230px;
+    margin-bottom: 90px;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    font-family: 'Oxygen', sans-serif;
-    border: 1px solid blue;
+    align-items: center;    
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-stretch: extra-condensed;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
 
-} */
 
-/* .inpuTextField{
-    width: 1055%;
-    margin-inline: 5px;
-} */
-
-
-
-.bannerBlueAzul {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 700px!important;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    /* border: 1px solid red; */
-    z-index: 1; 
-  }
   
 .titles{
     margin-left: 120px;
-    margin-top: 50px;
+    margin-top: 250px;
     width: 40%;
     font-family: inherit;
     font-size: 35px;
@@ -111,15 +112,9 @@
 .oficinas{
 
     width: 100%;
-    height: 400px;
     display: grid;
     align-items: center;
-    margin-top: 200px;
-    
-    /* background-color: rgb(214, 217, 226);
-        border: 1px solid rgb(255, 0, 0); */
-
-    
+    margin-top: 200px;     
 }
 
 .ofiDiv{
@@ -145,3 +140,145 @@
 .maps img{
     width: 100%;
 }
+
+
+.onlyScreenMax{
+    display: none;
+}
+/******************************************************/
+
+@media only screen and (max-width:600px) {
+
+    .formulario{
+      display: none;
+    }
+    
+    .contenedor{
+        display: grid;
+        /* border: 1px solid blue; */
+    }
+
+      .onlyScreenMax{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 100px;
+        /* border: 1px solid blue; */
+      }
+      .oficinas{
+
+        margin-top: 50px;     
+    }
+
+    
+    .bannerBlueAzul {
+        display: none;
+    }
+    
+    .titles{
+       margin: auto;
+        width: 80%;
+        margin-top: 10px;
+        font-size: 25px;
+        line-height: 30px;
+
+    }
+    .cardText{
+        display: none;
+    }
+    .images{
+        height: 400px;
+    }
+    
+
+}
+
+
+
+/*****************************************************************************************/
+
+
+@media only screen and (min-width:601px) and (max-width:1000px) {
+
+    
+    .contenedor{
+        display: grid;
+    }
+      .formulario{
+        display: none;
+      }
+
+      .onlyScreenMax{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 100px;
+        /* border: 1px solid blue; */
+      }
+      .oficinas{
+
+        margin-top: 50px;     
+    }
+
+    
+    .bannerBlueAzul {
+        display: none;
+    }
+
+    .titles{
+        margin: auto;
+         width: 80%;
+         margin-top: 170px;
+         font-size: 25px;
+         line-height: 30px;
+ 
+     }
+
+    .cardText{
+        width: 350px;
+        height: 500px;
+        left: 200px;
+    }
+    
+    .title1{
+        margin-top: 4px;
+        font-size: 25px;
+    }
+    
+    .textPrincipal{
+        font-size: 14px;
+    }
+
+
+}
+
+/*****************************************************************************************/
+
+/* @media only screen and (max-width:1000px){
+
+    .contenedor{
+        display: grid;
+    }
+      .formulario{
+        display: none;
+      }
+
+      .onlyScreenMax{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 100px;
+        border: 1px solid blue;
+      }
+      .oficinas{
+
+        margin-top: 50px;     
+    }
+
+    
+    .bannerBlueAzul {
+        display: none;
+    }
+
+} */
+

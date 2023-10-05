@@ -49,7 +49,7 @@ export const Mercados = () => {
                         },
                     },
                     '& .MuiTypography-root': { 
-                        fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                        fontFamily: 'inherit',
                         fontSize:'22px',
                         // fontWeight:'li',
                         fontStretch:'ultra-condensed',

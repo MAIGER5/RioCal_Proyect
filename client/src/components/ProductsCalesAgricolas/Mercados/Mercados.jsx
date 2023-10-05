@@ -3,6 +3,12 @@ import { NavLink } from 'react-router-dom';
 import styles from './Mercados.module.css'
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import HouseIcon from '@mui/icons-material/House';
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
+import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
+import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
+import GasMeterOutlinedIcon from '@mui/icons-material/GasMeterOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 
 
 export const Mercados = () => {
@@ -43,7 +49,7 @@ export const Mercados = () => {
                         },
                     },
                     '& .MuiTypography-root': { 
-                        fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                        fontFamily: 'inherit',
                         fontSize:'22px',
                         // fontWeight:'li',
                         fontStretch:'ultra-condensed',
@@ -61,14 +67,22 @@ export const Mercados = () => {
 
                 }}
                 >
-
+                <Paper component={NavLink} to={'/Quimico'}>
+                    <ScienceOutlinedIcon className='IconClass'/>
+                    <Typography>Químico</Typography>
+                </Paper>
                 <Paper component={NavLink} to={'/IngCivilConst'}>
                     <EngineeringOutlinedIcon className='IconClass'/>
                     <Typography>Ing. Civil & Const.</Typography>
                 </Paper>
-                <Paper component={NavLink} to={'/IngCivilConst'}>
-                    <HouseIcon className='IconClass'/>
-                    <Typography>Material de<br />Construcción</Typography>
+                <Paper component={NavLink} to={'/Metalurgica'}>
+                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
+                    <Typography>Metalúrgica</Typography>
+                </Paper>
+
+                <Paper >
+                    <ConfirmationNumberOutlinedIcon className='IconClass'/>
+                    <Typography align='center'>Cerámica y Vidrio</Typography>
                 </Paper>
 
             </Box>

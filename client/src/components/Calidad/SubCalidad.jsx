@@ -12,6 +12,10 @@ export const SubCalidad = () => {
         sx={{ 
           width: '27%', 
           background:'none',
+          '@media only screen and (max-width:1000px)':{
+            width:'95%',
+            marginBottom:'70px'
+          }
         }}>
         <CardActionArea>
           <CardMedia
@@ -28,7 +32,7 @@ export const SubCalidad = () => {
           <CardContent className={styles.TextTarjet1} 
             sx={{
               background:'#748599', 
-              height:210,
+              height:250,
               opacity:'93%'
             }}>
 
@@ -42,7 +46,11 @@ export const SubCalidad = () => {
       <Card className={styles.ContenedorTarjet1} 
         sx={{ 
           width: '27%', 
-          background:'none' 
+          background:'none',
+          '@media only screen and (max-width:1000px)':{
+            width:'95%',
+            marginBottom:'70px'
+          }
         }}>
         <CardActionArea>
           <CardMedia
@@ -58,7 +66,7 @@ export const SubCalidad = () => {
           <CardContent className={styles.TextTarjet1} 
             sx={{
               background:'#748599', 
-              height:210,
+              height:250,
               opacity:'93%'
             }}>
 
@@ -72,7 +80,11 @@ export const SubCalidad = () => {
       <Card className={styles.ContenedorTarjet1} 
         sx={{ 
           width: '27%', 
-          background:'none' 
+          background:'none',
+          '@media only screen and (max-width:1000px)':{
+            width:'95%',
+            marginBottom:'70px'
+          }
         }}>
         <CardActionArea>
           <CardMedia
@@ -88,7 +100,7 @@ export const SubCalidad = () => {
           <CardContent className={styles.TextTarjet1} 
             sx={{
               background:'#748599', 
-              height:210,
+              height:250,
               opacity:'93%'
             }}>
 

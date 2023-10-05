@@ -28,18 +28,18 @@ export const Productos = () => {
                             <Button
                                 sx={{
                                     width:'290px',
-                                height:'40px',
-                                color:'#ffff',
-                                fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                                fontSize:'15px',
-                                fontWeight:600,
-                                backgroundColor:'#265c9e',
-                                borderRadius:'80px',
-                                marginBottom:'50px',
-                                '&:hover': {
-                                    backgroundColor: '#50882b',
-                                    borderColor: '#0062cc',
-                                    boxShadow: 'none',
+                                    height:'40px',
+                                    color:'#ffff',
+                                    fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
+                                    fontSize:'15px',
+                                    fontWeight:600,
+                                    backgroundColor:'#265c9e',
+                                    borderRadius:'80px',
+                                    marginBottom:'50px',
+                                    '&:hover': {
+                                        backgroundColor: '#50882b',
+                                        borderColor: '#0062cc',
+                                        boxShadow: 'none',
                                 },
                             }}
                             > CONTACTANOS </Button>

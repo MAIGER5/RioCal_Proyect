@@ -1,9 +1,7 @@
 .container{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    height: 60%;
-    margin-top: 90px;
-    margin-bottom: 150px;
+    margin-block: 90px;
     display: flex;
     justify-content: space-between;
     /* background-color: #36c9c9; */
@@ -11,5 +9,14 @@
 }
 
 .piedra{
-    width: 49%;
+    width: 47%;
+    overflow: hidden;
+    height: auto;
+    border: 1px solid rgb(240, 232, 232);
+}
+
+.piedra img{
+    width: 100%;
+    object-fit: cover;
+
 }

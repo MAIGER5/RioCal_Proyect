@@ -23,13 +23,13 @@ export const PreguntasFrec = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
                 >
-                <Typography variant='p' color={'#47525c'} className={styles.Typography}>¿Es peligrosa la cal hidratada alta en calcio?</Typography>
+                <Typography variant='p' color={'#47525c'} className={styles.Typography}>¿Cuál es la diferencia entre la cal viva con alto contenido de calcio y la cal viva dolomítica?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography variant='p' className={styles.TypographyDos}
 
                     >
-                    Hay precauciones de seguridad específicas que deben tomarse al manipular, almacenar y usar cal en cualquier forma. Se deben seguir las normas de seguridad adecuadas en todo momento. Para obtener un resumen completo de las pautas de seguridad al usar cal hidratada, consulte nuestra Hoja de datos de seguridad.
+                    Todo se reduce al nivel de carbonato de calcio versus carbonato de magnesio en la piedra caliza de origen. “Alto calcio” indica una alta concentración de carbonato de calcio, con carbonato de magnesio que alcanza hasta el 5%; "dolomítico" indica niveles de carbonato de magnesio mucho más altos, que oscilan entre el 35 y el 46%.
                 </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -45,53 +45,11 @@ export const PreguntasFrec = () => {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
                 >
-                <Typography variant='p' className={styles.Typography}>¿La cal hidratada tipo S es lo mismo que la cal?</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                <Typography variant='p' className={styles.TypographyDos}>
-                El tipo S es una cal dolomítica hidratada
-                </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion
-                sx={{
-                    '& .MuiTypography-root':{
-                        color:'#47525c',
-                    }
-                }}
-            >
-                <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-                >
-                <Typography variant='p' className={styles.Typography}>¿La cal hidratada dolomítica es lo mismo que la cal hidratada?</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography  variant='p' className={styles.TypographyDos}
-
-                    >La cal hidratada dolomítica contiene un % más alto de magnesio y un % más bajo de calcio en comparación con la cal hidratada con alto contenido de calcio.
-                </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion
-                sx={{
-                    '& .MuiTypography-root':{
-                        color:'#47525c',
-                    }
-                }}
-            >
-                <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-                >
                 <Typography variant='p' className={styles.Typography}>¿Las especificaciones anteriores son consistentes para todas las ubicaciones?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography  variant='p' className={styles.TypographyDos}
-
-                    >Las especificaciones del producto variarán según la ubicación. Para obtener más información, incluida la disponibilidad y los productos típicos de su área, comuníquese con nuestro equipo.
+                <Typography variant='p' className={styles.TypographyDos}>
+                Las especificaciones del producto variarán según la ubicación. Para obtener más información, incluida la disponibilidad y los productos típicos para su área, comuníquese con nuestro equipo.
                 </Typography>
                 </AccordionDetails>
             </Accordion>

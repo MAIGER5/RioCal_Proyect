@@ -1,9 +1,8 @@
-
 .boxPrincipal{
+    width: 100%;
     display: grid; 
     color: #47525c; 
     margin-top: 100px;
-
 }
 
 .contenedorPrincipal{
@@ -37,7 +36,7 @@
 
 .titles a{
     padding-left: 20px;
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 21px;
     font-weight: 500;
     color:  #265c9e;
@@ -56,7 +55,7 @@
 }
 
 .description p, li{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: #47525c;
     font-weight: lighter;
@@ -91,8 +90,9 @@
     content: "\2022"; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
 
 }
+
 .tituloPrincipal{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 55px;
     font-weight: bold;
     color:  #265c9e;
@@ -102,7 +102,7 @@
 }
 
 .titleDescription{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     color: #265c9e;
     font-size: 24px;
     font-stretch: ultra-condensed;
@@ -111,4 +111,37 @@
 
 .links{
     text-decoration: none;
+}
+
+/***********************************************************************************/
+@media only screen and (max-width: 1000px) {
+    
+    .tituloPrincipal{
+        margin: auto;
+        font-size: 39px;
+    }
+    .titles{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        display: grid
+    }
+
+    .description{
+        margin: auto;
+        width: 85%;
+        height: auto;
+    }
+    .titleDescription{
+        margin: auto;
+        width: 90%;
+    }
+    .description p{
+        margin: auto;
+        width: 85%;
+        height: auto;
+    }
+    
+
 }

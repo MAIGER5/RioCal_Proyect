@@ -297,6 +297,7 @@
     }
 } */
 
+/*****************************************************************************************/
 
 @media only screen and (max-width: 450px) {
 
@@ -320,6 +321,7 @@
         margin-top: 40px;
         width: 95%;
         height: 40px;
+        text-decoration: none;
     }
     
     .leyendaCarmeus {
@@ -381,9 +383,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-decoration: none;
       }
       #divdiferente{
         background-color: #10497c;
+        text-decoration: none;
       }
       .flecha{
         float: right;
@@ -428,6 +432,9 @@
         margin: auto;
         font-size: 15px;
       }
+      .botonTextosLink{
+        text-decoration: none;
+      }
 
       .botonTextos{
         width: 80%;
@@ -443,6 +450,7 @@
         border-radius: 20px;
         font-size: 19px;
         cursor: pointer;
+        text-decoration: none;
       }
 
       .imageContact{
@@ -494,6 +502,7 @@
         font-size: 19px;
         font-weight: 600;
         cursor: pointer;
+        text-decoration: none;
         z-index: 2;
       }
 

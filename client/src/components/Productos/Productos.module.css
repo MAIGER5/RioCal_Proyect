@@ -3,6 +3,7 @@
     display: grid; 
     color: #47525c; 
     margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -166,4 +167,48 @@
 
 .IconClass{
     color: #265c9e;
+}
+
+/********************************************************************************/
+
+@media only screen and (max-width: 1000px) {
+    
+    .tituloPrincipal{
+        margin: auto;
+        font-size: 39px;
+    }
+    .titles{
+        display: none;
+    }
+    .container{
+        display: grid
+    }
+
+    .description{
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+    .titleDescription{
+        margin: auto;
+        width: 90%;
+    }
+    .description p{
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    
+
+    .subtitles{
+        margin: auto;
+        margin-block: 50px;
+        line-height: 60px;
+        text-align: center;
+
+    }
+    .cuadro{
+        margin: auto;
+    }
+
 }

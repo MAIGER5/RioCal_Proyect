@@ -73,6 +73,7 @@
 }
 
 .titleGrow{
+    height: 0px;
     width: 80%;
     margin-left: 35px;
     color: white;
@@ -89,7 +90,6 @@
 
 .boton12{
     margin-left: 35px;
-
 }
 
 #CalidadDeProcesos{
@@ -112,7 +112,8 @@
 }
 
 .boton{
-    width: 430px;
+    width: 450px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -128,7 +129,7 @@
 
 .contenedor{
     width: 80%;
-    height: 500px;
+    height: auto;
     margin: auto;
     display: flex;
     align-items: center;
@@ -179,4 +180,87 @@
     content: "\2022";
     color: white; /* Código Unicode para un círculo sólido, puedes cambiarlo por otros caracteres */
 
+}
+
+
+/****************************************************************************/
+
+@media only screen and (max-width:1000px){
+    
+    #CalidadDeProcesos{
+        width: 80%;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        text-align: start;
+        text-wrap: balance;
+        line-height: 35px;
+
+
+    }
+    #CalidadDeProcesos1{
+        width: 80%;
+
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .boton{
+        width:90%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        /* border: 1px solid green; */
+    }
+
+    .layout {
+      width: 100%;
+      height: 850px;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    .grow1,
+    .grow2,
+    .grow3{
+        margin: auto;
+        width: 80%;
+        height: 33%;
+        display: grid;
+        margin-bottom: 20px;
+    }
+    
+    .titleGrow{
+        width: 100%;
+        margin-bottom: 0;
+        color: white;
+    }
+    .textGorw{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+    
+    }
+    
+    .boton12{
+        margin-left: 35px;
+    }
+
+    /*componente subcalidad*******************/
+    
+    .contenedor{
+        flex-direction: column;
+    }
 }

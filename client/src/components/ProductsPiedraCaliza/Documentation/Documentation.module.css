@@ -2,10 +2,10 @@
     margin: auto;
     display: grid;
     width: 70%;
-    height: 400px;
+    height: 500px;
     background-color: #eff5f5;
     margin-top: 90px;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 
 .fichaTec{
@@ -25,4 +25,16 @@
 
 .links{
     text-decoration: none;
+}
+
+/*************************************************************************************/
+
+@media only screen and (max-width:1000px) {
+    .container{
+        width: 90%;
+        height: 600px;
+    }
+    .fichaTec{
+        margin-top: 30px;
+    }
 }

@@ -23,14 +23,18 @@ export const Rio_Cal_Mas = () => {
             </div>
             <div className={styles.boton}>
                 <Boton9 />
-                <Boton10 />
+                <div className={styles.boton10NoVisible}>
+                    <Boton10  />
+                </div>
             </div>
         </div>
         <div className={styles.cuadroPesos}>
             <div className={styles.dentroCuadroPesos1}> 
                 <p id={styles.titleCuadroPesos1}>Con más de 50 años de experiencia en Cales Hidratadas</p>
                 <p id={styles.parrafoCuadroPesos1}>Nuestros productos se encuentran posicionados como las mejores Cales del mercado</p>
-                <Boton11/>
+                <div className={styles.boton10NoVisible}>
+                    <Boton11/>
+                </div>
             </div>
             <div className={styles.dentroCuadroPesos2}>
                 <div className={styles.cajonPeso}>
@@ -47,11 +51,7 @@ export const Rio_Cal_Mas = () => {
                 </div>
             </div>
         </div>
-        {/* <div className={styles.cardText}>
-            <div className={styles.title1}>RIO CAL + </div>
-            <div className={styles.textPrincipal}>Haz parte de la Red de distribución  Mas grande de Colombia de Cales Hidratadas.</div>
-        </div> */}
-        <section className={styles.layout}>
+        <section className={styles.divProductos}>
             <Link to={'/Promical10kg'} className={styles.tarjet}>
                 <div className={styles.card}>
                     <img src={CalHidratadaBlanquearPromical} alt="" />
@@ -102,7 +102,8 @@ export const Rio_Cal_Mas = () => {
                     <img src={CalHidratadaTipoN} alt="" />
                 </div>
                 <div className={styles.textTarjet}>
-                Cal Hidradata Tipo N
+                Cal Hidradata Tipo N <br />   
+                <br />
                 </div>
                 <div className={styles.peso}>
                     25 kg

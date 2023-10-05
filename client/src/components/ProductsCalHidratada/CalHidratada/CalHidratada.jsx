@@ -44,8 +44,8 @@ export const CalHidratada = () => {
                                 width:'250px',
                                 height:'40px',
                                 color:'#ffff',
-                                fontFamily: 'PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif',
-                                fontSize:'15px',
+                                fontFamily: 'inherit',
+                                fontSize:'12px',
                                 backgroundColor:'#265c9e',
                                 borderRadius:'80px',
                                 '&:hover': {

@@ -8,6 +8,7 @@
 
 .imagePinc{
     margin-top: 50px;
+    margin-bottom: 300px;
     width: 100%;
     height: 600px;
     overflow: hidden; /* Oculta el contenido que excede el contenedor */
@@ -31,6 +32,7 @@
     background-color: #265c9e;
     opacity: 90%;
     left: 27%;
+    line-height: 30px;
     transform: translate(-50%, -50%);;
 }
 
@@ -71,4 +73,87 @@
 
 .tarjetasIndustries{
     margin-bottom: 150px;
+}
+
+
+
+/*****************************************************************************************/
+
+@media only screen and (max-width:450px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagePinc{
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .cardText{
+        position: inherit;
+        top: 0;
+        width: 100%;
+        height: 520px;
+        background-color: #265c9e;
+        opacity: 100%;
+        left: 0;
+        transform: none;
+    }
+    .title1{
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .textPrincipal{
+        margin-top: 5%;
+
+    }
+    .tarjetasIndustries{
+        margin-top: 0px;
+    }
+}
+
+
+/*****************************************************************************************/
+
+
+@media only screen and (min-width:451px) and (max-width:600px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagePinc{
+        margin-bottom: 0;
+    }
+    .cardText{
+        position: inherit;
+        top: 0;
+        width: 100%;
+        height: 420px;
+        background-color: #265c9e;
+        opacity: 100%;
+        left: 0;
+        transform: none;
+    }
+    .title1{
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+}
+
+@media only screen and (min-width:601px) and (max-width:1000px) {
+    .cardText{
+        width: 350px;
+        height: 500px;
+        left: 200px;
+    }
+    
+    .title1{
+        margin-top: 4px;
+        font-size: 25px;
+    }
+    
+    .textPrincipal{
+        font-size: 14px;
+    }
+
 }

@@ -1,4 +1,4 @@
-import React, from 'react';
+
 import logo from '.././Utils/logo.png';
 import styles from './FooterWeb.module.css'
 import { Link, NavLink } from 'react-router-dom';
@@ -86,13 +86,14 @@ export const FooterWeb = () => {
                     <Typography color={'#fafafa'}y fontFamily={'inherit'} fontWeight={'ligther'}>Carmeuse is committed to providing financial support and volunteerism to organizations whose primary focus is to help underprivileged children in need with opportunities in education, </Typography>
                     <Button component={NavLink} to={'/Contacto'}
                         sx={{
-                            width:'250px',
+                            width:'200px',
                             height:'40px',
                             background:'white',
                             borderRadius:'80px',
                             color:'#3a4750',
                             fontWeight:600,
                             fontFamily:'inherit',
+                            marginTop:'30px',
                             '&:hover': {
                                 backgroundColor: '#50882b',
                                 borderColor: '#0062cc',

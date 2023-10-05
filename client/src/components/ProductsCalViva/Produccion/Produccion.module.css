@@ -6,7 +6,7 @@
 }
 
 .rango span{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: inherit;
     font-style: initial;
@@ -30,7 +30,7 @@
 }
 
 .contenedor p, strong{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: inherit;
     font-style: initial;
@@ -46,7 +46,7 @@
 }
 
 .especificacionesTitle{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 40px;
     font-weight: 500;
     color: inherit;
@@ -55,7 +55,7 @@
 }
 
 .resaltado{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     font-style: initial;
     text-rendering: optimizelegibility;
@@ -70,10 +70,22 @@
 }
 
 .title{
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 40px;
     font-weight: 600;
     color: #265c9e;
     font-stretch: ultra-condensed;
     letter-spacing: 1px;
+    line-height: 40px;
+}
+
+/***************************************************************************/
+
+@media only screen and (max-width:1000px){
+    .title{
+        font-size: 30px;
+    }
+    .especificacionesTitle{
+        font-size: 30px;
+    }
 }

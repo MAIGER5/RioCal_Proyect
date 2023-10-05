@@ -84,9 +84,9 @@ export const Home = () => {
       </section>
       <div className={styles.titleProductos}>Productos</div>
       <div className={styles.productos}>
-        <div className={styles.productosDivs}> <p>Industrias</p> <ArrowForwardIosIcon className={styles.flecha}/></div>
-        <div id={styles.divdiferente} className={styles.productosDivs}><p>Productos</p> <ArrowForwardIosIcon className={styles.flecha}/></div>
-        <div className={styles.productosDivs}><p>RioCal +</p> <ArrowForwardIosIcon className={styles.flecha}/></div>
+        <Link to={'/Industrias'} className={styles.productosDivs}> <p>Industrias</p> <ArrowForwardIosIcon className={styles.flecha}/></Link>
+        <Link to={'/Productos'} id={styles.divdiferente} className={styles.productosDivs}><p>Productos</p> <ArrowForwardIosIcon className={styles.flecha}/></Link>
+        <Link to={'/RioCalMas'} className={styles.productosDivs}><p>RioCal +</p> <ArrowForwardIosIcon className={styles.flecha}/></Link>
 
       </div>
       <div id={styles.carruselContainer} className={styles.tarjetasOcultar}>
@@ -121,16 +121,20 @@ export const Home = () => {
       </div>
       <div className={styles.textResponsiveOtrosSolucions}>Las pruebas técnicas de laboratorios y la aplicación de técnicas de control estadístico son fundamentales para garantizar la calidad y fiabilidad de los productos y procesos industriales. Los métodos de ensayo utilizados en estos laboratorios se basan en rigurosos estándares y protocolos, permitiendo evaluar y medir de manera precisa diversas propiedades y características. 
       </div>
-      <h4 className={styles.botonTextos}>Explora Más</h4>
+      <Link to={'/Calidad'} className={styles.botonTextosLink}>
+        <h4 className={styles.botonTextos}>Explora Más</h4>
+      </Link>
       <div className={styles.titleResponsiveOtrosSolucions}><h4>PRODUCTOS CON VALOR AGREGADO</h4>
       </div>
       <div className={styles.textResponsiveOtrosSolucions}>Las pruebas técnicas de laboratorios y la aplicación de técnicas de control estadístico son fundamentales para garantizar la calidad y fiabilidad de los productos y procesos industriales. Los métodos de ensayo utilizados en estos laboratorios se basan en rigurosos estándares y protocolos, permitiendo evaluar y medir de manera precisa diversas propiedades y características. 
       </div>
-      <h4 className={styles.botonTextos}>Neutramol</h4>
+      <Link to={'/Calidad'} className={styles.botonTextosLink}>
+        <h4 className={styles.botonTextos}>Neutramol</h4>
+      </Link>
       <div className={styles.imageContact}>
         <img src={carmeus2} alt="" />
         <div className={styles.textContact}>EMPIEZA A CRECER CON NOSOTROS AHORA</div>
-        <div className={styles.botonContact}>Contactanos</div>
+        <Link to={'/Contacto'} className={styles.botonContact}>Contactanos</Link>
       </div>
     </div>
   ) 

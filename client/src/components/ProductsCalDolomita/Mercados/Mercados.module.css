@@ -23,12 +23,13 @@
 
 .title{
 
-    font-family: PFDinTextPro-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-family: inherit;
     font-size: 40px;
     font-weight: 500;
     color: inherit;
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
+    line-height: 40px;
 }
 
 .contenedorCard div{
@@ -41,3 +42,12 @@
     /* border: 1px solid green; */
 }
 
+
+
+/**********************************************************************/
+
+@media only screen and (max-width:1000px){
+    .title{
+        font-size: 30px;
+    }
+}

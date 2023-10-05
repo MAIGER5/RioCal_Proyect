@@ -168,7 +168,7 @@ export const FormularioContacto = () => {
   }
 
   return (
-    <Stack onSubmit={handleSumit}
+    <Stack onSubmit={handleSumit} width={'100%'}
         spacing={4} 
         component={'form'}
         sx={{
@@ -178,7 +178,7 @@ export const FormularioContacto = () => {
             // left:'100px',
             margin:'auto',
             '& .MuiTextField-root':{
-                width:'30ch',
+                width:'47%',
             },
         }}
     >
@@ -317,7 +317,7 @@ export const FormularioContacto = () => {
                 onChange={handleForm}
                 sx={{
                     '&.MuiTextField-root': {
-                        width: '63ch', // Estilo global para los otros TextField
+                        width: '100%', // Estilo global para los otros TextField
                     },
                 }}
             />
@@ -338,7 +338,7 @@ export const FormularioContacto = () => {
             <Button type='submit'
                 sx={{
                 width:'25%',
-                height:'40px',
+                height:'50px',
                 background:'#0063b4',
                 borderRadius:'30px',
                 color:'#ffff',
@@ -351,6 +351,11 @@ export const FormularioContacto = () => {
                     borderColor: '#0062cc',
                     boxShadow: 'none',
                 },
+                '@media only screen and (max-width:1000px)':{
+                  margin:'auto',
+                  width:'60%'
+                  
+                }
                 }}
             >
              { form.nacionalidad!=='Estados Unidos'? 'Enviar': 'Submit'}

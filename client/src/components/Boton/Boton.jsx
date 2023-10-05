@@ -203,7 +203,7 @@ export const Boton10 = () => {
   return (
     <Button 
         sx={{
-            width:"350px",
+            width:"290px",
             height:'40px',
             // background:'white',
             borderRadius:'3px',
