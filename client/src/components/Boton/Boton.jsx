@@ -3,11 +3,12 @@ import StoreIcon from '@mui/icons-material/Store';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import StackedLineChartIcon from '@mui/icons-material/StackedLineChart';
 import RecyclingIcon from '@mui/icons-material/Recycling';
+import { NavLink } from 'react-router-dom';
 
 
 export const Boton = () => {
   return (
-    <Button 
+    <Button  component={NavLink} to={'/Contacto'}
         sx={{
             width:'50%',
             height:'15%',
@@ -28,7 +29,7 @@ export const Boton = () => {
 
 export const Boton2 = () => {
   return (
-    <Button 
+    <Button  component={NavLink} to={'/Contacto'}
       sx={{
         width:'70%',
         height:'15%',
@@ -46,7 +47,7 @@ export const Boton2 = () => {
 }
 export const Boton3 = () => {
   return (
-    <Button 
+    <Button  component={NavLink} to={'/Contacto'}
       sx={{
         width:'70%',
         height:'10%',
@@ -65,7 +66,7 @@ export const Boton3 = () => {
 }
 export const Boton31 = () => {
   return (
-    <Button 
+    <Button  component={NavLink} to={'/Contacto'}
       sx={{
         width:'70%',
         height:'10%',
@@ -105,7 +106,7 @@ export const Boton4 = () => {
 
 export const Boton5 = () => {
   return (
-    <Button 
+    <Button  component={NavLink} to={'/Contacto'}
       sx={{
         width:'25%',
         height:'25%',
@@ -126,7 +127,7 @@ export const Boton5 = () => {
 
 export const Boton6 = () => {
   return (
-    <Button variant='text'
+    <Button variant='text' component={NavLink} to={'/Contacto'}
       sx={{
         width:'20%',
         height:'20%',
@@ -181,7 +182,7 @@ export const Boton8 = () => {
 
 export const Boton9 = () => {
   return (
-    <Button 
+    <Button component={NavLink} to={'/Contacto'}
         sx={{
             width:"150px",
             height:'40px',
@@ -201,7 +202,7 @@ export const Boton9 = () => {
 }
 export const Boton10 = () => {
   return (
-    <Button 
+    <Button component={NavLink} to={'/Contacto'}
         sx={{
             width:"290px",
             height:'40px',
@@ -222,7 +223,7 @@ export const Boton10 = () => {
 }
 export const Boton11 = () => {
   return (
-    <Button 
+    <Button component={NavLink} to={'/Contacto'}
         sx={{
             width:"120px",
             height:'30px',

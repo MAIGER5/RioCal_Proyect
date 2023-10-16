@@ -89,6 +89,7 @@
     font-size: 30px;
     font-family: inherit;
     line-height: 35px;
+    
     /* border: 1px solid red; */
 
 }
@@ -102,4 +103,26 @@
     transition: transform 1s;
     transition: opacity 0.3s;
 
+}
+
+@media only screen and (max-width:600px){
+    .contenedorInforCard{
+        width: 100%;
+        height: 200px;
+    }
+
+    .cuadroImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .cuadroImage h3{
+        top: 60%;
+        font-size: 20px;
+        text-wrap: balance;
+        color: white;
+        /* border: 1px solid red; */
+    
+    }
 }

@@ -30,6 +30,18 @@ export const Agricultura = () => {
                 </div>
                 <div className={styles.textImagen}><p>Desinfección</p></div>
             </div>
+            <div id={styles.tarjetOcultar} className={styles.contenedorInforCard}>
+                <div className={styles.cuadroImageVacasPollos}>
+                    <img src={sugar} alt="" />
+                </div>
+                <div className={styles.textImagen}><p>Tratamiento del Suelo</p></div>
+            </div>
+            <div id={styles.tarjetOcultar} className={styles.contenedorInforCard}>
+                <div className={styles.cuadroImageVacasPollos}>
+                    <img src={azucar} alt="" />
+                </div>
+                <div className={styles.textImagen}><p>Industria del Azucar</p></div>
+            </div>
             <div className={styles.contenedorInforCard2}>
                 <div className={styles.cuadroImage2} style={{ backgroundImage: `linear-gradient(to left, rgba(255, 255, 255, 0), rgba(70, 130, 180, 0.8)), url(${sugar})` }}>
                     <div className={styles.textImagenSuelo}>Tratamiento del Suelo</div>

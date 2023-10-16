@@ -1,5 +1,6 @@
 
 import styles from './Home.module.css';
+// import './styles.css'
 import { Link } from 'react-router-dom'
 import Carousel from '@itseasy21/react-elastic-carousel';
 import principalHome from '../../utils/principalHome.jpg'
@@ -23,33 +24,69 @@ import '@fontsource/roboto/700.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import TextMobileStepper from './ResponsiveHome/ResTabPanel';
 import { CardCarrusel } from './Carusel/CardCarrusel';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 
 
-// const inforCardCarrusel = [
-//   {
-//     id:1,
-//     image:{CalViva},
-//     title:'Cal Viva'
-//   },
-//   {
-//     id:2,
-//     image:{CalDolomita},
-//     title:'Cal Dolomita'
-//   },
-//   {
-//     id:3,
-//     image:{hidratada},
-//     title:'Cal Hidratada'
-//   },
-//   {
-//     id:4,
-//     image:{caliza},
-//     title:'Carbonato de Calcio'
-//   },
-// ]
+const inforCardCarrusel = [
+  {
+    id:1,
+    image: CalViva,
+    title:'Cal Viva',
+    route:'/Calviva'
+  },
+  {
+    id:2,
+    image:CalDolomita,
+    title:'Cal Dolomita',
+    route:'/CalDolomita'
+  },
+  {
+    id:3,
+    image:hidratada,
+    title:'Cal Hidratada',
+    route:'/CalHidratada'
+  },
+  {
+    id:4,
+    image:neutramol,
+    title:'Neutramol',
+    route:'/CalHidratada'
+  },
+  {
+    id:5,
+    image:caliza,
+    title:'Carbonato de Calcio',
+    route:'/PiedraCaliza'
+  },
+  {
+    id:6,
+    image:caliza,
+    title:'Agrícola',
+    route:'/CalesAgricolas'
+  },
+]
 
 export const Home = () => {
 
+
+  const carrusel = inforCardCarrusel.map((carr)=> (
+    <CardCarrusel key={carr.id}  image={carr.image} title={carr.title} route={carr.route}/>
+  ))
+
+  const customStyles = {
+    arrow: {
+      margin: 'auto',
+      height: '25px',
+      borderRadius: '50px',
+      background: '#f0f0f0',
+      padding: '10px',
+      cursor: 'pointer',
+      color: '#0067b3',
+      display:'block'
+    }
+  };
+  
   const breakPoints = [
     {width:1, itemsToShow:1},
     {width:500, itemsToShow:2},
@@ -79,7 +116,7 @@ export const Home = () => {
           <div className={styles.divCarmeus}> <img src={carmeus1} alt="" /></div>
           <div id={styles.divCarmeus2} className={styles.divCarmeus}> <img src={carmeus2} alt="" /></div>
           <div className={styles.growCarmeus}>RIO CAL miembro del grupo Carmeuse, líder mundial en la producción de cales y productos a base de minerales necesarios para una variedad de aplicación industriales <br /> <br /> Trabajamos con la máxima excelencia, buscando ofrecer soluciones y productos innovadores a nuestros clientes, desarrollando habilidades y oportunidades de crecimiento para todos los empleados que forman parte de este proyecto. Construimos nuestro negocio sobre la base de la confianza y la integridad. Impactamos la vida cotidiana de nuestros clientes, nuestras comunidades y personas.</div>
-          <h4 className={styles.botonCarmeusInternational}>Descubre <br /> Carmeuse Internacional</h4>
+          <h4 className={styles.botonCarmeusInternational} > <a href="https://www.carmeuse.com/eu-en">Descubre <br /> Carmeuse Internacional</a></h4>
         </section>
       </section>
       <div className={styles.titleProductos}>Productos</div>
@@ -89,14 +126,20 @@ export const Home = () => {
         <Link to={'/RioCalMas'} className={styles.productosDivs}><p>RioCal +</p> <ArrowForwardIosIcon className={styles.flecha}/></Link>
 
       </div>
-      <div id={styles.carruselContainer} className={styles.tarjetasOcultar}>
-        <Carousel breakPoints={breakPoints}>
-          <CardCarrusel image={CalViva} title='Cal Viva'/>
-          <CardCarrusel image={CalDolomita} title='Cal Dolomita'/>
-          <CardCarrusel image={hidratada} title='Cal Hidratada'/>
-          <CardCarrusel image={neutramol} title='Neutramol'/>
-          <CardCarrusel image={caliza} title='Carbonato de Calcio'/>
-          <CardCarrusel image={caliza} title='Cal Agrícola'/>
+      <div id={styles.carruselContainer} className='' >
+        <Carousel 
+          breakPoints={breakPoints} 
+          renderArrow={({ type, onClick }) => (
+            <div
+              onClick={onClick}
+              style={customStyles.arrow}
+            >
+              {type === 'PREV' ? <ArrowLeftIcon /> : <ArrowRightIcon/>}
+            </div>
+          )}
+     
+        >
+          {carrusel}
         </Carousel>
       </div>
       <div className={styles.titleProductos}>Explora nuestros productos destacados</div>

@@ -34,7 +34,7 @@ export const TarjetaAgricola = () => {
                     
                 },
                 '& .IconClass': {
-                    fontSize: '70px',
+                    fontSize: '50px',
                     color: 'white',
                     transition:'color 0.6s',
 
@@ -42,7 +42,7 @@ export const TarjetaAgricola = () => {
                 '@media only screen and (max-width:400px)': {
                   width:'80%',
                   '& .MuiTypography-root': {
-                    fontSize: '18px', 
+                    fontSize: '16px', 
                     lineHeight:'25px' // Cambio del tamaño de la typography
                   },
                 },
@@ -57,12 +57,8 @@ export const TarjetaAgricola = () => {
 
             }}
         >
-          <Box sx={{ display: 'flex', flexDirection: 'column', width:'40%'}}>
-            <CardContent 
-                sx={{ 
-                    flex: '1 0 auto',
-                }}
-            >
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent:'center', width:'40%'}}>
+            <CardContent >
               <Typography  
                 component="div" variant="h5" 
                 align='center'

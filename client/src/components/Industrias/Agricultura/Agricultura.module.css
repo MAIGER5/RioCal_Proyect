@@ -2,7 +2,6 @@
     display: flexbox;
     position: relative;
     width: 100vw;
-    height: 2300px;
     margin-top: 100px;
 
 }
@@ -25,27 +24,29 @@
 .cardText{
     position: absolute;
     display: grid;
-    top: 630px;
-    width: 35%;
-    height: 25%;
-    background-color: forestgreen;
-    opacity: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);;
+    top: 530px;
+    width: 450px;
+    height: 500px;
+    background-color: #265c9e;
+    opacity: 90%;
+    left: 27%;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
 }
+
 
 .title1{
     margin: auto;
     margin-top: 40px;
-    width: 70%;
+    width: 80%;
     height: 130px;
     /* border: 1px solid black; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: flex-start;
     align-items: center;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 45px;
-    font-weight: 400;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 500;
     color: white;
     font-stretch: semi-condensed;
     letter-spacing: 1.5px;
@@ -62,7 +63,7 @@
     align-items: center;    
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 500;
     color: white;
     font-stretch: extra-condensed;
     letter-spacing: 1.5px;
@@ -71,7 +72,7 @@
 
 .contenedorCards{
     margin: auto;
-    margin-top: 400px;
+    margin-top: 300px;
     width: 80%;
     height: 20%;
     display: flex;
@@ -81,9 +82,11 @@
 
 .contenedorInforCard{
     width: 25%;
+    height: 400px;
 }
 
 .contenedorInforCard:hover .textImagen{
+
     background-color: forestgreen;
 }
 
@@ -94,6 +97,7 @@
 
 .contenedorInforCard2{
     width: 47%;
+    height: 400px;
     overflow: hidden;
     position: relative;
     /* border: 1px solid blue; */
@@ -102,7 +106,7 @@
 
 .cuadroImageVacasPollos{
     width: 100%;
-    height: 40%;
+    height: 60%;
     overflow: hidden;
     position: relative;
     display: block;
@@ -111,7 +115,7 @@
 
 .cuadroImage2{
     width: 100%; /* Ajusta según sea necesario */
-    height: 90%; /* Ajusta según sea necesario */
+    height: 100%; /* Ajusta según sea necesario */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -126,6 +130,8 @@
     object-position: center center;
     opacity: 85%;
     transition: transform 1s;
+    /* border-radius: 3px; */
+
 }
 
 .textImagenSuelo{
@@ -141,7 +147,7 @@
 
 .textImagen{
     width:100%x;
-    height: 50%;
+    height: 40%;
     background-color: #0063b4;
     display: flex;
     justify-content: start;
@@ -184,6 +190,7 @@
     width: 80%; /* Ajusta según sea necesario */
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
     height: 25%;
     background-size: cover;
     background-repeat: no-repeat; /* Asegura que la imagen de fondo no se repita */
@@ -227,4 +234,231 @@
     margin-left: 20px;
     margin-bottom: 30px;
     z-index: 3;
+}
+
+#tarjetOcultar{
+    display: none;
+}
+/****************************************************************************/
+
+
+@media only screen and (max-width:400px){
+
+    #tarjetOcultar{
+        display: block;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagePinc{
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .cardText{
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 470px;
+        background-color: #265c9e;
+        opacity: 100%;
+        left: 0;
+        transform: none;
+    }
+    .title1{
+        line-height: 30px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .textPrincipal{
+        margin-top: 5px;
+        font-size: 12px;
+
+    }
+    .contenedorCards{
+        margin-top: 100px;
+    }
+
+}
+/****************************************************************************/
+
+
+@media only screen and (min-width:401px) and (max-width:650px){
+
+    #tarjetOcultar{
+        display: block;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagePinc{
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .cardText{
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 400px;
+        background-color: #265c9e;
+        opacity: 100%;
+        left: 0;
+        transform: none;
+    }
+    .title1{
+        line-height: 30px;
+        margin-top: 10;
+        margin-bottom: 40px;
+    }
+    .textPrincipal{
+        margin-top: 9px;
+        font-size: 14px;
+
+    }
+    .contenedorCards{
+        margin-top: 100px;
+    }
+}
+
+
+/************************************************************/
+
+
+@media only screen and (min-width:651px) and (max-width:950px){
+
+    #tarjetOcultar{
+        display: block;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagePinc{
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .cardText{
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 350px;
+        background-color: #265c9e;
+        opacity: 100%;
+        left: 0;
+        transform: none;
+    }
+    .title1{
+        line-height: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .textPrincipal{
+        margin-top: 9px;
+        font-size: 18px;
+
+    }
+    .contenedorCards{
+        margin-top: 100px;
+    }
+}
+
+/*************************************************************************/
+
+@media only screen and (max-width:800px){
+
+    #tarjetOcultar{
+        display: block;
+    }
+
+    .contenedorCards{
+        width: 60%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contenedorInforCard{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 70px;
+        /* border-radius: 10px; */
+    }
+
+    .cuadroImageVacasPollos{
+        height: 60%;
+    }
+    .textImagen{
+        height: 30%;
+    }
+    .textImagen p{
+        font-size: 22px;
+        text-wrap: balance;
+    }
+
+    .contenedorInforCard2{
+        display: none;
+    
+    }
+
+    .sugarIndustry{
+        display: none;
+    }
+}
+
+/******************************************************************************/
+
+
+@media only screen and (min-width:801px) and (max-width:1200px){
+
+    #tarjetOcultar{
+        display: block;
+    }
+
+    .contenedorCards{
+        width: 60%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contenedorInforCard{
+        width: 100%;
+        height: 600px;
+        margin-bottom: 70px;
+        /* border-radius: 10px; */
+    }
+
+    .cuadroImageVacasPollos{
+        height: 60%;
+    }
+    .textImagen{
+        height: 30%;
+    }
+    .textImagen p{
+        font-size: 29px;
+        text-wrap: balance;
+    }
+
+    .contenedorInforCard2{
+        display: none;
+    
+    }
+
+    .sugarIndustry{
+        display: none;
+    }
 }

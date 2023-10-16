@@ -282,10 +282,13 @@
   }
 
   #carruselContainer{
-    width: 79%;
+    width: 77%;
     margin: auto;
     margin-top: 30px;
   }
+
+  
+  
 /* 
 @media screen and (max-width: 1445px){
     .contenedorCards{
@@ -297,11 +300,18 @@
     }
 } */
 
+
+
 /*****************************************************************************************/
 
 @media only screen and (max-width: 450px) {
 
-
+    
+  #carruselContainer{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
     .imagePinc{
         height: 300%;    
     }
@@ -350,20 +360,28 @@
     .botonCarmeusInternational{
         display: grid;
         background-color: #0067b3;
-        color: white;
-        height: 50px;
-        padding: 10px;
-        text-align: center;
-        border-radius: 60px;
-        font-size: 19px;
         cursor: pointer;
+        border-radius: 60px;
+
+    
+    }
+    .botonCarmeusInternational a{
+      margin: auto;
+      width: 80%;
+      color: white;
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: none;
     
     }
 
     .titleProductos{ 
         display: none; 
         
-    }
+    } 
+
     .productos {
         margin: auto;
         width: 78%;
@@ -397,12 +415,17 @@
         display: none;
       }
 
-      
+      #carruselContainer{
+        width: 79%;
+        margin: auto;
+        margin-top: 190px;
+      }
+
       .titleResponsiveOtrosProductos{
         display: block;
         width: 78%;
         margin: auto;
-        margin-top: 170px;
+        margin-top: 70px;
         font-size: 29px;
         line-height: 30px;
       }
@@ -523,8 +546,18 @@
       
 }
 
+
+
+/*****************************************************************************************/
+
+
 @media only screen and (min-width:451px) and (max-width:950px) {
 
+  #carruselContainer{
+    width: 77%;
+    margin: auto;
+    margin-top: 190px;
+  }
 
     .imagePinc{
         height: 250%;
@@ -577,7 +610,6 @@
         text-wrap: balance;
     }
 
-
     .productos {
         margin: auto;
         width: 78%;
@@ -588,6 +620,9 @@
         grid-template-columns: 1fr;
         gap: 18px;
     }
+    .botonTextosLink{
+      text-decoration: none;
+    }
     .productosDivs{
         background-color: #0067b3;
         color: white;
@@ -597,6 +632,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-decoration: none;
     }
     #divdiferente{
         background-color: #10497c;
@@ -618,7 +654,7 @@
         display: block;
         width: 78%;
         margin: auto;
-        margin-top: 170px;
+        margin-top: 70px;
         font-size: 29px;
         line-height: 30px;
       }
@@ -715,6 +751,7 @@
         font-weight: 600;
         cursor: pointer;
         z-index: 2;
+        text-decoration: none;
       }
 
       .textContact{
@@ -732,6 +769,11 @@
         z-index: 2;
       }
 }
+
+
+
+/*****************************************************************************************/
+
 
 @media only screen and (min-width:950px) and (max-width:1200px) {
 
